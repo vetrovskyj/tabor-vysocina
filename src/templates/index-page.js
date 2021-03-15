@@ -1,129 +1,88 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
+import Helmet from "react-helmet"
+import { withPrefix } from "gatsby"
 
 import Layout from '../components/Layout'
-import Features from '../components/Features'
-import BlogRoll from '../components/BlogRoll'
 
 export const IndexPageTemplate = ({
-  image,
-  title,
   heading,
   subheading,
-  mainpitch,
-  description,
-  intro,
 }) => (
-  <div>
-    <div
-      className="full-width-image margin-top-0"
-      style={{
-        backgroundImage: `url(${
-          !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-        })`,
-        backgroundPosition: `top left`,
-        backgroundAttachment: `fixed`,
-      }}
-    >
-      <div
-        style={{
-          display: 'flex',
-          height: '150px',
-          lineHeight: '1',
-          justifyContent: 'space-around',
-          alignItems: 'left',
-          flexDirection: 'column',
-        }}
-      >
-        <h1
-          className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
-          style={{
-            boxShadow:
-              'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(255, 68, 0)',
-            color: 'white',
-            lineHeight: '1',
-            padding: '0.25em',
-          }}
-        >
-          {title}
-        </h1>
-        <h3
-          className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
-          style={{
-            boxShadow:
-              'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(255, 68, 0)',
-            color: 'white',
-            lineHeight: '1',
-            padding: '0.25em',
-          }}
-        >
-          {subheading}
-        </h3>
+  <main className="homepage-main">
+    <div className="slider">
+      <div className="sliderphoto" onLoad="sliderFunc">
+        <img className="photo" width={1920} alt="sliderphoto" src="../img/sliderphoto4.jpg" />
+        <img className="photo" width={1920} alt="sliderphoto" src="../img/sliderphoto1.png" />
+        <img className="photo" width={1920} alt="sliderphoto" src="../img/sliderphoto6.jpg" />
       </div>
-    </div>
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="section">
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
-              <div className="content">
-                <div className="content">
-                  <div className="tile">
-                    <h1 className="title">{mainpitch.title}</h1>
-                  </div>
-                  <div className="tile">
-                    <h3 className="subtitle">{mainpitch.description}</h3>
-                  </div>
-                </div>
-                <div className="columns">
-                  <div className="column is-12">
-                    <h3 className="has-text-weight-semibold is-size-2">
-                      {heading}
-                    </h3>
-                    <p>{description}</p>
-                  </div>
-                </div>
-                <Features gridItems={intro.blurbs} />
-                <div className="columns">
-                  <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/products">
-                      See all products
-                    </Link>
-                  </div>
-                </div>
-                <div className="column is-12">
-                  <h3 className="has-text-weight-semibold is-size-2">
-                    Latest stories
-                  </h3>
-                  <BlogRoll />
-                  <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/blog">
-                      Read more
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div className="slider-sale-and-text">
+        <p className="slider-sale">Sleva</p>
+        <div className="slider-text">
+          <p className="slider-text-sale">{subheading} <br />značky <span className="slider-text-brand">{heading}</span></p>
+        </div>
+        <div className="rectangles">
+          <div className="rectangle" />
+          <div className="rectangle" />
+          <div className="rectangle" />
         </div>
       </div>
-    </section>
-  </div>
+    </div>
+    <div className="icons">
+      <a href="./sluzby/index.html#optometrie" className="icon-container">
+        <h2>Optometrie</h2>
+        <img alt="optomerty-icon" src="../img/optometry.png" />
+      </a>
+      <a href="./sluzby/index.html#bryle" className="icon-container">
+        <h2>Brýle</h2>
+        <img alt="glasses-icon" src="../img/glasses.png" />
+      </a>
+      <a href="./sluzby/index.html#doplnky" className="icon-container">
+        <h2>Doplňky</h2>
+        <img alt="accessories-icon" src="../img/accessories.png" />
+      </a>
+    </div>
+    <div className="bottom-section">
+      <section>
+        <h2>Nadpis sekce</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed optio voluptate vitae eligendi tempore ex animi nesciunt, dolor beatae illum totam, odio labore assumenda. Architecto ut ex odit doloremque reprehenderit.</p>
+      </section>
+      <img alt="glasses-show-illustration-photo" src="../img/glassesshow.png" />
+    </div>
+    <div className="info-footer-container">
+      <div className="info-footer">
+        <div className="info-contacts">
+          <div className="info-contact">
+            <img alt="person-icon" src="../img/person-icon.png" />
+            <p>Bc. Jitka Hronková</p>
+          </div>
+          <div className="info-contact">
+            <img alt="info-icon" src="../img/info-icon.png" />
+            <p>IČO: 45645687</p>
+          </div>
+          <div className="info-contact">
+            <img alt="location-icon" src="../img/location-icon.png" />
+            <p>nám. Svobody 14, Volyně, 387 01</p>
+          </div>
+        </div>
+        <div className="aditional-links">
+          <a href="#">Obchodní podmínky</a>
+          <a href="#">Autorská práva</a>
+        </div>
+        <a href="https://www.facebook.com/O%C4%8Dn%C3%AD-optika-Volyn%C4%9B-191635897936682/"><img className="fb-icon" alt="facebook-icon" src="../img/facebook-icon.png" /></a>
+      </div>
+    </div>
+    <Helmet>
+      <script src={withPrefix('./scripts/slider.js')} type="text/javascript" />
+      <script src={withPrefix('./scripts/hamburger.js')} type="text/javascript" />
+    </Helmet>
+  </main>
 )
 
 IndexPageTemplate.propTypes = {
-  image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  title: PropTypes.string,
   heading: PropTypes.string,
   subheading: PropTypes.string,
-  mainpitch: PropTypes.object,
-  description: PropTypes.string,
-  intro: PropTypes.shape({
-    blurbs: PropTypes.array,
-  }),
 }
 
 const IndexPage = ({ data }) => {
@@ -132,13 +91,8 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <IndexPageTemplate
-        image={frontmatter.image}
-        title={frontmatter.title}
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
-        mainpitch={frontmatter.mainpitch}
-        description={frontmatter.description}
-        intro={frontmatter.intro}
       />
     </Layout>
   )
@@ -158,35 +112,8 @@ export const pageQuery = graphql`
   query IndexPageTemplate {
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
-        title
-        image {
-          childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
         heading
         subheading
-        mainpitch {
-          title
-          description
-        }
-        description
-        intro {
-          blurbs {
-            image {
-              childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-            text
-          }
-          heading
-          description
-        }
       }
     }
   }
