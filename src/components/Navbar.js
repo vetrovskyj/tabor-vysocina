@@ -1,8 +1,5 @@
 import React from 'react'
 
-
-const header = document.querySelector('.logo-and-nav-container');
-
 const Navbar = class extends React.Component {
   constructor(props) {
     super(props)
