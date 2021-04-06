@@ -41,7 +41,7 @@ export const ContactPage = ({}) => {
                   </div>
                   <div className="basic-contact">
                     <h2>Adresa</h2>
-                    <p>náměstí Svobody 14, Volyně, 38701</p>
+                    <p>náměstí Svobody 14, Volyně, 387 01</p>
                   </div>
                 </div>
               </div>
