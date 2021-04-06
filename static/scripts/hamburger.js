@@ -11,10 +11,10 @@ hamburger.addEventListener('click', function() {
         const navList = document.createElement('div');
         const navListLineFirst = document.createElement('a');
         navListLineFirst.innerText = 'Produkty a služby';
-        navListLineFirst.setAttribute('href', '/optika-volyne/sluzby/')
+        navListLineFirst.setAttribute('href', '/sluzby/')
         const navListLineThird = document.createElement('a');
         navListLineThird.innerText = 'Kontakt';
-        navListLineThird.setAttribute('href', '/optika-volyne/kontakt/')
+        navListLineThird.setAttribute('href', '/kontakt/')
         navList.appendChild(navListLineFirst);
         navList.appendChild(navListLineThird);
         hamNav.appendChild(navList);

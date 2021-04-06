@@ -23,14 +23,14 @@ const Navbar = class extends React.Component {
         </header>
         <div className="logo-and-nav-container">
           <div className="logo-and-nav">
-            <span className="logo"><a href="./">Optika Volyně</a></span>
+            <span className="logo"><a href="/">Optika Volyně</a></span>
             <nav>
               <ul>
                 <li>
-                  <a href="./sluzby/">Produkty a služby</a>
+                  <a href="/sluzby/">Produkty a služby</a>
                 </li>
                 <li>
-                  <a href="./kontakt/">Kontakt</a>
+                  <a href="/kontakt/">Kontakt</a>
                 </li>
               </ul>
               <div className="hamburger">
