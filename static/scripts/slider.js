@@ -1,4 +1,4 @@
-setTimeout(() => {
+window.addEventListener('DOMContentLoaded', () => {
     const carouselSlide = document.querySelector('.sliderphoto');
     const carouselImages = document.querySelectorAll('.photo');
     const dots = document.querySelectorAll('.rectangle');
@@ -124,4 +124,4 @@ setTimeout(() => {
         xDown = null;
         yDown = null;
     };
-}, 4000);
+});
