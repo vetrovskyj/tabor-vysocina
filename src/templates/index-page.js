@@ -83,6 +83,7 @@ export const IndexPageTemplate = ({
 IndexPageTemplate.propTypes = {
   heading: PropTypes.string,
   subheading: PropTypes.string,
+  uvodni_foto: PropTypes.object
 }
 
 const IndexPage = ({ data }) => {
