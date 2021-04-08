@@ -3,19 +3,21 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Helmet from "react-helmet"
 import { withPrefix } from "gatsby"
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
 import Layout from '../components/Layout'
 
 export const IndexPageTemplate = ({
   heading,
   subheading,
+  uvodni_foto,
 }) => (
   <main className="homepage-main">
     <div className="slider">
       <div className="sliderphoto" onLoad="sliderFunc">
-        <img className="photo" width={1920} alt="sliderphoto" src="../img/sliderphoto4.jpg" />
-        <img className="photo" width={1920} alt="sliderphoto" src="../img/sliderphoto1.png" />
-        <img className="photo" width={1920} alt="sliderphoto" src="../img/sliderphoto6.jpg" />
+        <PreviewCompatibleImage imageInfo={uvodni_foto.obrazek2} className="photo" width={1920} alt="sliderphoto" />
+        <PreviewCompatibleImage imageInfo={uvodni_foto.obrazek1} className="photo" width={1920} alt="sliderphoto" />
+        <PreviewCompatibleImage imageInfo={uvodni_foto.obrazek3} className="photo" width={1920} alt="sliderphoto" />
       </div>
       <div className="slider-sale-and-text">
         <p className="slider-sale">Sleva</p>
@@ -83,7 +85,11 @@ export const IndexPageTemplate = ({
 IndexPageTemplate.propTypes = {
   heading: PropTypes.string,
   subheading: PropTypes.string,
-  uvodni_foto: PropTypes.object
+  uvodni_foto: PropTypes.shape({
+    obrazek1: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+    obrazek2: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+    obrazek3: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  }),
 }
 
 const IndexPage = ({ data }) => {
@@ -94,6 +100,7 @@ const IndexPage = ({ data }) => {
       <IndexPageTemplate
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
+        uvodni_foto={frontmatter.uvodni_foto}
       />
     </Layout>
   )
@@ -115,6 +122,29 @@ export const pageQuery = graphql`
       frontmatter {
         heading
         subheading
+        uvodni_foto {
+          obrazek1 {
+            childImageSharp {
+               fluid(maxWidth: 1920) {
+                ...GatsbyImageSharpFluid
+               }
+            }
+          }
+          obrazek2 {
+            childImageSharp {
+              fluid(maxWidth: 1920) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+          obrazek3 {
+            childImageSharp {
+              fluid(maxWidth: 1920) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
       }
     }
   }
