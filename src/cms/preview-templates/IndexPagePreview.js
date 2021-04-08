@@ -11,15 +11,9 @@ const IndexPagePreview = ({ entry, getAsset }) => {
         heading={data.heading}
         subheading={data.subheading}
         uvodni_foto={{
-          obrazek1: {
-            image: getAsset(entry.getIn(['data', 'uvodni_foto', 'obrazek1'])),
-          },
-          obrazek2: {
-            image: getAsset(entry.getIn(['data', 'uvodni_foto', 'obrazek2'])),
-          },
-          obrazek3: {
-            image: getAsset(entry.getIn(['data', 'uvodni_foto', 'obrazek3'])),
-          },
+          obrazek1: getAsset(entry.getIn(['data', 'uvodni_foto', 'obrazek1'])),
+          obrazek2: getAsset(entry.getIn(['data', 'uvodni_foto', 'obrazek2'])),
+          obrazek3: getAsset(entry.getIn(['data', 'uvodni_foto', 'obrazek3'])),
         }}
       />
     )

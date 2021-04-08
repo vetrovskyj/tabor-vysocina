@@ -15,9 +15,9 @@ export const IndexPageTemplate = ({
   <main className="homepage-main">
     <div className="slider">
       <div className="sliderphoto" onLoad="sliderFunc">
-        <PreviewCompatibleImage imageInfo={uvodni_foto.obrazek2} className="photo" width={1920} alt="sliderphoto" />
         <PreviewCompatibleImage imageInfo={uvodni_foto.obrazek1} className="photo" width={1920} alt="sliderphoto" />
         <PreviewCompatibleImage imageInfo={uvodni_foto.obrazek3} className="photo" width={1920} alt="sliderphoto" />
+        <PreviewCompatibleImage imageInfo={uvodni_foto.obrazek2} className="photo" width={1920} alt="sliderphoto" />
       </div>
       <div className="slider-sale-and-text">
         <p className="slider-sale">Sleva</p>
@@ -125,21 +125,21 @@ export const pageQuery = graphql`
         uvodni_foto {
           obrazek1 {
             childImageSharp {
-               fluid(maxWidth: 1920) {
+               fluid(maxWidth: 2048, quality: 90) {
                 ...GatsbyImageSharpFluid
                }
             }
           }
           obrazek2 {
             childImageSharp {
-              fluid(maxWidth: 1920) {
+              fluid(maxWidth: 2048, quality: 90) {
                 ...GatsbyImageSharpFluid
               }
             }
           }
           obrazek3 {
             childImageSharp {
-              fluid(maxWidth: 1920) {
+              fluid(maxWidth: 2048, quality: 90) {
                 ...GatsbyImageSharpFluid
               }
             }
