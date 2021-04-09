@@ -22,4 +22,4 @@ collections:
           - {label: Znacka, name: subheading, widget: string}
           - {label: Sleva, name: heading, widget: string}
           - {label: Uvodni foto, name: uvodni_foto, widget: object, fields: [{label: Obrazek1, name: obrazek1, widget: image}, {label: Obrazek2, name: obrazek2, widget: image}, {label: Obrazek3, name: obrazek3, widget: image}]}
-          - {label: Sekce, name: section, widget: object, fields: [{label: Nadpis, name: section_heading, widget: string}, {label: Text, name: section_text, widget: text}, {label: Obrazek, name: image1, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}}]}
+          - {label: Sekce, name: section, widget: object, fields: [{label: Nadpis, name: section_heading, widget: string}, {label: Text, name: section_text, widget: text}, {label: Obrazek, name: image1, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}]}
