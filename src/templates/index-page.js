@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Helmet from "react-helmet"
 import { withPrefix } from "gatsby"
-import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
 import Layout from '../components/Layout'
 
@@ -15,9 +14,9 @@ export const IndexPageTemplate = ({
   <main className="homepage-main">
     <div className="slider">
       <div className="sliderphoto" onLoad="sliderFunc">
-        <PreviewCompatibleImage imageInfo={uvodni_foto.obrazek1} className="photo" width={1920} alt="sliderphoto" />
-        <PreviewCompatibleImage imageInfo={uvodni_foto.obrazek3} className="photo" width={1920} alt="sliderphoto" />
-        <PreviewCompatibleImage imageInfo={uvodni_foto.obrazek2} className="photo" width={1920} alt="sliderphoto" />
+        <img src={uvodni_foto.obrazek1} className="photo" width={1920} alt="sliderphoto" />
+        <img src={uvodni_foto.obrazek2} className="photo" width={1920} alt="sliderphoto" />
+        <img src={uvodni_foto.obrazek3} className="photo" width={1920} alt="sliderphoto" />
       </div>
       <div className="slider-sale-and-text">
         <p className="slider-sale">Sleva</p>
@@ -86,9 +85,9 @@ IndexPageTemplate.propTypes = {
   heading: PropTypes.string,
   subheading: PropTypes.string,
   uvodni_foto: PropTypes.shape({
-    obrazek1: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-    obrazek2: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-    obrazek3: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+    obrazek1: PropTypes.string,
+    obrazek2: PropTypes.string,
+    obrazek3: PropTypes.string,
   }),
 }
 
@@ -123,27 +122,9 @@ export const pageQuery = graphql`
         heading
         subheading
         uvodni_foto {
-          obrazek1 {
-            childImageSharp {
-               fluid(maxWidth: 2048, quality: 90) {
-                ...GatsbyImageSharpFluid
-               }
-            }
-          }
-          obrazek2 {
-            childImageSharp {
-              fluid(maxWidth: 2048, quality: 90) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-          obrazek3 {
-            childImageSharp {
-              fluid(maxWidth: 2048, quality: 90) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
+          obrazek1
+          obrazek2
+          obrazek3
         }
       }
     }
