@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { IndexPageTemplate } from '../../templates/index-page'
 
-const IndexPagePreview = ({ entry }) => {
+const IndexPagePreview = ({ entry, getAsset }) => {
   const data = entry.getIn(['data']).toJS()
 
   if (data) {
@@ -14,6 +14,14 @@ const IndexPagePreview = ({ entry }) => {
           obrazek1: entry.getIn(['data', 'uvodni_foto', 'obrazek1']),
           obrazek2: entry.getIn(['data', 'uvodni_foto', 'obrazek2']),
           obrazek3: entry.getIn(['data', 'uvodni_foto', 'obrazek3']),
+        }}
+        section={{
+          section_heading: entry.getIn(['data', 'section', 'section_heading']),
+          section_text: entry.getIn(['data', 'section', 'section_text']),
+          image1: {
+            image: getAsset(entry.getIn(['data', 'section', 'image1', 'image'])),
+            alt: entry.getIn(['data', 'section', 'image1', 'alt']),
+          },
         }}
       />
     )

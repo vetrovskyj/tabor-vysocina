@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Helmet from "react-helmet"
 import { withPrefix } from "gatsby"
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
 import Layout from '../components/Layout'
 
@@ -10,6 +11,7 @@ export const IndexPageTemplate = ({
   heading,
   subheading,
   uvodni_foto,
+  section,
 }) => (
   <main className="homepage-main">
     <div className="slider">
@@ -46,10 +48,10 @@ export const IndexPageTemplate = ({
     </div>
     <div className="bottom-section">
       <section>
-        <h2>Nadpis sekce</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed optio voluptate vitae eligendi tempore ex animi nesciunt, dolor beatae illum totam, odio labore assumenda. Architecto ut ex odit doloremque reprehenderit.</p>
+        <h2>{section.section_heading}</h2>
+        <p>{section.section_text}</p>
       </section>
-      <img alt="glasses-show-illustration-photo" src="../img/glassesshow.png" />
+      <PreviewCompatibleImage className="section-photo" imageInfo={section.image1} />
     </div>
     <div className="info-footer-container">
       <div className="info-footer">
@@ -89,6 +91,11 @@ IndexPageTemplate.propTypes = {
     obrazek2: PropTypes.string,
     obrazek3: PropTypes.string,
   }),
+  section: PropTypes.shape({
+    section_heading: PropTypes.string,
+    section_text: PropTypes.string,
+    image1: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  }),
 }
 
 const IndexPage = ({ data }) => {
@@ -100,6 +107,7 @@ const IndexPage = ({ data }) => {
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
         uvodni_foto={frontmatter.uvodni_foto}
+        section={frontmatter.section}
       />
     </Layout>
   )
@@ -125,6 +133,20 @@ export const pageQuery = graphql`
           obrazek1 { relativePath }
           obrazek2 { relativePath }
           obrazek3 { relativePath }
+        }
+        section {
+          section_heading
+          section_text
+          image1 {
+            alt
+            image {
+              childImageSharp {
+                fluid(maxWidth: 1920, quality: 92) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
         }
       }
     }

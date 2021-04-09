@@ -542,6 +542,7 @@ nav ul li:last-child {
 
 .bottom-section {
     display: flex;
+    width: 100%;
 }
 
 .bottom-section section {
@@ -571,6 +572,10 @@ nav ul li:last-child {
 
 .bottom-section img {
     filter: brightness(90%);
+    width: calc(100% / 3);
+}
+
+.gatsby-image-wrapper {
     width: calc(100% / 3);
 }
 
