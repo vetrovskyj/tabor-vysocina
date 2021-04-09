@@ -14,9 +14,9 @@ export const IndexPageTemplate = ({
   <main className="homepage-main">
     <div className="slider">
       <div className="sliderphoto" onLoad="sliderFunc">
-        <img src={uvodni_foto.obrazek1} className="photo" width={1920} alt="sliderphoto" />
-        <img src={uvodni_foto.obrazek2} className="photo" width={1920} alt="sliderphoto" />
-        <img src={uvodni_foto.obrazek3} className="photo" width={1920} alt="sliderphoto" />
+        <img src={"../img/"+uvodni_foto.obrazek1.relativePath} className="photo" width={1920} alt="sliderphoto" />
+        <img src={"../img/"+uvodni_foto.obrazek2.relativePath} className="photo" width={1920} alt="sliderphoto" />
+        <img src={"../img/"+uvodni_foto.obrazek3.relativePath} className="photo" width={1920} alt="sliderphoto" />
       </div>
       <div className="slider-sale-and-text">
         <p className="slider-sale">Sleva</p>
@@ -122,9 +122,9 @@ export const pageQuery = graphql`
         heading
         subheading
         uvodni_foto {
-          obrazek1
-          obrazek2
-          obrazek3
+          obrazek1 { relativePath }
+          obrazek2 { relativePath }
+          obrazek3 { relativePath }
         }
       }
     }
