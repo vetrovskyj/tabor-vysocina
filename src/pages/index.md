@@ -1,6 +1,6 @@
 ---
 templateKey: index-page
-subheading: 30% na brýle
+subheading: 20% na brýle
 heading: Converse
 uvodni_foto:
   obrazek1: /img/sliderphoto4.jpg
