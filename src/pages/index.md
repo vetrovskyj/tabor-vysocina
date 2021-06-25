@@ -15,5 +15,5 @@ section:
     reprehenderit.
   image1:
     alt: glasses-show-illustration-photo
-    image: /img/optometrie.jpg
+    image: /img/glassesshow.png
 ---
