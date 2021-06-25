@@ -15,5 +15,5 @@ section:
     reprehenderit.
   image1:
     alt: glasses-show-illustration-photo
-    image: /img/glassesshow.png
+    image: /img/doplnky-product.jpg
 ---
