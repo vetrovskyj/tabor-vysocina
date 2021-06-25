@@ -6,6 +6,7 @@
 
 .gatsby-image-wrapper {
     border-radius: 0;
+    width: calc(100% / 3);
 }
 
 .background {
@@ -675,6 +676,7 @@ nav ul li:last-child {
 
 .bottom-section {
     display: flex;
+    width: 100%;
 }
 
 .bottom-section section {
