@@ -3,10 +3,12 @@ import Helmet from "react-helmet"
 import { withPrefix } from "gatsby"
 
 import Layout from '../../components/Layout'
+import SaleBanner from '../../components/SaleBanner'
 
 export const ServicesPage = ({}) => { 
   return (
     <Layout>
+      <SaleBanner></SaleBanner>
       <main className="products-main">
         <div className="slider-products">
           <img className="sliderphoto-products" width={1920} alt="ilustrační foto - interier optiky" src="../../img/products-image.jpg" />

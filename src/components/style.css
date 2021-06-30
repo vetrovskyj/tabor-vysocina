@@ -20,9 +20,6 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: auto;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 header {
@@ -54,6 +51,19 @@ header p {
 .topandbottom a:hover,
 .topandbottom a i:hover {
     color: white;
+}
+
+.sale-banner {
+    background-color: #77A02E;
+    padding: 20px 0;
+}
+
+.sale-banner p {
+    width: 50%;
+    text-align: justify;
+    margin: auto;
+    color: white;
+    font-size: 24px;
 }
 
 .contact {
@@ -144,7 +154,7 @@ a:hover:before {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
-    z-index: 2;
+    z-index: 7;
 }
 
 .dropdown-pages {
@@ -152,7 +162,7 @@ a:hover:before {
     position: absolute;
     min-width: 160px;
     background-color: white;
-    z-index: 1;
+    z-index: 6;
     padding-top: 20px;
 }
 
@@ -1253,7 +1263,7 @@ nav ul li:last-child {
     margin-bottom: 0px;
 }
 
-#mapa {
+.mapa {
     width: 50%;
     height: 450px;
 }
@@ -1542,7 +1552,7 @@ nav ul li:last-child {
     .get-there-desc-container {
         width: 100%;
     }
-    #mapa {
+    .mapa {
         width: 100%;
         height: 200px;
     }
