@@ -2687,10 +2687,12 @@ nav ul li:last-child {
 .additional-pages-main {
     width: 40%;
     margin: 0 auto auto auto;
+    min-height: 67vh;
+    padding-bottom: 30px;
 }
 
 .additional-pages-main h1 {
-    margin: 30px 0;
+    padding: 30px 0;
     color: #77A02E;
 }
 
@@ -2708,7 +2710,6 @@ nav ul li:last-child {
 
 .additional-pages-footer {
     border-top: 2px solid black;
-    margin-top: 30px;
 }
 
 @media (max-width:1300px) {

@@ -12,7 +12,7 @@ export const ContactPage = ({ }) => {
         <div className="contact-first">
           <div className="basic-contacts-container">
             <div className="store-image-container">
-              <img className="store-image" src="../../img/store-image.png" alt="obrázek provozovny Optika Volyně" />
+              <img className="store-image" src="../../img/optika-zvenku.png" alt="obrázek provozovny Optika Volyně" />
               <div className="contact-heading">
                 <p>Kontakty</p>
               </div>
