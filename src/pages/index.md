@@ -17,6 +17,6 @@ section:
     a optometrických služeb. Přijdťe se sami přesvědčit a udělejte si radost
     novými brýlemi.
   image1:
-    alt: glasses-show-illustration-photo
+    alt: ilustracni foto bryli
     image: /img/glassesshow.png
 ---
