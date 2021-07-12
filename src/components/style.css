@@ -56,11 +56,12 @@ header p {
 .sale-banner {
     background-color: #77A02E;
     padding: 20px 0;
+    width: 100%;
 }
 
 .sale-banner p {
     width: 50%;
-    text-align: justify;
+    text-align: center;
     margin: auto;
     color: white;
     font-size: 24px;
