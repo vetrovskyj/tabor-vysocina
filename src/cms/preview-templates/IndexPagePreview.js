@@ -8,8 +8,12 @@ const IndexPagePreview = ({ entry, getAsset }) => {
   if (data) {
     return (
       <IndexPageTemplate
-        heading={data.heading}
-        subheading={data.subheading}
+        uvodni_text={{
+          firstRow: entry.getIn(['data', 'uvodni_text', 'firstRow']),
+          coloredText: entry.getIn(['data', 'uvodni_text', 'coloredText']),
+          secondRow: entry.getIn(['data', 'uvodni_text', 'secondRow']),
+          thirdRow: entry.getIn(['data', 'uvodni_text', 'thirdRow']),
+        }}
         uvodni_foto={{
           obrazek1: entry.getIn(['data', 'uvodni_foto', 'obrazek1']),
           obrazek2: entry.getIn(['data', 'uvodni_foto', 'obrazek2']),

@@ -1,7 +1,10 @@
 ---
 templateKey: index-page
-subheading: 20% na brýle
-heading: Converse
+uvodni_text:
+  firstRow: Vaše
+  coloredText: Volyni
+  secondRow: známá optika
+  thirdRow: přímo ve
 uvodni_foto:
   obrazek1: /img/optika-bryle.png
   obrazek2: /img/optika-bryle-sideways.png

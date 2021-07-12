@@ -8,8 +8,7 @@ import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import Layout from '../components/Layout'
 
 export const IndexPageTemplate = ({
-  heading,
-  subheading,
+  uvodni_text,
   uvodni_foto,
   section,
 }) => (
@@ -21,9 +20,9 @@ export const IndexPageTemplate = ({
         <img src={"../img/"+uvodni_foto.obrazek3.relativePath} className="photo" width={1920} alt="sliderphoto" />
      </div>
      <div className="slider-sale-and-text">
-        <p className="slider-sale">Sleva</p>
+        <p className="slider-sale">{uvodni_text.firstRow}</p>
         <div className="slider-text">
-          <p className="slider-text-sale">{subheading} <br />značky <span className="slider-text-brand">{heading}</span></p>
+          <p className="slider-text-sale">{uvodni_text.secondRow} <br />{uvodni_text.thirdRow} <span className="slider-text-brand">{uvodni_text.coloredText}</span></p>
         </div>
         <div className="rectangles">
           <div className="rectangle" />
@@ -84,8 +83,12 @@ export const IndexPageTemplate = ({
 )
 
 IndexPageTemplate.propTypes = {
-  heading: PropTypes.string,
-  subheading: PropTypes.string,
+  uvodni_text: PropTypes.shape({
+    firstRow: PropTypes.string,
+    coloredText: PropTypes.string,
+    secondRow: PropTypes.string,
+    thirdRow: PropTypes.string,
+  }),
   uvodni_foto: PropTypes.shape({
     obrazek1: PropTypes.string,
     obrazek2: PropTypes.string,
@@ -104,8 +107,7 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <IndexPageTemplate
-        heading={frontmatter.heading}
-        subheading={frontmatter.subheading}
+        uvodni_text={frontmatter.uvodni_text}
         uvodni_foto={frontmatter.uvodni_foto}
         section={frontmatter.section}
       />
@@ -127,8 +129,12 @@ export const pageQuery = graphql`
   query IndexPageTemplate {
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
-        heading
-        subheading
+        uvodni_text {
+          firstRow
+          coloredText
+          secondRow
+          thirdRow
+        }
         uvodni_foto {
           obrazek1 { relativePath }
           obrazek2 { relativePath }

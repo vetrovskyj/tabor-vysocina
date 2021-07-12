@@ -376,6 +376,9 @@ nav ul li:last-child {
     .topandbottom a {
         font-size: 10px;
     }
+    .gatsby-image-wrapper {
+        width: 50%;
+    }
 }
 
 @media (max-width:490px) {
