@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+p:empty {
+    display: none;
+}
+
 .gatsby-image-wrapper {
     border-radius: 0;
     width: calc(100% / 3);
@@ -55,7 +59,6 @@ header p {
 
 .sale-banner {
     background-color: #77A02E;
-    padding: 20px 0;
     width: 100%;
 }
 
@@ -65,6 +68,7 @@ header p {
     margin: auto;
     color: white;
     font-size: 24px;
+    padding: 20px 0;
 }
 
 .contact {
@@ -873,7 +877,7 @@ nav ul li:last-child {
 }
 
 @media (max-width:650px) {
-    .sale-banner {
+    .sale-banner p {
         padding: 10px 0;
     }
     .icons {
