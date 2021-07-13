@@ -1,8 +1,6 @@
 ---
 templateKey: index-page
-disclaimer: Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-  molestias magni, voluptas fugiat possimus et magnam amet eaque mollitia
-  maxime!
+disclaimer:
 uvodni_text:
   firstRow: ""
   coloredText: ""

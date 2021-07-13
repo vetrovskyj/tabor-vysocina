@@ -15,7 +15,7 @@ export const IndexPageTemplate = ({
   disclaimer,
 }) => (
   <main className="homepage-main">
-    <SaleBanner>{disclaimer}</SaleBanner>
+    <SaleBanner><p>{disclaimer}</p></SaleBanner>
     <div className="slider">
       <div className="sliderphoto" onLoad="sliderFunc">
         <img src={"../img/" + uvodni_foto.obrazek1.relativePath} className="photo" width={1920} alt="sliderphoto" />

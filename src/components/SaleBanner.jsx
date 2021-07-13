@@ -1,14 +1,12 @@
 import React from 'react'
 
 
-const SaleBanner = class extends React.Component {
-  render() {
-    return (
+const SaleBanner = ({ children }) => {
+  return (
       <div className="sale-banner">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto molestias magni, voluptas fugiat possimus et magnam amet eaque mollitia maxime!</p>
+        {children}
       </div>
-    )
-  }
+ )
 }
 
 export default SaleBanner
