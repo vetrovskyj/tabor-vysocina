@@ -1,13 +1,11 @@
 ---
 templateKey: index-page
-disclaimer: Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-  molestias magni, voluptas fugiat possimus et magnam amet eaque mollitia
-  maxime!
+disclaimer: ""
 uvodni_text:
-  firstRow: ""
-  coloredText: ""
-  secondRow: ""
-  thirdRow: ""
+  firstRow: Vaše
+  coloredText: Volyni
+  secondRow: známá optika
+  thirdRow: přímo ve
 uvodni_foto:
   obrazek1: /img/optika-bryle.png
   obrazek2: /img/optika-kasa.png
