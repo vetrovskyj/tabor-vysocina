@@ -4,8 +4,8 @@ disclaimer: ""
 uvodni_text:
   firstRow: "Vaše"
   coloredText: "Volyni"
-  secondRow: "přímo ve"
-  thirdRow: "známá optika"
+  secondRow: "známá optika"
+  thirdRow: "přímo ve"
 uvodni_foto:
   obrazek1: /img/optika-bryle.png
   obrazek2: /img/optika-kasa.png

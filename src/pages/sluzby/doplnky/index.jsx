@@ -41,7 +41,7 @@ export const Doplnky = ({ }) => {
         </div>
         <div className="bottom-of-productpage">
           <div className="review product-review">
-            <div className="speech-bubble-right sortiment-bubble">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis rerum, porro neque unde hic, est voluptate recusandae voluptas, aliquid fugiat excepturi sed molestias inventore vero dignissimos libero enim deserunt illo.
+            <div className="speech-bubble-right sortiment-bubble">Péče o zrak může být občas trochu finančně náročná a proto jsem rád, že v optice Volyně mi vždy poradí, co je pro mě nejlepší a mám možnost to nakoupit za super cenu. Díky roztoku na čočky občas úplně zapomínám, že je vlastně nosím a když je na sobě doopravdy nemám, na vše se dívám přes skvěle vyčištěné brýle.
             </div>
             <div className="reviewer reviewer-of-product">
               <img src="../../../img/person-for-products3.jpg" alt="referent Ladislav" width={200} />
@@ -58,7 +58,7 @@ export const Doplnky = ({ }) => {
               </div>
               <div className="info-contact">
                 <img alt="info-icon" src="../../../img/info-icon.png" />
-                <p>IČO: 45645687</p>
+                <p>IČO: 02835754</p>
               </div>
               <div className="info-contact">
                 <img alt="location-icon" src="../../../img/location-icon.png" />

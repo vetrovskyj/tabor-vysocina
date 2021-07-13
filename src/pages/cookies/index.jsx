@@ -37,7 +37,7 @@ export const Cookies = ({ }) => {
               </div>
               <div className="info-contact">
                 <img alt="info-icon" src="../../img/info-icon.png" />
-                <p>IČO: 45645687</p>
+                <p>IČO: 02835754</p>
               </div>
               <div className="info-contact">
                 <img alt="location-icon" src="../../img/location-icon.png" />

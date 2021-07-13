@@ -41,7 +41,7 @@ export const Optometrie = ({ }) => {
         </div>
         <div className="bottom-of-productpage">
           <div className="review product-review">
-            <div className="speech-bubble-right sortiment-bubble">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis rerum, porro neque unde hic, est voluptate recusandae voluptas, aliquid fugiat excepturi sed molestias inventore vero dignissimos libero enim deserunt illo.
+            <div className="speech-bubble-right sortiment-bubble">Do optiky jsem přišel těsně před zavíračkou a přesto mi vlídně provedli vyšetření zraku, seznámili mě s jeho výsledky a poradili mi s výběrem brýlí. Díky rozsháhlé nabídce mi hned jedny padly do oka a během půl hodiny jsem tak odcházel s novými brýlemi a vyšetřením zdarma.
             </div>
             <div className="reviewer reviewer-of-product">
               <img src="../../../img/person-for-products.jpg" alt="referent Matěj" width={200} />
@@ -58,7 +58,7 @@ export const Optometrie = ({ }) => {
               </div>
               <div className="info-contact">
                 <img alt="info-icon" src="../../../img/info-icon.png" />
-                <p>IČO: 45645687</p>
+                <p>IČO: 02835754</p>
               </div>
               <div className="info-contact">
                 <img alt="location-icon" src="../../../img/location-icon.png" />

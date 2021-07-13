@@ -20,28 +20,28 @@ export const Cocky = ({ }) => {
               <img alt="ikona individuality" src="../../../img/advice.svg" width={100} />
               <div className="box-desc">
                 <h2>Poradenství</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis sunt vero, numquam repellat, obcaecati unde in reprehenderit nihil aut accusamus nostrum iure amet voluptates minus non, officia cum esse voluptas?</p>
+                <p>Jsou pro vás kontaktní čočky zatím velkou neznámou? Nemusíte se bát, u nás vám s jejich výběrem i funkcemi rádi poradíme, vše vám vysvětlíme a doporučíme vám to, co je pro vaše oči nejlepší.</p>
               </div>
             </div>
             <div className="box">
               <img alt="ikona vyberu" src="../../../img/choices.svg" width={100} />
               <div className="box-desc">
                 <h2>Výběr</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis sunt vero, numquam repellat, obcaecati unde in reprehenderit nihil aut accusamus nostrum iure amet voluptates minus non, officia cum esse voluptas?</p>
+                <p>Vybírat si můžete z celé řady kontaktních čoček. V nabíce máme jednodenní, dvoutýdenní i měsíční typy čoček a najdete tak přesně takové, které budou odpovídat vašemu životnímu stylu a potřebám.</p>
               </div>
             </div>
             <div className="box">
               <img alt="ikona certifikatu" src="../../../img/contact-lens.svg" width={100} />
               <div className="box-desc">
                 <h2>Aplikace</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis sunt vero, numquam repellat, obcaecati unde in reprehenderit nihil aut accusamus nostrum iure amet voluptates minus non, officia cum esse voluptas?</p>
+                <p>Pokud s čočkami začínáte, rádi vám s prvním seznamováním pomůžeme. Naučíme vás, jak o čočky pečovat, jakým způsobem se dají co nejpříjemněji nasazovat a také následně vyjímat z očí.</p>
               </div>
             </div>
           </div>
         </div>
         <div className="bottom-of-productpage">
           <div className="review product-review">
-            <div className="speech-bubble-right sortiment-bubble">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis rerum, porro neque unde hic, est voluptate recusandae voluptas, aliquid fugiat excepturi sed molestias inventore vero dignissimos libero enim deserunt illo.
+            <div className="speech-bubble-right sortiment-bubble">Když jsem poprvé uvažovala o kontaktních čočkách, měla jsem docela velký strach. Mám velmi citlivé oči a nedokázala jsem si představit, jak si budu každý den čočky aplikovat. V optice Volyně mi však poradili s výběrem a naučili mě čočky používat tak, že jsem to skoro necítila.
             </div>
             <div className="reviewer reviewer-of-product">
               <img src="../../../img/person-for-products2.jpg" alt="referentka Markéta" width={200} />
@@ -58,7 +58,7 @@ export const Cocky = ({ }) => {
               </div>
               <div className="info-contact">
                 <img alt="info-icon" src="../../../img/info-icon.png" />
-                <p>IČO: 45645687</p>
+                <p>IČO: 02835754</p>
               </div>
               <div className="info-contact">
                 <img alt="location-icon" src="../../../img/location-icon.png" />

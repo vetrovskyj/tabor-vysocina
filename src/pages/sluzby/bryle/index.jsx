@@ -23,21 +23,21 @@ export const Bryle = ({ }) => {
               <img alt="ikona individuality" src="../../../img/individual.svg" width={100} />
               <div className="box-desc">
                 <h2>Individuální přístup</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis sunt vero, numquam repellat, obcaecati unde in reprehenderit nihil aut accusamus nostrum iure amet voluptates minus non, officia cum esse voluptas?</p>
+                <p>Uvědomujeme si, že každý je výjimečný a proto, ke všem zákazníkům přistupejeme individálně. Snažíme se naslouchat potřebám lidí a společně s nimi vybrat to, co jim bude vyhovovat ze všeho nejvíc.</p>
               </div>
             </div>
             <div className="box">
               <img alt="ikona vyberu" src="../../../img/choices.svg" width={100} />
               <div className="box-desc">
                 <h2>Široký výběr</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis sunt vero, numquam repellat, obcaecati unde in reprehenderit nihil aut accusamus nostrum iure amet voluptates minus non, officia cum esse voluptas?</p>
+                <p>Nabízíme spoustu <strong>dioptrických</strong> i <strong>slunečních</strong> brýlí, mezi kterými jsou zastoupeny i ty nevýznamější značky a vybere si tak opravdu každý. Samozřejmostí je možnost si brýle na místě vyzkoušet.</p>
               </div>
             </div>
             <div className="box">
               <img alt="ikona certifikatu" src="../../../img/experience.svg" width={100} />
               <div className="box-desc">
                 <h2>Odbornost</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis sunt vero, numquam repellat, obcaecati unde in reprehenderit nihil aut accusamus nostrum iure amet voluptates minus non, officia cum esse voluptas?</p>
+                <p>Můžete se spolehnout, že o vás bude vždy profesionálně postaráno kvalifikovaným personálem. V oblasti péče o zrak máme mnohaletou praxi a rádi se s vámi o naše zkušenosti podělíme během vaší návštěvy.</p>
               </div>
             </div>
           </div>
@@ -71,7 +71,7 @@ export const Bryle = ({ }) => {
               </div>
               <div className="info-contact">
                 <img alt="info-icon" src="../../../img/info-icon.png" />
-                <p>IČO: 45645687</p>
+                <p>IČO: 02835754</p>
               </div>
               <div className="info-contact">
                 <img alt="location-icon" src="../../../img/location-icon.png" />
