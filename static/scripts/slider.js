@@ -1,6 +1,8 @@
 window.addEventListener('DOMContentLoaded', () => {
     const carouselSlide = document.querySelector('.sliderphoto');
     const carouselImages = document.querySelectorAll('.photo');
+    const sliderSale = document.querySelector('.slider-sale');
+    const sliderText = document.querySelector('.slider-text');
     const dots = document.querySelectorAll('.rectangle');
 
     let counter = 1;
@@ -12,6 +14,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
     dots[0].addEventListener('click', () => {
         if (counter !== 0) {
+            sliderText.style.display = "none";
+            sliderSale.style.display = "none";
             dots[0].style.backgroundColor = 'white';
             dots[counter].style.backgroundColor = 'transparent';
             setTimeout(() => {
@@ -29,6 +33,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
     dots[1].addEventListener('click', () => {
         if (counter !== 1) {
+            sliderText.style.display = "block";
+            sliderSale.style.display = "block";
             dots[1].style.backgroundColor = 'white';
             dots[counter].style.backgroundColor = 'transparent';
             setTimeout(() => {
@@ -46,6 +52,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
     dots[2].addEventListener('click', () => {
         if (counter !== 2) {
+            sliderText.style.display = "none";
+            sliderSale.style.display = "none";
             dots[2].style.backgroundColor = 'white';
             dots[counter].style.backgroundColor = 'transparent';
             setTimeout(() => {
@@ -119,6 +127,14 @@ window.addEventListener('DOMContentLoaded', () => {
                     counter--;
                 };
             };
+            if (counter !== 1) {
+                sliderText.style.display = "none";
+                sliderSale.style.display = "none";
+            }
+            if (counter === 1) {
+                sliderText.style.display = "block";
+                sliderSale.style.display = "block";
+            }
         };
         /* reset values */
         xDown = null;
