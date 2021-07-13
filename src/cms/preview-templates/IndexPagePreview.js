@@ -8,6 +8,7 @@ const IndexPagePreview = ({ entry, getAsset }) => {
   if (data) {
     return (
       <IndexPageTemplate
+        disclaimer={data.disclaimer}
         uvodni_text={{
           firstRow: entry.getIn(['data', 'uvodni_text', 'firstRow']),
           coloredText: entry.getIn(['data', 'uvodni_text', 'coloredText']),

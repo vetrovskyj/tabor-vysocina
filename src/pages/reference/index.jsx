@@ -80,8 +80,8 @@ export const Reference = ({ }) => {
               </div>
             </div>
             <div className="aditional-links">
-              <a href="#">Obchodní podmínky</a>
-              <a href="#">Autorská práva</a>
+              <a href="../cookies/">Obchodní podmínky</a>
+              <a href="../autorska-prava/">Autorská práva</a>
             </div>
             <a href="https://www.facebook.com/O%C4%8Dn%C3%AD-optika-Volyn%C4%9B-191635897936682/"><img className="fb-icon" alt="facebook-icon" src="../../img/facebook-icon.png" /></a>
           </div>

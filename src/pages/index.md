@@ -1,5 +1,6 @@
 ---
 templateKey: index-page
+disclaimer: Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto molestias magni, voluptas fugiat possimus et magnam amet eaque mollitia maxime!
 uvodni_text:
   firstRow: Vaše
   coloredText: Volyni

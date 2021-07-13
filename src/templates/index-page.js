@@ -12,9 +12,10 @@ export const IndexPageTemplate = ({
   uvodni_text,
   uvodni_foto,
   section,
+  disclaimer,
 }) => (
   <main className="homepage-main">
-    <SaleBanner></SaleBanner>
+    <SaleBanner>{disclaimer}</SaleBanner>
     <div className="slider">
       <div className="sliderphoto" onLoad="sliderFunc">
         <img src={"../img/" + uvodni_foto.obrazek1.relativePath} className="photo" width={1920} alt="sliderphoto" />
@@ -74,7 +75,7 @@ export const IndexPageTemplate = ({
           <a href="/cookies/">Používání cookies</a>
           <a href="/autorska-prava/">Autorská práva</a>
         </div>
-        <a href="https://www.facebook.com/O%C4%8Dn%C3%AD-optika-Volyn%C4%9B-191635897936682/" target="_blank"><img className="fb-icon" alt="facebook-icon" src="../img/facebook-icon.png" /></a>
+        <a href="https://www.facebook.com/O%C4%8Dn%C3%AD-optika-Volyn%C4%9B-191635897936682/" target="_blank" rel="noreferrer"><img className="fb-icon" alt="facebook-icon" src="../img/facebook-icon.png" /></a>
       </div>
     </div>
     <Helmet>
@@ -85,6 +86,7 @@ export const IndexPageTemplate = ({
 )
 
 IndexPageTemplate.propTypes = {
+  disclaimer: PropTypes.string,
   uvodni_text: PropTypes.shape({
     firstRow: PropTypes.string,
     coloredText: PropTypes.string,
@@ -109,6 +111,7 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <IndexPageTemplate
+        disclaimer={frontmatter.disclaimer}
         uvodni_text={frontmatter.uvodni_text}
         uvodni_foto={frontmatter.uvodni_foto}
         section={frontmatter.section}
@@ -131,6 +134,7 @@ export const pageQuery = graphql`
   query IndexPageTemplate {
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
+        disclaimer
         uvodni_text {
           firstRow
           coloredText
