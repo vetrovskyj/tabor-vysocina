@@ -1,6 +1,6 @@
 ---
 templateKey: index-page
-disclaimer:
+disclaimer: ""
 uvodni_text:
   firstRow: ""
   coloredText: ""
