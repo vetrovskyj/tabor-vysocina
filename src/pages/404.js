@@ -5,7 +5,7 @@ const NotFoundPage = () => (
   <Layout>
     <div>
       <h1>Stránku se nepodařilo najít</h1>
-      <p>V případě nutnosti kontaktujte správce webu</p>
+      <p>Mějte prosím zapnutý javascript v prohlížeči. Případně vyzkoušejte jiný prohlížeč. V případě nutnosti kontaktujte správce webu</p>
     </div>
   </Layout>
 )
