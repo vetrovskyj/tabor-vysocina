@@ -21,7 +21,7 @@ export const Reference = ({ }) => {
               <img src="../../img/person-review4.jpg" alt="referentka Šárka" width={200} />
               <p>Šárka</p>
             </div>
-            <div className="speech-bubble">Naprosto parádní servis! Díky paní Hronkové mám krásné nové sluneční brýle a nemůžu si je vynachválit. Přistupují k vám zde individuálně, takže vždy odcházíte přesně s tím, co vám nejvíc sedne. Určitě doporučuji 😉</div>
+            <div className="speech-bubble">Naprosto parádní servis! Díky paní Hronkové mám krásné nové sluneční brýle a nemůžu si je vynachválit. Přistupují k vám zde individuálně, takže vždy odcházíte přesně s tím, co vám nejvíc sedne. Určitě doporučuji &#128521;</div>
           </div>
           <div className="review">
             <div className="speech-bubble-right">Do optiky chodíme pravidelně i s dětmi. Díky trpělivosti a zároveň odbornosti personálu totiž vždy dostaneme to nejlepší. Vůbec nepochobuji o tom, že budeme optiku dále navštěvovat. Určitě se také přijďte sami přesvědčit!</div>
@@ -40,7 +40,7 @@ export const Reference = ({ }) => {
           </div>
           <div className="review">
             <div className="speech-bubble-right">Optiku Volyně navštěvujeme celá rodina už několik let a vždy jsme byli spokojení. Seženeme tady totiž brýle sluneční, dioptrické, na čtení i na dálku a vybereme si tak úplně vsichni. Díky příjemné obsluze se vždy těšíme na další návštěvu
-              😀
+            &#x1F600;
             </div>
             <div className="reviewer">
               <img src="../../img/person-review3.jpg" alt="referentka Jarmila" width={200} />

@@ -48,7 +48,7 @@ export const Cookies = ({ }) => {
               <a href="/cookies/">Používání cookies</a>
               <a href="/autorska-prava/">Autorská práva</a>
             </div>
-            <a href="https://www.facebook.com/O%C4%8Dn%C3%AD-optika-Volyn%C4%9B-191635897936682/" target="_blank"><img className="fb-icon" alt="facebook-icon" src="../../img/facebook-icon.png" /></a>
+            <a href="https://www.facebook.com/O%C4%8Dn%C3%AD-optika-Volyn%C4%9B-191635897936682/" target="_blank" rel="noreferrer"><img className="fb-icon" alt="facebook-icon" src="../../img/facebook-icon.png" /></a>
           </div>
         </div>
       <Helmet>

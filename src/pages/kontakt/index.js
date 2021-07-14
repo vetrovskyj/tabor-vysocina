@@ -2,10 +2,20 @@ import React from 'react'
 import Helmet from "react-helmet"
 import { withPrefix } from "gatsby"
 import { Map, MarkerLayer, Marker, ZoomControl, MouseControl, CompassControl, KeyboardControl } from 'react-mapycz'
-
+import emailjs from 'emailjs-com';
 import Layout from '../../components/Layout'
 
 export const ContactPage = ({ }) => {
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs.sendForm('service_kdfua1k', 'template_v13g6dh', e.target, 'user_wiV7wq7ZpAMgeS9KKMtWf')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  }
   return (
     <Layout>
       <main className="contact-main">
@@ -122,7 +132,7 @@ export const ContactPage = ({ }) => {
           <div className="form-and-location">
             <div className="contact-form">
               <h2>Kontaktujte nás</h2>
-              <form>
+              <form onSubmit={sendEmail}>
                 <div className="user-data">
                   <div className="user-data-entity">
                     <label>Celé jméno</label>
@@ -178,6 +188,7 @@ export const ContactPage = ({ }) => {
       </main>
       <Helmet>
         <script src={withPrefix('../scripts/hamburger.js')} type="text/javascript" />
+        <script src={withPrefix('../scripts/form-validation.js')} type="text/javascript" />
       </Helmet>
     </Layout>
   )

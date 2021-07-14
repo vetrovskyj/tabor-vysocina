@@ -26,9 +26,9 @@ const Navbar = class extends React.Component {
             <span className="logo"><a href="/">Optika Volyně</a></span>
             <nav>
               <ul>
-                <li class="dropdown-line">
+                <li className="dropdown-line">
                   <a href="/sluzby/">Produkty a služby</a>
-                  <div class="dropdown-pages">
+                  <div className="dropdown-pages">
                     <a href="/sluzby/optometrie/">Optometrie</a>
                     <a href="/sluzby/bryle/">Brýle</a>
                     <a href="/sluzby/cocky/">Kontatkní čočky</a>
