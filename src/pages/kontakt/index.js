@@ -6,12 +6,12 @@ import emailjs from 'emailjs-com';
 import Layout from '../../components/Layout'
 
 export const ContactPage = ({ }) => {
+  let emailAlert = document.createElement('p');
+  let nameAlert = document.createElement('p');
+  let success = document.createElement('p');
   function sendEmail(e) {
     e.preventDefault();
 
-    let emailAlert = document.createElement('p');
-    let nameAlert = document.createElement('p');
-    let success = document.createElement('p');
     const button = document.querySelector('.button');
 
     function validateName() {
