@@ -6,29 +6,25 @@ import emailjs from 'emailjs-com';
 import Layout from '../../components/Layout'
 
 export const ContactPage = ({ }) => {
-  let emailAlert = document.createElement('p');
-  let nameAlert = document.createElement('p');
-  let success = document.createElement('p');
   function sendEmail(e) {
     e.preventDefault();
 
     const button = document.querySelector('.button');
+    const nameAlert = document.querySelector('.alert-name');
+    const emailAlert = document.querySelector('.alert-email');
+    const success = document.querySelector('.alert-success');
 
     function validateName() {
       const nameInput = document.querySelector('.name-input');
       const name = nameInput.value;
 
-      if (!name.match(/^(?:\b[A-Ž]+\b[\s\r\n]*){2,4}$/)) {
-        success.remove();
-        nameAlert.classList.remove('hide-alert');
+      if (!name.match(/^\W*([A-ZĚŠČŘŽÝÁÍÉa-zěščřžýáíé]+(\W+|$)){1,4}$/)) {
         nameAlert.classList.add('alert-name');
-        nameAlert.innerText = 'Zadejte jméno a příjmení bez diaktitiky (max 4 slova)';
-        button.after(nameAlert);
+        nameAlert.innerText = 'Zadejte jméno a příjmení (max 4 slova)';
         return false;
       }
 
-      nameAlert.classList.remove('alert-name');
-      nameAlert.classList.add('hide-alert');
+      nameAlert.innerText = '';
       return true;
     }
 
@@ -37,26 +33,23 @@ export const ContactPage = ({ }) => {
       const email = emailInput.value;
 
       if (!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
-        success.remove();
-        emailAlert.classList.remove('hide-alert');
         emailAlert.classList.add('alert-email');
         emailAlert.innerText = 'Prosím zadejte platný email';
-        button.after(emailAlert);
         return false;
 
       }
 
-      emailAlert.classList.remove('alert-email');
-      emailAlert.classList.add('hide-alert');
+      emailAlert.innerText = '';
       return true;
 
     }
 
     if (validateName() && validateEmail()) {
-      success.classList.remove('hide-success');
       success.classList.add('alert-success');
       success.innerText = 'Email byl úspěšně odeslán';
-      button.after(success);
+      setTimeout(() => {
+        success.innerText = '';
+      }, 5000);
 
       emailjs.sendForm('service_kdfua1k', 'template_v13g6dh', e.target, 'user_wiV7wq7ZpAMgeS9KKMtWf')
         .then((result) => {
@@ -199,6 +192,9 @@ export const ContactPage = ({ }) => {
                 </div>
                 <div className="send">
                   <input className="button" type="submit" name="submit" />
+                  <p className="alert-name"></p>
+                  <p className="alert-email"></p>
+                  <p className="alert-success"></p>
                 </div>
               </form>
             </div>
