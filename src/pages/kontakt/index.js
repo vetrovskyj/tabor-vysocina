@@ -51,7 +51,7 @@ export const ContactPage = ({ }) => {
         success.innerText = '';
       }, 5000);
 
-      emailjs.sendForm('service_kdfua1k', 'template_v13g6dh', e.target, 'user_wiV7wq7ZpAMgeS9KKMtWf')
+      emailjs.sendForm('service_o8shb7p', 'template_v13g6dh', e.target, 'user_wiV7wq7ZpAMgeS9KKMtWf')
         .then((result) => {
           console.log(result.text);
         }, (error) => {
