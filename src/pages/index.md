@@ -5,7 +5,7 @@ uvodni_text:
   firstRow: Vaše
   coloredText: Volyni
   secondRow: známá optika
-  thirdRow: přímo ve
+  thirdRow: na náměstí ve
 uvodni_foto:
   obrazek1: /img/optika-bryle.png
   obrazek2: /img/optika-kasa.png
