@@ -1,13 +1,13 @@
 ---
 templateKey: index-page
-disclaimer: ""
+disclaimer: fishdfuiodsbdshg gujind igfigjnfij  ufiggh  iudoghhio  doguighgf gouhhfg  ighfi
 uvodni_text:
-  firstRow: "Vaše"
-  coloredText: "Volyni"
-  secondRow: "známá optika"
-  thirdRow: "přímo ve"
+  firstRow: Vaše
+  coloredText: Volyni
+  secondRow: známá optika
+  thirdRow: přímo ve
 uvodni_foto:
-  obrazek1: /img/optika-bryle.png
+  obrazek1: /img/eyewear1_optimised.jpg
   obrazek2: /img/optika-kasa.png
   obrazek3: /img/optika-bryle-sideways.png
 section:
