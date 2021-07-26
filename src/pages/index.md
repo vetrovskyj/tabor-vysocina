@@ -7,9 +7,9 @@ uvodni_text:
   secondRow: známá optika
   thirdRow: "na náměstí "
 uvodni_foto:
-  obrazek1: /img/optika-bryle.png
-  obrazek2: /img/optika-kasa.png
-  obrazek3: /img/optika-bryle-sideways.png
+  obrazek1: /img/optika-vzadu.jpg
+  obrazek2: /img/kasa.jpg
+  obrazek3: /img/vytryna.jpg
 section:
   section_heading: Kdo jsme?
   section_text: >
@@ -19,5 +19,4 @@ section:
     novými brýlemi.
   image1:
     alt: ilustracni foto bryli
-    image: /img/glassesshow.png
----
+    image: /img/vytryna-detail.jpg
