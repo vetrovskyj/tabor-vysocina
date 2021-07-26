@@ -2,10 +2,10 @@
 templateKey: index-page
 disclaimer: ""
 uvodni_text:
-  firstRow: "Vaše"
-  coloredText: "Volyni"
-  secondRow: "známá optika"
-  thirdRow: "přímo ve"
+  firstRow: Vaše
+  coloredText: ve Volyni
+  secondRow: známá optika
+  thirdRow: "na náměstí "
 uvodni_foto:
   obrazek1: /img/optika-bryle.png
   obrazek2: /img/optika-kasa.png
