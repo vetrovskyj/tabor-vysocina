@@ -3,16 +3,8 @@ import { Helmet } from 'react-helmet'
 import Footer from './Footer'
 import Navbar from './Navbar'
 import './style.css'
-import ReactGA from 'react-ga';
 
 const TemplateWrapper = ({ children }) => {
-  const TRACKING_ID = "G-MQ3FHJKM42";
-  ReactGA.initialize(TRACKING_ID);
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-MQ3FHJKM42');
   return (
     <div>
       <Helmet>
@@ -27,7 +19,6 @@ const TemplateWrapper = ({ children }) => {
         <link rel="icon" type="image/png" href="../../img/logo.svg" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-MQ3FHJKM42"></script>
       </Helmet>
       <Navbar />
       {children}
