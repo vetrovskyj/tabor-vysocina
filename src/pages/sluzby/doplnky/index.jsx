@@ -37,14 +37,14 @@ export const Doplnky = ({ }) => {
               </div>
             </div>
             <div className="box">
-              <img alt="ikona cisticiho prostredku" src="../../../img/bleaching.svg" width={100} height={100} />
+              <img alt="ikona cisticiho prostredku" src="../../../img/bleaching.svg" width={100} />
               <div className="box-desc">
                 <h2>Čisticí prostředky</h2>
                 <p>Hadříky, čisticí prostředky na brýle a další. Pečujte o své brýle za pomoci těch nejkvalitnějších produktů a ujistěte se, že na svět budete koukat bez jediné šmouhy.</p>
               </div>
             </div>
             <div className="box">
-              <img alt="ikona roztoku" src="../../../img/roztok.svg" width={100} height={100} />
+              <img alt="ikona roztoku" src="../../../img/roztok.svg" width={100} />
               <div className="box-desc">
                 <h2>Roztoky na čočky</h2>
                 <p>Najdete u nás i kvalitní roztoky pro péči o vaše kontaktní čočky a to za přívětivé ceny. Roztoky zvhlčují, dezinfikují a některé z nich fungují i jako oční kapky. Přesvědčte se sami, že díky nim může být nošení čoček ještě pohodlnějsí.</p>
