@@ -7,6 +7,18 @@ import Layout from '../../components/Layout'
 export const AutorskaPrava = ({ }) => {
   return (
     <Layout>
+      <Helmet 
+        title={`Autorská práva | Optika Volyně`} 
+        meta={[
+        {
+          name: `description`,
+          content: 'Autorská práva vztahující se k obsahu na webu Optiky Voylně',
+        },
+        {
+          name: "keywords",
+          content: 'Optika, Optometrie, Volyně, Autorská práva',
+        },
+      ]} />
       <div className="additional-pages-nav"></div>
       <main className="additional-pages-main">
         <h1>Autorská práva</h1>

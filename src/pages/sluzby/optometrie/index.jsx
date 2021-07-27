@@ -7,6 +7,19 @@ import Layout from '../../../components/Layout'
 export const Optometrie = ({ }) => {
   return (
     <Layout>
+      <Helmet
+        title={`Optometrie | Optika Volyně`}
+        meta={[
+          {
+            name: `description`,
+            content: 'Optometrické služby, které Optika Volyně poskytuje',
+          },
+          {
+            name: "keywords",
+            content: 'Optika, Optometrie, Volyně, Zrak, Oči',
+          },
+        ]}
+      />
       <main className="glasses-main">
         <div className="slider-products">
           <img className="sliderphoto-products" width={1920} alt="sliderphoto" src="../../../img/optometrie-sortiment.jpg" />

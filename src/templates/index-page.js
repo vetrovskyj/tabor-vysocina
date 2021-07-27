@@ -110,6 +110,19 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout>
+      <Helmet
+        title={`Domovská stránka | Optika Volyně`}
+        meta={[
+          {
+            name: `description`,
+            content: 'Web Optiky Volyně, která prodává brýle, optické produkty a poskytuje služby péče o zrak',
+          },
+          {
+            name: "keywords",
+            content: 'Optika, Optometrie, Volyně, Brýle, Zrak, Oči',
+          },
+        ]}
+      />
       <IndexPageTemplate
         disclaimer={frontmatter.disclaimer}
         uvodni_text={frontmatter.uvodni_text}

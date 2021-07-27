@@ -7,6 +7,18 @@ import Layout from '../../components/Layout'
 export const Cookies = ({ }) => {
   return (
     <Layout>
+      <Helmet 
+        title={`Používání cookies | Optika Volyně`} 
+        meta={[
+        {
+          name: `description`,
+          content: 'Podmínky používání cookies v rámci webu Optiky Voylně',
+        },
+        {
+          name: "keywords",
+          content: 'Optika, Optometrie, Volyně, Cookies',
+        },
+      ]} />
       <div className="additional-pages-nav"></div>
       <main className="additional-pages-main">
         <h1>Zásady používání cookies</h1>

@@ -4,9 +4,22 @@ import { withPrefix } from "gatsby"
 
 import Layout from '../../components/Layout'
 
-export const ServicesPage = ({}) => { 
+export const ServicesPage = ({ }) => {
   return (
     <Layout>
+      <Helmet
+        title={`Produkty a služby | Optika Volyně`}
+        meta={[
+          {
+            name: `description`,
+            content: 'Služby a produkty Optiky Volyně, které nabízí a poskytuje zákazníkům',
+          },
+          {
+            name: "keywords",
+            content: 'Optika, Optometrie, Volyně, Brýle, Produkty, Služby, Čočky, Doplňky',
+          },
+        ]}
+      />
       <main className="products-main">
         <div className="slider-products">
           <img className="sliderphoto-products" width={1920} alt="ilustrační foto - interier optiky" src="../../img/products-image.jpg" />
@@ -106,11 +119,11 @@ export const ServicesPage = ({}) => {
           </div>
         </div>
       </main>
-    <Helmet>
-      <script src={withPrefix('../scripts/hamburger.js')} type="text/javascript" />
-    </Helmet>
+      <Helmet>
+        <script src={withPrefix('../scripts/hamburger.js')} type="text/javascript" />
+      </Helmet>
     </Layout>
-)
+  )
 }
 
 export default ServicesPage

@@ -7,6 +7,19 @@ import Layout from '../../../components/Layout'
 export const Cocky = ({ }) => {
   return (
     <Layout>
+      <Helmet
+        title={`Kontaktní čočky | Optika Volyně`}
+        meta={[
+          {
+            name: `description`,
+            content: 'Služby týkající se kontaktních čoček, které optika Volyně nabízí',
+          },
+          {
+            name: "keywords",
+            content: 'Optika, Optometrie, Volyně, Kontaktní čočky, Oči',
+          },
+        ]}
+      />
       <main className="glasses-main">
         <div className="slider-products">
           <img className="sliderphoto-products" width={1920} alt="sliderphoto" src="../../../img/lenses.jpg" />
@@ -66,7 +79,7 @@ export const Cocky = ({ }) => {
               </div>
             </div>
             <div className="aditional-links">
-            <a href="../../cookies/">Obchodní podmínky</a>
+              <a href="../../cookies/">Obchodní podmínky</a>
               <a href="../../autorska-prava/">Autorská práva</a>
             </div>
             <a href="https://www.facebook.com/O%C4%8Dn%C3%AD-optika-Volyn%C4%9B-191635897936682/"><img className="fb-icon" alt="facebook-icon" src="../../../img/facebook-icon.png" /></a>

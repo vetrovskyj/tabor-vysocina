@@ -7,6 +7,19 @@ import Layout from '../../../components/Layout'
 export const Bryle = ({ }) => {
   return (
     <Layout>
+      <Helmet
+        title={`Brýle | Optika Volyně`}
+        meta={[
+          {
+            name: `description`,
+            content: 'Brýle, sluneční brýle a jejich značky, které jsou k dostanání v Optice Volyně',
+          },
+          {
+            name: "keywords",
+            content: 'Optika, Optometrie, Volyně, Brýle, Sluneční brýle',
+          },
+        ]}
+      />
       <main className="glasses-main">
         <div className="slider-products">
           <img className="sliderphoto-products" width={1920} alt="sliderphoto" src="../../../img/glasses-in-shop.jpg" />

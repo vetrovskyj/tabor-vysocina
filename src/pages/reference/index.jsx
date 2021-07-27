@@ -7,6 +7,19 @@ import Layout from '../../components/Layout'
 export const Reference = ({ }) => {
   return (
     <Layout>
+      <Helmet
+        title={`Reference | Optika Volyně`}
+        meta={[
+          {
+            name: `description`,
+            content: 'Reference a recenze zákazníků Optiky Volyně',
+          },
+          {
+            name: "keywords",
+            content: 'Optika, Optometrie, Volyně, Reference',
+          },
+        ]} 
+      />
       <main className="references-main">
         <div className="slider-products">
           <img className="sliderphoto-products" width={1920} alt="sliderphoto" src="../../img/glasses-in-shop2.jpg" />
@@ -40,7 +53,7 @@ export const Reference = ({ }) => {
           </div>
           <div className="review">
             <div className="speech-bubble-right">Optiku Volyně navštěvujeme celá rodina už několik let a vždy jsme byli spokojení. Seženeme tady totiž brýle sluneční, dioptrické, na čtení i na dálku a vybereme si tak úplně vsichni. Díky příjemné obsluze se vždy těšíme na další návštěvu
-            &#x1F600;
+              &#x1F600;
             </div>
             <div className="reviewer">
               <img src="../../img/person-review3.jpg" alt="referentka Jarmila" width={200} />

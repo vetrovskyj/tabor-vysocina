@@ -5,11 +5,11 @@ import { Map, MarkerLayer, Marker, ZoomControl, MouseControl, CompassControl, Ke
 import emailjs from 'emailjs-com';
 import Layout from '../../components/Layout'
 
-export const ContactPage = ({ }) => {
+export const ContactPage = ({ 
+}) => {
   function sendEmail(e) {
     e.preventDefault();
 
-    const button = document.querySelector('.button');
     const nameAlert = document.querySelector('.alert-name');
     const emailAlert = document.querySelector('.alert-email');
     const success = document.querySelector('.alert-success');
@@ -61,6 +61,18 @@ export const ContactPage = ({ }) => {
   }
   return (
     <Layout>
+      <Helmet 
+        title={`Kontakty | Optika Volyně`} 
+        meta={[
+        {
+          name: `description`,
+          content: 'Kontakty a adresa prodejny optiky a optometrických služeb ve Volyni',
+        },
+        {
+          name: "keywords",
+          content: 'Optika, Optometrie, Volyně, Brýle, Kontakt',
+        },
+      ]} />
       <main className="contact-main">
         <div className="contact-first">
           <div className="basic-contacts-container">
