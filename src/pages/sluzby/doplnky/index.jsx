@@ -33,21 +33,21 @@ export const Doplnky = ({ }) => {
               <img alt="ikona pouzdra na bryle" src="../../../img/glasses-case.png" width={100} />
               <div className="box-desc">
                 <h2>Pouzdra</h2>
-                <p>Optometrické vyšetření provádí vždy vysoce kvalifikovaný pracovník. Věnujeme vám vždy plnou pozornost, poradíme a pomocí moderních optometrických nástrojů a metod se postaráme o vaše oči.</p>
+                <p>V nabídce máme velké možství různých pouzder na brýle. Vyberte si elegantní, módní pouzdro a nebo se odvažte a kupte dětem některé s bláznivým motivem. Ať si vyberete jakékoliv, můžete si být jistí, že vaše brýle jsou v bezpečí.</p>
               </div>
             </div>
             <div className="box">
               <img alt="ikona cisticiho prostredku" src="../../../img/bleaching.svg" width={100} />
               <div className="box-desc">
                 <h2>Čisticí prostředky</h2>
-                <p>Zrak si k nám můžete nechat zajít vyšetřit kdykoliv během naší otevírací doby a to i bez objednání. Věnovat se vám budeme hned, jakmile to bude možné a klidně během pár minut může být hotovo.</p>
+                <p>Hadříky, čisticí prostředky na brýle a další. Pečujte o své brýle za pomoci těch nejkvalitnějších produktů a ujistěte se, že na svět budete koukat bez jediné šmouhy.</p>
               </div>
             </div>
             <div className="box">
               <img alt="ikona roztoku" src="../../../img/roztok.svg" width={100} />
               <div className="box-desc">
                 <h2>Roztoky na čočky</h2>
-                <p>Veškeré optometrické služby, které vám uděláme, máte při následném nákupu jakýchkoliv brýlí zdarma. S výběrem vám na základě vyšetření samozřejmě pomůžeme a společně se pokusíme najít to nejlepší možné řešení.</p>
+                <p>Najdete u nás i kvalitní roztoky pro péči o vaše kontaktní čočky a to za přívětivé ceny. Roztoky zvhlčují, dezinfikují a některé z nich fungují i jako oční kapky. Přesvědčte se sami, že díky nim může být nošení čoček ještě pohodlnějsí.</p>
               </div>
             </div>
           </div>
