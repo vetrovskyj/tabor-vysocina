@@ -1,6 +1,6 @@
 ---
 templateKey: index-page
-disclaimer: ""
+disclaimer: 12.8. a 13.8. ZAVŘENO - DOVOLENÁ
 uvodni_text:
   firstRow: Vaše
   coloredText: ve Volyni
@@ -20,3 +20,4 @@ section:
   image1:
     alt: ilustracni foto bryli
     image: /img/vytryna-detail.jpg
+---
