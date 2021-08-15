@@ -353,7 +353,7 @@ nav ul li:last-child {
 }
 
 @media (max-width:750px) {
-    .topandbottom p,
+    .topandbottom-text,
     .topandbottom a {
         font-size: 12px;
     }
@@ -363,21 +363,21 @@ nav ul li:last-child {
 }
 
 @media (max-width:750px) {
-    .topandbottom p,
+    .topandbottom-text,
     .topandbottom a {
         font-size: 12px;
     }
 }
 
 @media (max-width:600px) {
-    .topandbottom p,
+    .topandbottom-text,
     .topandbottom a {
         font-size: 11px;
     }
 }
 
 @media (max-width:550px) {
-    .topandbottom p,
+    .topandbottom-text,
     .topandbottom a {
         font-size: 10px;
     }
@@ -387,7 +387,7 @@ nav ul li:last-child {
 }
 
 @media (max-width:490px) {
-    .topandbottom p,
+    .topandbottom-text,
     .topandbottom a {
         font-size: 9px;
     }

@@ -90,7 +90,7 @@ export const ContactPage = ({
                   </div>
                   <div className="basic-contact">
                     <h2>Zavolejte nám</h2>
-                    <a href="tel:+420773201372">+420604802888</a>
+                    <a href="tel:+420604802888">+420604802888</a>
                   </div>
                 </div>
                 <div className="basic-contact-container">
@@ -99,7 +99,7 @@ export const ContactPage = ({
                   </div>
                   <div className="basic-contact">
                     <h2>Napište nám</h2>
-                    <a href="mailto:vetrovsky.jan@gmail.com">optikavolyne@seznam.cz</a>
+                    <a href="mailto:optikavolyne@seznam.cz">optikavolyne@seznam.cz</a>
                   </div>
                 </div>
                 <div className="basic-contact-container">
