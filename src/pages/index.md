@@ -1,6 +1,6 @@
 ---
 templateKey: index-page
-disclaimer: 12.8. a 13.8. ZAVŘENO - DOVOLENÁ
+disclaimer: 31.8. ZAVŘENO - DOVOLENÁ
 uvodni_text:
   firstRow: Vaše
   coloredText: ve Volyni
