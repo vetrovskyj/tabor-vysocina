@@ -12,8 +12,8 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: "pages"
-    label: "Pages"
+  - name: "stranky"
+    label: "Stranky"
     files:
       - file: "src/pages/index.md"
         label: "Uvodni stranka"
@@ -23,3 +23,19 @@ collections:
           - {label: Uvodni text, name: uvodni_text, widget: object, fields: [{label: Prvni radek, name: firstRow, widget: string, required: false}, {label: Druhy radek, name: secondRow, widget: string, required: false}, {label: Treti radek, name: thirdRow, widget: string, required: false}, {label: Barevne slovo, name: coloredText, widget: string, required: false}]}
           - {label: Uvodni foto, name: uvodni_foto, widget: object, fields: [{label: Obrazek1, name: obrazek1, widget: image}, {label: Obrazek2, name: obrazek2, widget: image}, {label: Obrazek3, name: obrazek3, widget: image}]}
           - {label: Sekce, name: section, widget: object, fields: [{label: Nadpis, name: section_heading, widget: string}, {label: Text, name: section_text, widget: text}, {label: Obrazek, name: image1, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}]}
+
+  - name: "novinky"
+    label: "Novinky"
+    folder: "src/pages/novinky"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
+      - {label: "Titulek", name: "title", widget: "string"}
+      - {label: "Datum", name: "date", widget: "datetime"}
+      - {label: "Popis", name: "description", widget: "text"}
+      - {label: "Náhled", name: "featuredpost", widget: "boolean"}
+      - {label: "Přiložený obrázek", name: "featuredimage", widget: image}
+      - {label: "Text", name: "body", widget: "markdown"}
+      - {label: "Tagy", name: "tags", widget: "list"}
+ 
