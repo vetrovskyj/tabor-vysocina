@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 
-export const ArticlePostTemplate = ({
+export const Articles = ({
   content,
   contentComponent,
   description,
@@ -31,7 +31,7 @@ export const ArticlePostTemplate = ({
   )
 }
 
-ArticlePostTemplate.propTypes = {
+Articles.propTypes = {
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
   description: PropTypes.string,
@@ -44,7 +44,7 @@ const ArticlePost = ({ data }) => {
 
   return (
     <Layout>
-      <ArticlePostTemplate
+      <Articles
         content={post.html}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
