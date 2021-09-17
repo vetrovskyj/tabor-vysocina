@@ -35,6 +35,16 @@ class Articles extends React.Component {
                 }`}
               >
                 <header>
+                  {post.frontmatter.featuredimage ? (
+                    <div className="thumbnail-image">
+                      <PreviewCompatibleImage
+                        imageInfo={{
+                          image: post.frontmatter.featuredimage,
+                          alt: `náhledový obrázek ke článku ${post.frontmatter.title}`,
+                        }}
+                      />
+                    </div>
+                  ) : null}
                   <p className="article-title-container">
                     <Link
                       className="article-title"
@@ -97,6 +107,13 @@ export default () => (
                 templateKey
                 date(formatString: "MMMM DD, YYYY")
                 featuredpost
+                featuredimage {
+                  childImageSharp {
+                    fluid(maxWidth: 300, quality: 100) {
+                      ...GatsbyImageSharpFluid
+                    }
+                  }
+                }
               }
             }
           }
