@@ -59,7 +59,7 @@ const ArticlePost = ({ data }) => {
 
   return (
     <Layout>
-      <Articles
+      <ArticlesTemplate
         content={post.html}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
