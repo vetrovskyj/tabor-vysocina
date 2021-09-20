@@ -4,36 +4,17 @@ import { Link, graphql, StaticQuery } from 'gatsby'
 import PreviewCompatibleImage from './PreviewCompatibleImage'
 
 class Articles extends React.Component {
-    constructor(props) {
-        super(props);this.state = {
-          hovered: false
-        };
-      }
-    
-      onMouseEnter = e => {
-        this.setState({ hovered: true });
-      };
-    
-      onMouseLeave = e => {
-        this.setState({ hovered: false });
-      };
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
-    const { hovered } = this.state;
-    const btnStyle = hovered ? { backgroundColor: "#42AECC" } : {};
-    const titleStyle = hovered ? { color: "#42AECC" } : {};
 
     return (
       <div className="article-list">
         {posts &&
           posts.map(({ node: post }) => (
-            <div className="article-container" key={post.id}>
-              <article
-                className={`article-item ${
-                  post.frontmatter.featuredpost ? 'is-featured' : ''
-                }`}
-              >
+            <div className={`article-container ${post.frontmatter.featuredpost ? 'is-featured' : ''
+              }`} key={post.id}>
+              <article className="article-item">
                 <header>
                   {post.frontmatter.featuredimage ? (
                     <div className="thumbnail-image">
@@ -48,11 +29,7 @@ class Articles extends React.Component {
                   <p className="article-title-container">
                     <Link
                       className="article-title"
-                      to={post.fields.slug}
-                      onMouseEnter={this.onMouseEnter} 
-                      onMouseLeave={this.onMouseLeave}
-                      style={titleStyle}
-                    >
+                      to={post.fields.slug}>
                       {post.frontmatter.title}
                     </Link>
                     <span className="article-date">
@@ -64,10 +41,7 @@ class Articles extends React.Component {
                   {post.excerpt}
                   <br />
                   <br />
-                  <Link className="btn" to={post.fields.slug} 
-                  style={btnStyle} 
-                  onMouseEnter={this.onMouseEnter} 
-                  onMouseLeave={this.onMouseLeave}>
+                  <Link className="btn" to={post.fields.slug}>
                     více
                   </Link>
                 </p>
@@ -97,7 +71,10 @@ export default () => (
         ) {
           edges {
             node {
-              excerpt(pruneLength: 400)
+              excerpt(
+                pruneLength: 400
+                format: PLAIN
+                )
               id
               fields {
                 slug
@@ -105,11 +82,11 @@ export default () => (
               frontmatter {
                 title
                 templateKey
-                date(formatString: "MMMM DD, YYYY")
+                date(formatString: "D. MMMM YYYY", locale: "cs")
                 featuredpost
                 featuredimage {
                   childImageSharp {
-                    fluid(maxWidth: 300, quality: 100) {
+                    fluid(maxWidth: 140, quality: 100) {
                       ...GatsbyImageSharpFluid
                     }
                   }

@@ -7,13 +7,39 @@ export default class News extends React.Component {
   render() {
     return (
       <Layout>
-        <section className="section">
-          <div className="container">
-            <div className="content">
-              <Articles />
+        <div className="slider-products">
+          <img className="sliderphoto-products" width={1920} alt="sliderphoto" src="../../img/optika-kasa.png" />
+          <div className="slider-sale-and-text-products">
+            <h1 className="slider-sale-products">Novinky</h1>
+            <div className="slider-text-products">
+              <h1 className="slider-text-sale-products">a další zajímavosti</h1>
             </div>
           </div>
-        </section>
+        </div>
+        <Articles />
+        <div className="info-footer-container">
+          <div className="info-footer">
+            <div className="info-contacts">
+              <div className="info-contact">
+                <img alt="person-icon" src="../../img/person-icon.png" />
+                <p>Bc. Jitka Hronková</p>
+              </div>
+              <div className="info-contact">
+                <img alt="info-icon" src="../../img/info-icon.png" />
+                <p>IČO: 02835754</p>
+              </div>
+              <div className="info-contact">
+                <img alt="location-icon" src="../../img/location-icon.png" />
+                <p>nám. Svobody 14, Volyně, 387 01</p>
+              </div>
+            </div>
+            <div className="aditional-links">
+              <a href="../cookies/">Používání cookies</a>
+              <a href="../autorska-prava/">Autorská práva</a>
+            </div>
+            <a href="https://www.facebook.com/O%C4%8Dn%C3%AD-optika-Volyn%C4%9B-191635897936682/" target="_blank"><img className="fb-icon" alt="facebook-icon" src="../../img/facebook-icon.png" /></a>
+          </div>
+        </div>
       </Layout>
     )
   }
