@@ -19,19 +19,13 @@ Web vznikl ve spolupráci s [Janem Větrovským](https://www.linkedin.com/in/jan
 
 Obsah je členěn do jednotlivých stránek tak, aby byly související informace co nejvíce sloučené do smysluplných celků. Návštěvník webu by tak neměl mít problém rychle se zorientovat a najít požadovanou informaci v co nejkratším časovém úseku. Víme totiž, že Váš čas je drahocenný a chceme Vám tak interakci s naší optikou usnadnit, jak jen to je možné.
 
-Na webu tak velmi rychle najdete například otevírací dobu, adresu provozovny, recenze, novinky, nabízené produkty a služby i shrnutí hlavních zájmů Optiky Volyně. Vše je rozděleno do stránek s následující strukturou:
+Na webu tak velmi rychle najdete například otevírací dobu, adresu provozovny, recenze, novinky, nabízené produkty a služby i shrnutí hlavních zájmů Optiky Volyně. Vše je rozděleno do 5 hlavních oblastí:
 
 * Hlavní stránka
-
-  * Novinky
-  * Sortiment
-
-    * Doplňky
-    * Brýle
-    * Kontaktní čočky
-    * Doplňky
-  * Reference
-  * Kontakty
+* Novinky
+* Sortiment
+* Reference
+* Kontakty
 
 ## Nová image
 
