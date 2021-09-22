@@ -2884,6 +2884,7 @@ nav ul li:last-child {
 .article-item header {
     display: flex;
     background-color: inherit;
+    justify-content: left;
 }
 
 .article-item header p {
