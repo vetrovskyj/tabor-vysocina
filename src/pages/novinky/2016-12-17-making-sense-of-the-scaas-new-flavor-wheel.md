@@ -1,34 +1,48 @@
 ---
 templateKey: article-post
-title: Making sense of the SCAA’s new Flavor Wheel
-date: 2016-12-17T15:04:10.000Z
-description: The Coffee Taster’s Flavor Wheel, the official resource used by
-  coffee tasters, has been revised for the first time this year.
-featuredpost: true
-featuredimage: /img/accessories.png
+title: Optika Volyně má nový web!
+date: 2021-07-24T14:00:00.000Z
+description: Dne 24. 7. 2021 jsme zákazníkům představili nový podnikový web,
+  díky kterému bude snazší získávat informace o naší provozovně, optometrických
+  službách, zboží, vybavení a aktuálním dění.
+featuredpost: false
+featuredimage: /img/web-foto.jpg
 tags:
-  - flavor
-  - tasting
+  - web
+  - novinky
 ---
-![](/img/contact-lens.svg)
+![](/img/web-foto.jpg)
 
-The SCAA updated the wheel to reflect the finer nuances needed to describe flavors more precisely. The new descriptions are more detailed and hence allow cuppers to distinguish between more flavors.
+Web vznikl ve spolupráci s [Janem Větrovským](https://www.linkedin.com/in/jan-vetrovsky/), který jeho tvorbu dokumentuje i ve své bakalářské práci. Je navržen tak, aby splňoval požadavky Vás, našich zákazníků. Cílem bylo vytvořit jednoduché, intuitivní ale zároveň informačně nabyté a funkční rozhraní, díky kterému bude mít zákazník přehled o všech důležitých aspektech volyňské optiky.
 
-While this is going to be a big change for professional coffee tasters, it means a lot to you as a consumer as well. We’ll explain how the wheel came to be, how pros use it and what the flavors actually mean.
+## Obsah webu
 
-## What the updates mean to you
+Obsah je členěn do jednotlivých stránek tak, aby byly související informace co nejvíce sloučené do smysluplných celků. Návštěvník webu by tak neměl mít problém rychle se zorientovat a najít požadovanou informaci v co nejkratším časovém úseku. Víme totiž, že Váš čas je drahocenný a chceme Vám tak interakci s naší optikou usnadnit, jak jen to je možné.
 
-The Specialty Coffee Association of America (SCAA), founded in 1982, is a non-profit trade organization for the specialty coffee industry. With members located in more than 40 countries, SCAA represents every segment of the specialty coffee industry, including:
+Na webu tak velmi rychle najdete například otevírací dobu, adresu provozovny, recenze, novinky, nabízené produkty a služby i shrnutí hlavních zájmů Optiky Volyně. Vše je rozděleno do stránek s následující strukturou:
 
-* producers
-* roasters
-* importers/exporters
-* retailers
-* manufacturers
-* baristas
+* Hlavní stránka
 
-For over 30 years, SCAA has been dedicated to creating a vibrant specialty coffee community by recognizing, developing and promoting specialty coffee. SCAA sets and maintains quality standards for the industry, conducts market research, and provides education, training, resources, and business services for its members.
+  * Novinky
+  * Sortiment
 
-Coffee cupping, or coffee tasting, is the practice of observing the tastes and aromas of brewed coffee. It is a professional practice but can be done informally by anyone or by professionals known as "Q Graders". A standard coffee cupping procedure involves deeply sniffing the coffee, then loudly slurping the coffee so it spreads to the back of the tongue.
+    * Doplňky
+    * Brýle
+    * Kontaktní čočky
+    * Doplňky
+  * Reference
+  * Kontakty
 
-The coffee taster attempts to measure aspects of the coffee's taste, specifically the body (the texture or mouthfeel, such as oiliness), sweetness, acidity (a sharp and tangy feeling, like when biting into an orange), flavour (the characters in the cup), and aftertaste. Since coffee beans embody telltale flavours from the region where they were grown, cuppers may attempt to identify the coffee's origin.
+## Nová image
+
+S novým webem přichází také nová image Optiky Volyně laděná do modré a zelené barvy pro navození atmosféry zdraví a životního stylu. Stejnobarevné je také nové **logo**, které znázorňuje rysy lidského oka.
+
+![](/img/logo.svg)
+
+## Technologie
+
+Web Optiky Volyně je vytvořen za pomoci frameworku GatsbyJS, značkovacího jazyka HTML a kaskádových stylů. Snažili jsme se zároveň o co nejlepší optimalizaci výkonu i optimalizaci pro vyhledávače, aby se web rychle načítal, správně fungoval a byl snadno nalezitelný. 
+
+## Budoucnost
+
+Postupně bychom web rádi rozšiřovali a to jak po obsahové, tak funkcionální stránce. Již nyní se díky novým webovým funkcím snadno dozvíte o novinkách, upozorněních či kontaktujete naší provozovnu. Kdo ví, třeba bude možné postupem času online realizovat i rezervace návštěv či nákup samotný.
