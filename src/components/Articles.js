@@ -72,7 +72,7 @@ export default () => (
           edges {
             node {
               excerpt(
-                pruneLength: 400
+                pruneLength: 300
                 format: PLAIN
                 )
               id
