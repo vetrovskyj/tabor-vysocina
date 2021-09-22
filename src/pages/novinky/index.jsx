@@ -1,12 +1,26 @@
 import React from 'react'
 
 import Layout from '../../components/Layout'
+import Helmet from "react-helmet"
+import { withPrefix } from "gatsby"
 import Articles from '../../components/Articles'
 
 export default class News extends React.Component {
   render() {
     return (
       <Layout>
+        <Helmet
+          title={`Novinky | Optika Volyně`}
+          meta={[
+            {
+              name: `description`,
+              content: 'Novinky a aktuality o vybavení, událostech, změnách a zboží optiky a optometrie ve městě Volyně',
+            },
+            {
+              name: "keywords",
+              content: 'Optika, Optometrie, Volyně, Aktuality, Novinky, Vybavení',
+            },
+          ]} />
         <div className="slider-products">
           <img className="sliderphoto-products" width={1920} alt="sliderphoto" src="../../img/optika-kasa.png" />
           <div className="slider-sale-and-text-products">
@@ -40,6 +54,9 @@ export default class News extends React.Component {
             <a href="https://www.facebook.com/O%C4%8Dn%C3%AD-optika-Volyn%C4%9B-191635897936682/" target="_blank"><img className="fb-icon" alt="facebook-icon" src="../../img/facebook-icon.png" /></a>
           </div>
         </div>
+        <Helmet>
+          <script src={withPrefix('../scripts/hamburger.js')} type="text/javascript" />
+        </Helmet>
       </Layout>
     )
   }
