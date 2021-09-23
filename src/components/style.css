@@ -224,6 +224,10 @@ footer {
     width: 100%;
 }
 
+.footer-to-bottom {
+    margin-top: auto;
+}
+
 footer p,
 footer a {
     padding: 5px 0;
@@ -3359,4 +3363,51 @@ nav ul li:last-child {
     .article-post-body h4 {
         font-size: 11px;
     }
+}
+
+
+/*css for tags*/
+
+.tags-container {
+    margin: auto;
+}
+
+.found-tags-heading {
+    font-size: 32px;
+    font-weight: 600;
+    color: #77A02E;
+    margin-bottom: 20px;
+}
+
+.found-tag {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 10px 0;
+    color: #4279cc;
+}
+
+.taglist {
+    list-style: disc outside;
+    margin-left: 1.5em;
+}
+
+.taglist a {
+    text-decoration: none;
+}
+
+.all-tags-link {
+    margin-top: 50px;
+    font-size: 16px;
+    color: black;
+}
+
+.all-tags-link a {
+    color: black;
+}
+
+.all-tags-heading {
+    font-size: 32px;
+    font-weight: 600;
+    color: #77A02E;
+    margin-bottom: 20px;
 }
