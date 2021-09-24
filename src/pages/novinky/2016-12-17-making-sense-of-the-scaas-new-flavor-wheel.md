@@ -13,7 +13,7 @@ tags:
 ---
 ![](/img/web-foto.jpg)
 
-Web vznikl ve spolupráci s [Janem Větrovským](https://www.linkedin.com/in/jan-vetrovsky/), který jeho tvorbu dokumentuje i ve své bakalářské práci. Je navržen tak, aby splňoval požadavky Vás, našich zákazníků. Cílem bylo vytvořit jednoduché, intuitivní ale zároveň informačně nabyté a funkční rozhraní, díky kterému bude mít zákazník přehled o všech důležitých aspektech volyňské optiky.
+Web vznikl ve spolupráci s [Janem Větrovským](https://www.linkedin.com/in/jan-vetrovsky/), který jeho tvorbu dokumentuje i ve své bakalářské práci. Je navržen tak, aby splňoval požadavky našich zákazníků. Cílem bylo vytvořit jednoduché, intuitivní ale zároveň informačně nabyté a funkční rozhraní, díky kterému bude mít zákazník přehled o všech důležitých aspektech volyňské optiky.
 
 ## Obsah webu
 
@@ -35,7 +35,7 @@ S novým webem přichází také nová image Optiky Volyně laděná do modré a
 
 ## Technologie
 
-Web Optiky Volyně je vytvořen za pomoci frameworku GatsbyJS, značkovacího jazyka HTML a kaskádových stylů. Snažili jsme se zároveň o co nejlepší optimalizaci výkonu i optimalizaci pro vyhledávače, aby se web rychle načítal, správně fungoval a byl snadno nalezitelný. 
+Web Optiky Volyně je vytvořen za pomoci frameworku GatsbyJS, značkovacího jazyku HTML a kaskádových stylů. Snažili jsme se zároveň o co nejlepší optimalizaci výkonu i optimalizaci pro vyhledávače, aby se web rychle načítal, správně fungoval a byl snadno nalezitelný. 
 
 ## Budoucnost
 
