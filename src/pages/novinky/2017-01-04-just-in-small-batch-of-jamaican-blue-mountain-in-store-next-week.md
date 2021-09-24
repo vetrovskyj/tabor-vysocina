@@ -17,7 +17,7 @@ tags:
 ---
 ![](/img/visioffice2.jpg)
 
-V rámci zkvalitňovaní našich optometrických služeb byl do naši provozovny pořídit nový přístroj Visioffice 2, který pomáhá s centrací brýlových čoček. Díky němu si můžete být jistí, že měření zraku bude přesné a spolehlivé. Následně pak můžeme objektivně posoudit stav vašeho zraku a určit nejvhodnější personalizované řešení.
+V rámci zkvalitňovaní našich optometrických služeb byl do naší provozovny pořízen nový přístroj Visioffice 2, který pomáhá s centrací brýlových čoček. Díky němu si můžete být jistí, že měření zraku bude přesné a spolehlivé. Následně pak můžeme objektivně posoudit stav vašeho zraku a určit nejvhodnější personalizované řešení.
 
 ## Výhody
 
