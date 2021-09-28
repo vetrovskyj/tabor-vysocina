@@ -713,6 +713,16 @@ nav ul li:last-child {
     height: 150px;
 }
 
+.articles-preview-list {
+    margin: 10px auto !important;
+}
+
+.articles-preview {
+    padding: 20px 20px 20px 40px !important;
+    border-left: 2px solid black;
+    background-color: transparent !important;
+}
+
 .bottom-section {
     display: flex;
     width: 100%;
@@ -893,6 +903,18 @@ nav ul li:last-child {
     .fb-icon {
         max-height: 5vh;
     }
+    .articles-preview {
+        padding: 20px 20px 20px 30px !important;
+    }
+    .articles-preview-title {
+        font-size: 24px !important;
+    }
+    .articles-preview-text {
+        font-size: 14px !important;
+    }
+    .articles-preview-date {
+        font-size: 14px !important;
+    }
 }
 
 @media (max-width:650px) {
@@ -984,6 +1006,18 @@ nav ul li:last-child {
     .info-contact img {
         max-height: 20px;
     }
+    .articles-preview {
+        padding: 10px 10px 10px 20px !important;
+    }
+    .articles-preview-title {
+        font-size: 16px !important;
+    }
+    .articles-preview-text {
+        font-size: 12px !important;
+    }
+    .articles-preview-date {
+        font-size: 12px !important;
+    }
 }
 
 @media (max-width:450px) {
@@ -1008,6 +1042,18 @@ nav ul li:last-child {
     }
     .icon-container h2 {
         font-size: 24px;
+    }
+    .articles-preview-title {
+        font-size: 14px !important;
+    }
+    .articles-preview-text {
+        font-size: 11px !important;
+    }
+    .articles-preview-date {
+        font-size: 11px !important;
+    }
+    .articles-preview {
+        padding: 5px 5px 5px 10px !important;
     }
 }
 

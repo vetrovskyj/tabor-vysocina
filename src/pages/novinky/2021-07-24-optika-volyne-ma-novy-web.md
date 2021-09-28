@@ -13,7 +13,7 @@ tags:
 ---
 ![](/img/web-foto.jpg)
 
-Web vznikl ve spolupráci s [Janem Větrovským](https://www.linkedin.com/in/jan-vetrovsky/), který jeho tvorbu dokumentuje i ve své bakalářské práci. Je navržen tak, aby splňoval požadavky Vás, našich zákazníků. Cílem bylo vytvořit jednoduché, intuitivní ale zároveň informačně nabyté a funkční rozhraní, díky kterému bude mít zákazník přehled o všech důležitých aspektech volyňské optiky.
+Web vznikl ve spolupráci s [Janem Větrovským](https://www.linkedin.com/in/jan-vetrovsky/), který jeho tvorbu dokumentuje i ve své bakalářské práci. Je navržen tak, aby splňoval požadavky našich zákazníků. Cílem bylo vytvořit jednoduché, intuitivní ale zároveň informačně nabyté a funkční rozhraní, díky kterému bude mít zákazník přehled o všech důležitých aspektech volyňské optiky.
 
 ## Obsah webu
 

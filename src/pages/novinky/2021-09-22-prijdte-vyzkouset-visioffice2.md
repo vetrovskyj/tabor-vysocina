@@ -1,8 +1,8 @@
 ---
 templateKey: article-post
-title: Přijďte vyzkoušet Visioffice 2
+title: Přijďte vyzkoušet Visioffice2
 date: 2021-09-22T22:00:00.000Z
-description: Visioffice 2 je přístroj, který spolehlivě vyměří všechny
+description: Visioffice2 je přístroj, který spolehlivě vyměří všechny
   individuální parametry nositele brýlových obrub. Nově ho můžete vyzkoušet i u
   nás v Optice Volyně.
 featuredpost: true
@@ -17,7 +17,7 @@ tags:
 ---
 ![](/img/visioffice2.jpg)
 
-V rámci zkvalitňovaní našich optometrických služeb byl do naši provozovny pořídit nový přístroj Visioffice 2, který pomáhá s centrací brýlových čoček. Díky němu si můžete být jistí, že měření zraku bude přesné a spolehlivé. Následně pak můžeme objektivně posoudit stav vašeho zraku a určit nejvhodnější personalizované řešení.
+V rámci zkvalitňovaní našich optometrických služeb byl do naší provozovny pořízen nový přístroj Visioffice2, který pomáhá s centrací brýlových čoček. Díky němu si můžete být jistí, že měření zraku bude přesné a spolehlivé. Následně pak můžeme objektivně posoudit stav vašeho zraku a určit nejvhodnější personalizované řešení.
 
 ## Výhody
 
