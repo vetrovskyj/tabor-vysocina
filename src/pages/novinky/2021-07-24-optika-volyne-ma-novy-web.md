@@ -35,7 +35,7 @@ S novým webem přichází také nová image Optiky Volyně laděná do modré a
 
 ## Technologie
 
-Web Optiky Volyně je vytvořen za pomoci frameworku GatsbyJS, značkovacího jazyka HTML a kaskádových stylů. Snažili jsme se zároveň o co nejlepší optimalizaci výkonu i optimalizaci pro vyhledávače, aby se web rychle načítal, správně fungoval a byl snadno nalezitelný. 
+Web Optiky Volyně je vytvořen za pomoci frameworku GatsbyJS, značkovacího jazyku HTML a kaskádových stylů. Snažili jsme se zároveň o co nejlepší optimalizaci výkonu i optimalizaci pro vyhledávače, aby se web rychle načítal, správně fungoval a byl snadno nalezitelný. 
 
 ## Budoucnost
 
