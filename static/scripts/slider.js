@@ -1,143 +1,157 @@
-window.addEventListener('DOMContentLoaded', () => {
-    const carouselSlide = document.querySelector('.sliderphoto');
-    const carouselImages = document.querySelectorAll('.photo');
-    const sliderSale = document.querySelector('.slider-sale');
-    const sliderText = document.querySelector('.slider-text');
-    const dots = document.querySelectorAll('.rectangle');
+const carouselSlideZero = document.querySelectorAll('#years-preview-zero .years-item-container');
+const carouselSlideFirst = document.querySelectorAll('#years-preview-first .years-item-container');
+const carouselSlideThird = document.querySelectorAll('#years-preview-third .years-item-container');
+const prevBtn = document.querySelectorAll('.prevBtn');
+const nextBtn = document.querySelectorAll('.nextBtn');
 
-    let counter = 1;
-    const size = carouselSlide.clientWidth;
+const nextButtonZero = nextBtn[0];
+const prevButtonZero = prevBtn[0];
+const nextButtonFirst = nextBtn[1];
+const prevButtonFirst = prevBtn[1];
+const nextButtonThird = nextBtn[2];
+const prevButtonThird = prevBtn[2];
+console.log(prevBtn);
 
-    carouselSlide.style.transform = 'translateX(' + (-size * 0) + 'px)';
-    carouselImages[2].style.opacity = '0';
-    carouselImages[0].style.opacity = '0';
+let counterZero = 0;
+let counterFirst = 0;
+let counterThird = 0;
 
-    dots[0].addEventListener('click', () => {
-        if (counter !== 0) {
-            sliderText.style.display = "none";
-            sliderSale.style.display = "none";
-            dots[0].style.backgroundColor = 'white';
-            dots[counter].style.backgroundColor = 'transparent';
-            setTimeout(() => {
-                carouselImages[1].style.zIndex = 0;
-                carouselImages[2].style.zIndex = 0;
-                carouselImages[0].style.zIndex = carouselImages.length + 1;
-            }, 400);
-            carouselImages[0].style.transition = '';
-            carouselImages[0].style.opacity = '1';
-            carouselImages[counter].style.transition = 'opacity 0.4s ease-in-out';
-            carouselImages[counter].style.opacity = '0';
-            counter = 0;
-        };
-    });
+const carouselSlide = document.querySelectorAll('.years-item-container');
+let width = document.querySelector('.years-preview').clientWidth / 3;
+let widthMargin = '';
 
-    dots[1].addEventListener('click', () => {
-        if (counter !== 1) {
-            sliderText.style.display = "block";
-            sliderSale.style.display = "block";
-            dots[1].style.backgroundColor = 'white';
-            dots[counter].style.backgroundColor = 'transparent';
-            setTimeout(() => {
-                carouselImages[0].style.zIndex = 0;
-                carouselImages[2].style.zIndex = 0;
-                carouselImages[1].style.zIndex = carouselImages.length + 1;
-            }, 400);
-            carouselImages[1].style.transition = '';
-            carouselImages[1].style.opacity = '1';
-            carouselImages[counter].style.transition = 'opacity 0.4s ease-in-out';
-            carouselImages[counter].style.opacity = '0';
-            counter = 1;
-        };
-    });
+if (window.innerWidth > 1000) {
+    width = width - 40;
+    widthMargin = width + 40;
+} else if (window.innerWidth > 750) {
+    width = width - 20;
+    widthMargin = width + 20;
+} else if (window.innerWidth > 500) {
+    width = width - 12;
+    widthMargin = width + 12;
+} else {
+    width = width - 6;
+    widthMargin = width + 6;
+}
 
-    dots[2].addEventListener('click', () => {
-        if (counter !== 2) {
-            sliderText.style.display = "none";
-            sliderSale.style.display = "none";
-            dots[2].style.backgroundColor = 'white';
-            dots[counter].style.backgroundColor = 'transparent';
-            setTimeout(() => {
-                carouselImages[0].style.zIndex = 0;
-                carouselImages[1].style.zIndex = 0;
-                carouselImages[2].style.zIndex = carouselImages.length + 1;
-            }, 400);
-            carouselImages[2].style.transition = '';
-            carouselImages[2].style.opacity = '1';
-            carouselImages[counter].style.transition = 'opacity 0.4s ease-in-out';
-            carouselImages[counter].style.opacity = '0';
-            counter = 2;
-        };
-    });
+console.log(width);
 
-    document.querySelector('.slider').addEventListener('touchstart', handleTouchStart, false);
-    document.querySelector('.slider').addEventListener('touchmove', handleTouchMove, false);
+for (let i = 0; i < carouselSlide.length; i++) {
+    carouselSlide[i].style.minWidth = width + 'px';
+}
 
-    var xDown = null;
-    var yDown = null;
+console.log(widthMargin);
 
-    function getTouches(evt) {
-        return evt.touches || // browser API
-            evt.originalEvent.touches; // jQuery
-    }
-
-    function handleTouchStart(evt) {
-        const firstTouch = getTouches(evt)[0];
-        xDown = firstTouch.clientX;
-        yDown = firstTouch.clientY;
-    };
-
-    function handleTouchMove(evt) {
-        if (!xDown || !yDown) {
-            return;
+nextButtonZero.addEventListener('click', () => {
+    counterZero++;
+    for (let i of carouselSlideZero) {
+        if (counterZero == 0) {
+            i.style.transform = 'translateX(' + (0) + 'px)';
+            i.style.transition = "transform 0.4s ease-in-out";
         }
+        if (counterZero == 1) {
+            i.style.transform = 'translateX(' + (-widthMargin) + 'px)';
+            i.style.transition = "transform 0.4s ease-in-out";
+        }
+        if (counterZero == 2) {
+            i.style.transform = 'translateX(' + (-widthMargin * 2) + 'px)';
+            i.style.transition = "transform 0.4s ease-in-out";
+        }
+        if (counterZero > 2) { counterZero = 2; }
+    }
+});
 
-        var xUp = evt.touches[0].clientX;
-        var yUp = evt.touches[0].clientY;
+prevButtonZero.addEventListener('click', () => {
+    counterZero--;
+    for (let i of carouselSlideZero) {
+        if (counterZero == 0) {
+            i.style.transform = 'translateX(' + (0) + 'px)';
+            i.style.transition = "transform 0.4s ease-in-out";
+        }
+        if (counterZero == 1) {
+            i.style.transform = 'translateX(' + (-widthMargin) + 'px)';
+            i.style.transition = "transform 0.4s ease-in-out";
+        }
+        if (counterZero == 2) {
+            i.style.transform = 'translateX(' + (-widthMargin * 2) + 'px)';
+            i.style.transition = "transform 0.4s ease-in-out";
+        }
+        if (counterZero < 0) { counterZero = 0; }
+    };
+});
 
-        var xDiff = xDown - xUp;
-        var yDiff = yDown - yUp;
+nextButtonFirst.addEventListener('click', () => {
+    counterFirst++;
+    for (let i of carouselSlideFirst) {
+        if (counterFirst == 0) {
+            i.style.transform = 'translateX(' + (0) + 'px)';
+            i.style.transition = "transform 0.4s ease-in-out";
+        }
+        if (counterFirst == 1) {
+            i.style.transform = 'translateX(' + (-widthMargin) + 'px)';
+            i.style.transition = "transform 0.4s ease-in-out";
+        }
+        if (counterFirst == 2) {
+            i.style.transform = 'translateX(' + (-widthMargin * 2) + 'px)';
+            i.style.transition = "transform 0.4s ease-in-out";
+        }
+        if (counterFirst > 2) { counterFirst = 2; }
+    }
+});
 
-        if (Math.abs(xDiff) > Math.abs(yDiff)) { /*most significant*/
-            if (xDiff > 0) {
-                if (counter < 2) {
-                    dots[counter + 1].style.backgroundColor = 'white';
-                    dots[counter].style.backgroundColor = 'transparent';
-                    setTimeout(() => {
-                        carouselImages[counter - 1].style.zIndex = 0;
-                        carouselImages[counter].style.zIndex = carouselImages.length + 1;
-                    }, 400);
-                    carouselImages[counter + 1].style.transition = '';
-                    carouselImages[counter + 1].style.opacity = '1';
-                    carouselImages[counter].style.transition = 'opacity 0.4s ease-in-out';
-                    carouselImages[counter].style.opacity = '0';
-                    counter++;
-                };
-            } else {
-                if (counter > 0) {
-                    dots[counter - 1].style.backgroundColor = 'white';
-                    dots[counter].style.backgroundColor = 'transparent';
-                    setTimeout(() => {
-                        carouselImages[counter + 1].style.zIndex = 0;
-                        carouselImages[counter].style.zIndex = carouselImages.length + 1;
-                    }, 400);
-                    carouselImages[counter - 1].style.transition = '';
-                    carouselImages[counter - 1].style.opacity = '1';
-                    carouselImages[counter].style.transition = 'opacity 0.4s ease-in-out';
-                    carouselImages[counter].style.opacity = '0';
-                    counter--;
-                };
-            };
-            if (counter !== 1) {
-                sliderText.style.display = "none";
-                sliderSale.style.display = "none";
-            }
-            if (counter === 1) {
-                sliderText.style.display = "block";
-                sliderSale.style.display = "block";
-            }
-        };
-        /* reset values */
-        xDown = null;
-        yDown = null;
+prevButtonFirst.addEventListener('click', () => {
+    counterFirst--;
+    for (let i of carouselSlideFirst) {
+        if (counterFirst == 0) {
+            i.style.transform = 'translateX(' + (0) + 'px)';
+            i.style.transition = "transform 0.4s ease-in-out";
+        }
+        if (counterFirst == 1) {
+            i.style.transform = 'translateX(' + (-widthMargin) + 'px)';
+            i.style.transition = "transform 0.4s ease-in-out";
+        }
+        if (counterFirst == 2) {
+            i.style.transform = 'translateX(' + (-widthMargin * 2) + 'px)';
+            i.style.transition = "transform 0.4s ease-in-out";
+        }
+        if (counterFirst < 0) { counterFirst = 0; }
+    };
+});
+
+nextButtonThird.addEventListener('click', () => {
+    counterThird++;
+    for (let i of carouselSlideThird) {
+        if (counterThird == 0) {
+            i.style.transform = 'translateX(' + (0) + 'px)';
+            i.style.transition = "transform 0.4s ease-in-out";
+        }
+        if (counterThird == 1) {
+            i.style.transform = 'translateX(' + (-widthMargin) + 'px)';
+            i.style.transition = "transform 0.4s ease-in-out";
+        }
+        if (counterThird == 2) {
+            i.style.transform = 'translateX(' + (-widthMargin * 2) + 'px)';
+            i.style.transition = "transform 0.4s ease-in-out";
+        }
+        if (counterThird > 2) { counterThird = 2; }
+    }
+});
+
+prevButtonThird.addEventListener('click', () => {
+    counterThird--;
+    for (let i of carouselSlideThird) {
+        if (counterThird == 0) {
+            i.style.transform = 'translateX(' + (0) + 'px)';
+            i.style.transition = "transform 0.4s ease-in-out";
+        }
+        if (counterThird == 1) {
+            i.style.transform = 'translateX(' + (-widthMargin) + 'px)';
+            i.style.transition = "transform 0.4s ease-in-out";
+        }
+        if (counterThird == 2) {
+            i.style.transform = 'translateX(' + (-widthMargin * 2) + 'px)';
+            i.style.transition = "transform 0.4s ease-in-out";
+        }
+        if (counterThird < 0) { counterThird = 0; }
     };
 });
