@@ -11,13 +11,13 @@ $(document).ready(() => {
 
     const prev = document.createElement('div');
     const prevImg = document.createElement('img');
-    prevImg.src = '../../assets/images/leva.png';
+    prevImg.src = '../.../img/leva.png';
     prev.id = 'prev';
     prev.appendChild(prevImg);
 
     const next = document.createElement('div');
     const nextImg = document.createElement('img');
-    nextImg.src = '../../assets/images/prava.png';
+    nextImg.src = '../.../img/prava.png';
     next.id = 'next';
     next.appendChild(nextImg);
 

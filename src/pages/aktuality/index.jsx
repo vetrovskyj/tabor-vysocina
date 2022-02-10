@@ -5,58 +5,69 @@ import Helmet from "react-helmet"
 import { withPrefix } from "gatsby"
 import Articles from '../../components/Articles'
 
-export default class News extends React.Component {
+export default class Aktuality extends React.Component {
   render() {
     return (
       <Layout>
         <Helmet
-          title={`Novinky | Optika Volyně`}
+          title={`Aktuality | Tábor Vysočina 3. turnus`}
           meta={[
             {
               name: `description`,
-              content: 'Novinky a aktuality o vybavení, událostech, změnách a zboží optiky a optometrie ve městě Volyně',
+              content: 'Aktuality organizační informace o dění na táboře Vysočina 3. turnus v Novém Městě na Moravě',
             },
             {
               name: "keywords",
-              content: 'Optika, Optometrie, Volyně, Aktuality, Novinky, Vybavení',
+              content: 'Tábor, Vysočina, PČR, Policie, Dětský tábor, Nové Město na Moravě, 3. turnus, Aktuality, Informace, Články',
             },
           ]} />
-        <div className="slider-products">
-          <img className="sliderphoto-products" width={1920} alt="sliderphoto" src="../../img/optika-kasa.png" />
-          <div className="slider-sale-and-text-products">
-            <h1 className="slider-sale-products">Novinky</h1>
-            <div className="slider-text-products">
-              <h1 className="slider-text-sale-products">a další zajímavosti</h1>
+        <main className="telo">
+          <div className="vylet">
+            <h1 className="nazev_vyletu"><a href="#">Výlet do Berouna</a></h1>
+            <div className="text_vyletu">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde optio soluta qui excepturi. Doloremque necessitatibus aperiam tempora doloribus odio ea. Voluptate quia delectus doloremque quisquam similique provident facere aliquam dolores?
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione eveniet quos hic nemo, magnam, atque libero eum totam omnis ad debitis officiis. Consequuntur iusto aliquid perspiciatis! Suscipit repudiandae rerum ut.</p>
+              <a className="more" href="#">více...</a>
             </div>
+            <a className="foto-href" href="#"><img className="foto" id="foto-id" src="../../img/rybnik.jpg" alt="fotka-rybniku" /></a>
           </div>
-        </div>
-        <Articles />
-        <div className="info-footer-container">
-          <div className="info-footer">
-            <div className="info-contacts">
-              <div className="info-contact">
-                <img alt="person-icon" src="../../img/person-icon.png" />
-                <p>Bc. Jitka Hronková</p>
-              </div>
-              <div className="info-contact">
-                <img alt="info-icon" src="../../img/info-icon.png" />
-                <p>IČO: 02835754</p>
-              </div>
-              <div className="info-contact">
-                <img alt="location-icon" src="../../img/location-icon.png" />
-                <p>nám. Svobody 14, Volyně, 387 01</p>
-              </div>
+          <div className="vylet">
+            <h1 className="nazev_vyletu"><a href="#">Příjezd na tábor</a></h1>
+            <div className="text_vyletu">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde optio soluta qui excepturi. Doloremque necessitatibus aperiam tempora doloribus odio ea. Voluptate quia delectus doloremque quisquam similique provident facere aliquam dolores?
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione eveniet quos hic nemo, magnam, atque libero eum totam omnis ad debitis officiis. Consequuntur iusto aliquid perspiciatis! Suscipit repudiandae rerum ut.</p>
+              <a className="more" href="#">více...</a>
             </div>
-            <div className="aditional-links">
-              <a href="../cookies/">Používání cookies</a>
-              <a href="../autorska-prava/">Autorská práva</a>
-            </div>
-            <a href="https://www.facebook.com/O%C4%8Dn%C3%AD-optika-Volyn%C4%9B-191635897936682/" target="_blank"><img className="fb-icon" alt="facebook-icon" src="../../img/facebook-icon.png" /></a>
+            <a className="foto-href" href="#"><img className="foto" src="../../img/budova.jpg" alt="fotka-rybniku" /></a>
           </div>
-        </div>
-        <Helmet>
-          <script src={withPrefix('../scripts/hamburger.js')} type="text/javascript" />
-        </Helmet>
+          <div className="vylet">
+            <h1 className="nazev_vyletu"><a href="#">Fotky z Velikonoc</a></h1>
+            <div className="text_vyletu">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde optio soluta qui excepturi. Doloremque necessitatibus aperiam tempora doloribus odio ea. Voluptate quia delectus doloremque quisquam similique provident facere aliquam dolores?
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione eveniet quos hic nemo, magnam, atque libero eum totam omnis ad debitis officiis. Consequuntur iusto aliquid perspiciatis! Suscipit repudiandae rerum ut.</p>
+              <a className="more" href="#">více...</a>
+            </div>
+            <a className="foto-href" href="#"><img className="foto" src="../../img/areal.PNG" alt="fotka-rybniku" /></a>
+          </div>
+          <div className="vylet">
+            <h1 className="nazev_vyletu"><a href="#">Výlet do Berouna</a></h1>
+            <div className="text_vyletu">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde optio soluta qui excepturi. Doloremque necessitatibus aperiam tempora doloribus odio ea. Voluptate quia delectus doloremque quisquam similique provident facere aliquam dolores?
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione eveniet quos hic nemo, magnam, atque libero eum totam omnis ad debitis officiis. Consequuntur iusto aliquid perspiciatis! Suscipit repudiandae rerum ut.</p>
+              <a className="more" href="#">více...</a>
+            </div>
+            <a className="foto-href" href="#"><img className="foto" src="../../img/rybnik.jpg" alt="fotka-rybniku" /></a>
+          </div>
+          <div className="vylet">
+            <h1 className="nazev_vyletu"><a href="#">Výlet do Berouna</a></h1>
+            <div className="text_vyletu">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde optio soluta qui excepturi. Doloremque necessitatibus aperiam tempora doloribus odio ea. Voluptate quia delectus doloremque quisquam similique provident facere aliquam dolores?
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione eveniet quos hic nemo, magnam, atque libero eum totam omnis ad debitis officiis. Consequuntur iusto aliquid perspiciatis! Suscipit repudiandae rerum ut.</p>
+              <a className="more" href="#">více...</a>
+            </div>
+            <a className="foto-href" href="#"><img className="foto" src="../../img/rybnik.jpg" alt="fotka-rybniku" /></a>
+          </div>
+        </main>
       </Layout>
     )
   }
