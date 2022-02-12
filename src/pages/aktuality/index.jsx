@@ -22,6 +22,7 @@ export default class Aktuality extends React.Component {
             },
           ]} />
         <main className="telo">
+          <Articles />
           <div className="vylet">
             <h1 className="nazev_vyletu"><a href="#">Výlet do Berouna</a></h1>
             <div className="text_vyletu">

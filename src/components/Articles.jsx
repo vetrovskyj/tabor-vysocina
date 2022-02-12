@@ -14,37 +14,35 @@ class Articles extends React.Component {
           posts.map(({ node: post }) => (
             <div className={`article-container ${post.frontmatter.featuredpost ? 'is-featured' : ''
               }`} key={post.id}>
-              <article className="article-item">
-                <header>
-                  {post.frontmatter.featuredimage ? (
-                    <div className="thumbnail-image">
-                      <PreviewCompatibleImage
-                        imageInfo={{
-                          image: post.frontmatter.featuredimage,
-                          alt: `náhledový obrázek ke článku ${post.frontmatter.title}`,
-                        }}
-                      />
-                    </div>
-                  ) : null}
-                  <p className="article-title-container">
-                    <Link
-                      className="article-title"
-                      to={post.fields.slug}>
-                      {post.frontmatter.title}
-                    </Link>
-                    <span className="article-date">
-                      {post.frontmatter.date}
-                    </span>
-                  </p>
-                </header>
-                <p className="article-text">
+              <article className="vylet">
+                <p className="nazev_vyletu">
+                  <Link
+                    className="article-title"
+                    to={post.fields.slug}>
+                    {post.frontmatter.title}
+                  </Link>
+                  <span className="article-date">
+                    {post.frontmatter.date}
+                  </span>
+                </p>
+                <p className="text_vyletu">
                   {post.excerpt}
                   <br />
                   <br />
-                  <Link className="btn" to={post.fields.slug}>
-                    více
+                  <Link className="more" to={post.fields.slug}>
+                    více...
                   </Link>
                 </p>
+                {post.frontmatter.featuredimage ? (
+                  <div className="foto-href">
+                    <PreviewCompatibleImage
+                      imageInfo={{
+                        image: post.frontmatter.featuredimage,
+                        alt: `náhledový obrázek ke článku ${post.frontmatter.title}`,
+                      }}
+                    />
+                  </div>
+                ) : null}
               </article>
             </div>
           ))}
@@ -60,7 +58,7 @@ Articles.propTypes = {
     }),
   }),
 }
-/*
+
 export default () => (
   <StaticQuery
     query={graphql`
@@ -72,7 +70,7 @@ export default () => (
           edges {
             node {
               excerpt(
-                pruneLength: 300
+                pruneLength: 350
                 format: PLAIN
                 )
               id
@@ -86,7 +84,7 @@ export default () => (
                 featuredpost
                 featuredimage {
                   childImageSharp {
-                    fluid(maxWidth: 140, quality: 100) {
+                    fluid(maxWidth: 1200, quality: 100) {
                       ...GatsbyImageSharpFluid
                     }
                   }
@@ -99,4 +97,4 @@ export default () => (
     `}
     render={(data, count) => <Articles data={data} count={count} />}
   />
-)*/
+)

@@ -6,7 +6,7 @@ description: Visioffice2 je přístroj, který spolehlivě vyměří všechny
   individuální parametry nositele brýlových obrub. Nově ho můžete vyzkoušet i u
   nás v Optice Volyně.
 featuredpost: true
-featuredimage: /img/visioffice-2.jpg
+featuredimage: /img/areal.PNG
 tags:
   - Visioffice
   - vybavení
@@ -15,7 +15,7 @@ tags:
   - optometrie
   - měření
 ---
-![](/img/visioffice2.jpg)
+![](/img/areal.png)
 
 V rámci zkvalitňovaní našich optometrických služeb byl do naší provozovny pořízen nový přístroj Visioffice2, který pomáhá s centrací brýlových čoček. Díky němu si můžete být jistí, že měření zraku bude přesné a spolehlivé. Následně pak můžeme objektivně posoudit stav vašeho zraku a určit nejvhodnější personalizované řešení.
 

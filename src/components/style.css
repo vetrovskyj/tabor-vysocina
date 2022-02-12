@@ -88,18 +88,23 @@ nav {
     padding: 20px 0
 }
 
+.article-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .vylet {
     box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.3);
     display: grid;
     width: 64%;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 3fr;
+    grid-template-rows: 1fr auto;
     grid-template-areas: "box1 box3" "box2 box3";
     padding: 10px;
     grid-column-gap: 20px;
     color: #585772;
     margin: 20px 0;
-    max-height: 340px
 }
 
 .vylet a {
@@ -112,21 +117,34 @@ nav {
 }
 
 .nazev_vyletu {
-    grid-area: box1
+    grid-area: box1;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+.nazev_vyletu a {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.article-date {
+    font-size: 14px;
 }
 
 .text_vyletu {
     grid-area: box2;
-    max-height: 100%
-}
-
-.text_vyletu p {
+    max-height: 100%;
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 10;
     -webkit-box-orient: vertical;
     -moz-webkit-box-orient: vertical;
     margin-right: 15px
+}
+
+.gatsby-image-wrapper {
+    height: 100%;
 }
 
 .more {
@@ -139,7 +157,7 @@ nav {
 }
 
 .foto {
-    height: 320px;
+    height: 100%;
     max-width: 100%;
     grid-area: box3;
     align-self: center;
@@ -175,22 +193,18 @@ nav {
 }
 
 @media(max-width:1500px) {
-    .vylet {
-        max-height: 280px
-    }
     .foto {
-        height: 260px;
-        width: 100%
+        width: 100%;
     }
-    .text_vyletu p {
-        -webkit-line-clamp: 7
+    .text_vyletu {
+        -webkit-line-clamp: 7;
     }
 }
 
 @media(max-width:1300px) {
     .vylet {
         width: 80%;
-        grid-column-gap: 10px
+        grid-column-gap: 10px;
     }
 }
 
@@ -199,81 +213,67 @@ nav {
         display: flex;
         flex-wrap: wrap;
         min-height: 15vh;
-        margin-bottom: 0
+        margin-bottom: 0;
     }
     .vysocina {
         font-size: 24px;
         padding: 0;
-        text-align: center
+        text-align: center;
     }
     .turnus {
         font-size: 16px;
         padding: 0;
-        text-align: center
+        text-align: center;
     }
     .nazev {
         margin-left: 10px;
         width: 60%;
         min-height: 10vh;
         align-items: center;
-        flex: auto
+        flex: auto;
     }
     .logo {
         width: 40%;
         height: 10vh;
-        align-items: center
+        align-items: center;
     }
     .nadpis img {
         height: 8vh;
-        width: auto
+        width: auto;
     }
     nav {
         order: 3;
         background-color: #666;
         height: 5vh;
-        align-self: flex-end
+        align-self: flex-end;
     }
     .menu {
         text-align: center;
         align-items: center;
-        height: 100%
+        height: 100%;
     }
     .kapitola {
-        margin-top: 30px
+        margin-top: 30px;
     }
     .vylet {
         width: 85%;
-        max-height: 260px
     }
-    .foto {
-        height: 240px
-    }
-    .text_vyletu p {
-        -webkit-line-clamp: 6
+    .text_vyletu {
+        -webkit-line-clamp: 6;
     }
 }
 
 @media(max-width:900px) {
     .vylet {
-        max-height: 220px;
         grid-column-gap: 5px
     }
-    .foto {
-        height: 200px
-    }
-    .text_vyletu p {
+    .text_vyletu {
         -webkit-line-clamp: 5
     }
 }
 
 @media(max-width:800px) {
-    .vylet {
-        max-height: 200px
-    }
-    .foto {
-        height: 180px
-    }
-    .text_vyletu p {
+    .text_vyletu {
         -webkit-line-clamp: 7
     }
     .text_vyletu {
@@ -282,33 +282,28 @@ nav {
     .more {
         font-size: 12px
     }
-    .nazev_vyletu {
+    .nazev_vyletu a {
         font-size: 24px
+    }
+    .article-date {
+        font-size: 12px;
     }
 }
 
 @media(max-width:800px) {
     .vylet {
-        max-height: 160px;
         margin: 10px 0
     }
-    .foto {
-        height: 140px
-    }
-    .text_vyletu p {
+    .text_vyletu {
         -webkit-line-clamp: 5
     }
 }
 
 @media(max-width:550px) {
     .vylet {
-        max-height: 140px;
         padding: 5px
     }
-    .foto {
-        height: 130px
-    }
-    .text_vyletu p {
+    .text_vyletu {
         -webkit-line-clamp: 4
     }
     .text_vyletu {
@@ -317,8 +312,11 @@ nav {
     .more {
         font-size: 12px
     }
-    .nazev_vyletu {
+    .nazev_vyletu a {
         font-size: 16px
+    }
+    .article-date {
+        font-size: 11px;
     }
 }
 
@@ -333,13 +331,7 @@ nav {
 }
 
 @media(max-width:450px) {
-    .vylet {
-        max-height: 120px
-    }
-    .foto {
-        height: 110px
-    }
-    .text_vyletu p {
+    .text_vyletu {
         -webkit-line-clamp: 4
     }
     .text_vyletu {
@@ -348,8 +340,11 @@ nav {
     .more {
         font-size: 11px
     }
-    .nazev_vyletu {
+    .nazev_vyletu a {
         font-size: 14px
+    }
+    .article-date {
+        font-size: 10px;
     }
 }
 
@@ -3081,7 +3076,7 @@ input:focus {
     .box {
         font-size: 18px
     }
-    .vylet p {
+    .text_vyletu_homepage {
         font-size: 18px
     }
 }

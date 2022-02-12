@@ -6,12 +6,12 @@ description: Dne 24. 7. 2021 jsme zákazníkům představili nový podnikový we
   díky kterému bude snazší získávat informace o naší provozovně, optometrických
   službách, zboží, vybavení a aktuálním dění.
 featuredpost: false
-featuredimage: /img/web-foto.jpg
+featuredimage: /img/areal.PNG
 tags:
   - web
   - novinky
 ---
-![](/img/web-foto.jpg)
+![](/img/areal.PNG)
 
 Web vznikl ve spolupráci s [Janem Větrovským](https://www.linkedin.com/in/jan-vetrovsky/), který jeho tvorbu dokumentuje i ve své bakalářské práci. Je navržen tak, aby splňoval požadavky našich zákazníků. Cílem bylo vytvořit jednoduché, intuitivní ale zároveň informačně nabyté a funkční rozhraní, díky kterému bude mít zákazník přehled o všech důležitých aspektech volyňské optiky.
 
@@ -31,7 +31,7 @@ Na webu tak velmi rychle najdete například otevírací dobu, adresu provozovny
 
 S novým webem přichází také nová image Optiky Volyně laděná do modré a zelené barvy pro navození atmosféry zdraví a životního stylu. Stejnobarevné je také nové **logo**, které znázorňuje rysy lidského oka.
 
-![](/img/logo.svg)
+![](/img/areal.PNG)
 
 ## Technologie
 
