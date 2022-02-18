@@ -153,11 +153,11 @@ nav {
 }
 
 .foto-href {
-    grid-area: box3
+    grid-area: box3;
 }
 
 .foto {
-    height: 100%;
+    min-height: 100%;
     max-width: 100%;
     grid-area: box3;
     align-self: center;
