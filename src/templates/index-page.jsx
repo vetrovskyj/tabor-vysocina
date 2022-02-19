@@ -6,9 +6,6 @@ import { withPrefix } from "gatsby"
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import ArticlesPreview from '../components/ArticlesPreview'
 
-import { Slide } from "react-slideshow-image";
-
-
 import Layout from '../components/Layout'
 
 export const IndexPageTemplate = ({
