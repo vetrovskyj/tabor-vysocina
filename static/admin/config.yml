@@ -51,6 +51,7 @@ collections:
       name: uploadcare
       config:
         publickey: 5fff2d77f52b1ab887fc
+    create: true
     fields:
       - label: "Fotky"
         name: "images"
