@@ -41,4 +41,23 @@ collections:
       - {label: "Náhledový obrázek", name: "featuredimage", widget: image}
       - {label: "Text", name: "body", widget: "markdown"}
       - {label: "Tagy", name: "tags", widget: "list"}
+
+  - label: "Projects" 
+    name: "projects" 
+    folder: "src/pages/novinky" 
+    media_folder: 'images' 
+    media_library:
+      name: uploadcare
+      config:
+        publickey: 5fff2d77f52b1ab887fc
+    fields: # The fields for each document, usually in front matter
+      - {label: "Image", name: "image", widget: "image", allow_multiple: true}
+      - label: "Gallery Images"
+        name: "images"
+        widget: "image"
+        options:
+          media_library:
+            config:
+              multiple: true
+              previewStep: false
  
