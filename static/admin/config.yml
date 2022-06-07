@@ -39,12 +39,9 @@ collections:
       - {label: "Text", name: "body", widget: "markdown"}
       - {label: "Tagy", name: "tags", widget: "list"}
 
-  - name: "nevim"
-    label: "Novinky"
-    folder: "src/pages/novinky"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    fields:
-      - {label: Name, name: name, widget: string, default: "Emmet"}
-      - {label: Avatar, name: avatar, widget: image, default: "/img/emmet.jpg"}
+  - name: "mainImages"
+    label: "Main Images"
+    widget: "list"
+    field: 
+      - { name: "image", label: "Image", widget: "image"}
  
