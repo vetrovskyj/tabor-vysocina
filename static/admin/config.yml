@@ -8,7 +8,10 @@ backend:
     uploadMedia: '[skip ci] Upload “{{path}}”'
     deleteMedia: '[skip ci] Delete “{{path}}”'
 
-media_folder: static/img
+media_library:
+  name: uploadcare
+  config:
+    publicKey: 5fff2d77f52b1ab887fc
 public_folder: /img
 
 collections:
@@ -38,10 +41,4 @@ collections:
       - {label: "Náhledový obrázek", name: "featuredimage", widget: image}
       - {label: "Text", name: "body", widget: "markdown"}
       - {label: "Tagy", name: "tags", widget: "list"}
-
-  - name: "mainImages"
-    label: "Main Images"
-    widget: "list"
-    field: 
-      - { name: "image", label: "Image", widget: "image"}
  
