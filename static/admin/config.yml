@@ -9,9 +9,10 @@ backend:
     deleteMedia: '[skip ci] Delete “{{path}}”'
 
 media_library:
-  name: uploadcare
+  name: cloudinary
   config:
-    publicKey: 5fff2d77f52b1ab887fc
+    cloud_name: dd2ejj6yt
+    api_key: 296647141253866
 public_folder: /img
 media_folder: static/img
 
@@ -48,16 +49,15 @@ collections:
     folder: "src/pages/galerie" 
     media_folder: 'static/img' 
     media_library:
-      name: uploadcare
+      name: cloudinary
       config:
-        publickey: 5fff2d77f52b1ab887fc
+        cloud_name: dd2ejj6yt
+        api_key: 296647141253866
     create: true
     fields:
       - label: "Fotky"
         name: "images"
         widget: "image"
         options:
-          media_library:
-            config:
-              multiple: true
+        multiple: true
  
