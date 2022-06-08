@@ -59,5 +59,4 @@ collections:
           media_library:
             config:
               multiple: true
-              previewStep: false
  
