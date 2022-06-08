@@ -44,20 +44,19 @@ collections:
       - {label: "Text", name: "body", widget: "markdown"}
       - {label: "Tagy", name: "tags", widget: "list"}
 
-  - name: blog
-    label: Blog
-    folder: blog
+  - name: galerie
+    label: Galerie
+    folder: "src/pages/galerie"
     create: true
     fields:
-      - { name: path, label: Path }
-      - { name: date, label: Date, widget: datetime }
-      - { name: title, label: Title }
-      - { name: body, label: Body, widget: markdown }
-      - label: "Media"
-        name: "media"
-        widget: "image"
-        allow_multiple: true
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "gallery-post"}
+      - {label: "Datum", name: "date", widget: "datetime"}
+      - {label: "Media",
+        name: "media",
+        widget: "image",
+        allow_multiple: true,
         media_library:
-          config:
-            multiple: true
+          {config:
+            {multiple: true,
+            output_filename_only: true}}}
  

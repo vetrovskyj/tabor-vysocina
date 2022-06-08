@@ -3,6 +3,7 @@ import React from 'react'
 import Layout from '../../components/Layout'
 import Helmet from "react-helmet"
 import { withPrefix } from "gatsby"
+import Galleries from '../../components/Galleries'
 
 export default class Galerie extends React.Component {
   render() {
@@ -21,6 +22,7 @@ export default class Galerie extends React.Component {
             },
           ]} />
         <main>
+          <Galleries />
           <section className="years-section">
             <h2>Léto</h2>
             <div className="years-preview-container">
