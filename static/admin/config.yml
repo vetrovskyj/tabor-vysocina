@@ -64,6 +64,7 @@ collections:
           config:
             cloud_name: dd2ejj6yt
             api_key: 296647141253866
+        multiple: true
         options:
           multiple: true
  
