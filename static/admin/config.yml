@@ -13,6 +13,7 @@ media_library:
   config:
     publicKey: 5fff2d77f52b1ab887fc
 public_folder: /img
+media_folder: static/img
 
 collections:
   - name: "stranky"
@@ -42,17 +43,17 @@ collections:
       - {label: "Text", name: "body", widget: "markdown"}
       - {label: "Tagy", name: "tags", widget: "list"}
 
-  - label: "Projects" 
-    name: "projects" 
-    folder: "src/pages/novinky" 
-    media_folder: 'images' 
+  - label: "Galerie" 
+    name: "galerie" 
+    folder: "src/pages/galerie" 
+    media_folder: 'static/img' 
     media_library:
       name: uploadcare
       config:
         publickey: 5fff2d77f52b1ab887fc
-    fields: # The fields for each document, usually in front matter
-      - {label: "Image", name: "image", widget: "image", allow_multiple: true}
-      - label: "Gallery Images"
+    create: true
+    fields:
+      - label: "Fotky"
         name: "images"
         widget: "image"
         options:
