@@ -45,18 +45,19 @@ collections:
       - {label: "Tagy", name: "tags", widget: "list"}
 
   - name: blog
-    label: Blog
-    folder: blog
-    create: true
-    fields:
-      - { name: path, label: Path }
-      - { name: date, label: Date, widget: datetime }
-      - { name: title, label: Title }
-      - { name: body, label: Body, widget: markdown }
-      - { label: Media,
-          name: media,
-          widget: image,
-          allow_multiple: true,
-          media_library: { name: cloudinary, output_filename_only: true },
-        }
+      label: Blog
+      folder: blog
+      create: true
+      fields:
+        - { name: path, label: Path }
+        - { name: date, label: Date, widget: datetime }
+        - { name: title, label: Title }
+        - { name: body, label: Body, widget: markdown }
+        - label: "Media"
+          name: "media"
+          widget: "image"
+          allow_multiple: true
+          media_library:
+            config:
+              multiple: true
  
