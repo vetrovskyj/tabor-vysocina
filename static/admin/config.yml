@@ -44,27 +44,12 @@ collections:
       - {label: "Text", name: "body", widget: "markdown"}
       - {label: "Tagy", name: "tags", widget: "list"}
 
-  - label: "Galerie" 
-    name: "galerie" 
-    folder: "src/pages/galerie" 
-    media_folder: 'static/img' 
-    media_library:
-      name: cloudinary
-      config:
-        cloud_name: dd2ejj6yt
-        api_key: 296647141253866
-    create: true
-    multiple: true
-    fields:
-      - label: "Fotky"
-        name: "images"
-        widget: "image"
-        media_library:
-          name: cloudinary
-          config:
-            cloud_name: dd2ejj6yt
-            api_key: 296647141253866
-        multiple: true
-        options:
-          multiple: true
+  - label: Media
+    name: media
+    widget: image
+    allow_multiple: true
+    media_library: 
+      name: cloudinary 
+      output_filename_only: true
+      multiple: true
  
