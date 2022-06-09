@@ -30,7 +30,7 @@ collections:
           - {label: Sekce, name: section, widget: object, fields: [{label: Nadpis, name: section_heading, widget: string}, {label: Text, name: section_text, widget: text}, {label: Obrazek, name: image1, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}]}
 
   - name: "novinky"
-    label: "Novinky"
+    label: "Aktuality"
     folder: "src/pages/aktuality"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
@@ -45,12 +45,46 @@ collections:
       - {label: "Tagy", name: "tags", widget: "list"}
 
   - name: galerie
-    label: Galerie
-    folder: "src/pages/galerie"
+    label: Foto Leto
+    folder: "src/pages/galerie/leto"
     create: true
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "gallery-post"}
       - {label: "Rok", name: "title", widget: "string"}
+      - {label: "Náhledový obrázek", name: "nahledacek", widget: image}
+      - {label: "Media",
+        name: "media",
+        widget: "image",
+        allow_multiple: true,
+        media_library:
+          {config:
+            {multiple: true,
+            output_filename_only: true}}}
+
+  - name: velikonoce
+    label: Foto Velikonoce
+    folder: "src/pages/galerie/velikonoce"
+    create: true
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "velikonoce-post"}
+      - {label: "Rok", name: "title", widget: "string"}
+      - {label: "Náhledový obrázek", name: "nahledacek", widget: image}
+      - {label: "Media",
+        name: "media",
+        widget: "image",
+        allow_multiple: true,
+        media_library:
+          {config:
+            {multiple: true,
+            output_filename_only: true}}}
+
+  - name: vylety
+    label: Foto vylety
+    folder: "src/pages/galerie/vylety"
+    create: true
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "vylety-post"}
+      - {label: "Místo", name: "title", widget: "string"}
       - {label: "Náhledový obrázek", name: "nahledacek", widget: image}
       - {label: "Media",
         name: "media",

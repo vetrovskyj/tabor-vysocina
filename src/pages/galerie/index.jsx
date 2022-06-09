@@ -4,6 +4,8 @@ import Layout from '../../components/Layout'
 import Helmet from "react-helmet"
 import { withPrefix } from "gatsby"
 import Galleries from '../../components/Galleries'
+import Velikonoce from '../../components/Velikonoce'
+import Vylety from '../../components/Vylety'
 
 export default class Galerie extends React.Component {
   render() {
@@ -23,6 +25,8 @@ export default class Galerie extends React.Component {
           ]} />
         <main>
           <Galleries />
+          <Velikonoce />
+          <Vylety />
           <Helmet>
             <script src={withPrefix('../scripts/slider.js')} type="text/javascript" />
           </Helmet>
