@@ -850,7 +850,7 @@ nav {
 }
 
 .years-item-container {
-    height: 300px;
+    height: 380px;
     overflow: hidden;
     position: relative
 }
@@ -860,7 +860,7 @@ nav {
     font-size: 32px;
     width: 100%;
     text-align: center;
-    padding-top: 25px
+    padding-top: 30px
 }
 
 .prevBtn,
@@ -885,7 +885,7 @@ main {
 
 @media(max-width:1500px) {
     .years-item-container {
-        height: 200px
+        height: 280px
     }
 }
 
@@ -931,7 +931,7 @@ main {
         margin-top: 30px
     }
     .years-item-container {
-        height: 150px;
+        height: 220px;
     }
     .prevBtn,
     .nextBtn {
@@ -941,7 +941,7 @@ main {
 
 @media(max-width:750px) {
     .years-item-container {
-        height: 130px;
+        height: 190px;
     }
     .years-item a {
         font-size: 32px
@@ -957,13 +957,10 @@ main {
         font-size: 14px
     }
     .years-item-container {
-        height: 100px;
+        height: 150px;
     }
     .years-item a {
         font-size: 24px
-    }
-    .years-section {
-        margin: 0 10px
     }
     .fa {
         font-size: 12px!important
@@ -972,16 +969,13 @@ main {
 
 @media(max-width:350px) {
     .years-item-container {
-        height: 70px;
+        height: 100px;
     }
     .years-item a {
         font-size: 16px
     }
     .link {
         font-size: 12px
-    }
-    .years-section {
-        margin: 0 5px
     }
     .fa {
         font-size: 11px!important
@@ -3141,6 +3135,10 @@ input:focus {
     padding: unset;
 }
 
+.article-post-body {
+    min-height: 82.7vh;
+}
+
 @media(max-width:1500px) {
     .boxes {
         grid-template-columns: 1fr 5fr 1fr 5fr 1fr 5fr 1fr
@@ -3218,6 +3216,9 @@ input:focus {
 }
 
 @media(max-width:1000px) {
+    .article-post-body {
+        min-height: 80vh;
+    }
     .vysocina {
         font-size: 24px;
         padding: 0;

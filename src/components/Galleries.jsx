@@ -59,6 +59,7 @@ export default () => (
     query={graphql`
       query GalleryRollQuery {
         allMarkdownRemark(
+          sort: { order: DESC, fields: [frontmatter___date] },
           filter: { frontmatter: { templateKey: { eq: "gallery-post" } } }
         ) {
           edges {
