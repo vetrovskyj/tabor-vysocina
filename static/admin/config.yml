@@ -31,7 +31,7 @@ collections:
 
   - name: "novinky"
     label: "Novinky"
-    folder: "src/pages/novinky"
+    folder: "src/pages/aktuality"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
@@ -50,7 +50,8 @@ collections:
     create: true
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "gallery-post"}
-      - {label: "Datum", name: "date", widget: "datetime"}
+      - {label: "Datum", name: "date", widget: "datetime", default: "", format: "YYYY"}
+      - {label: "Náhledový obrázek", name: "featuredimage", widget: image}
       - {label: "Media",
         name: "media",
         widget: "image",
