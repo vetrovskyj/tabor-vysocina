@@ -33,6 +33,8 @@
         "react-ga": "^3.3.0",
         "react-helmet": "^6.0.0",
         "react-mapycz": "^1.1.1",
+        "react-slick": "^0.29.0",
+        "slick-carousel": "^1.8.1",
         "uuid": "^7.0.0"
     },
     "keywords": [

@@ -51,7 +51,7 @@ collections:
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "gallery-post"}
       - {label: "Rok", name: "title", widget: "string"}
-      - {label: "Náhledový obrázek", name: "featuredimage", widget: image}
+      - {label: "Náhledový obrázek", name: "nahledacek", widget: image}
       - {label: "Media",
         name: "media",
         widget: "image",

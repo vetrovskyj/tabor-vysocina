@@ -2,34 +2,45 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
 import PreviewCompatibleImage from './PreviewCompatibleImage'
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
 
 class Galleries extends React.Component {
   render() {
     const { data } = this.props
     const { edges: galleries } = data.allMarkdownRemark
 
+    const settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 2,
+      slidesToScroll: 2
+    };
+
     return (
       <div>
-        {galleries &&
-          galleries.map(({ node: gallery }) => (
-            <div key={gallery.title}>
-              <Link
-                className="article-title"
-                to={gallery.fields.slug}>
-                {gallery.frontmatter.title}
-              </Link>
-              {gallery.frontmatter.featuredimage ? (
-                  <div className="foto-href">
-                    <PreviewCompatibleImage
-                      imageInfo={{
-                        image: gallery.frontmatter.featuredimage,
-                        alt: `náhledový obrázek ke galerii ${gallery.frontmatter.title}`,
-                      }}
-                    />
-                  </div>
-                ) : null}
-            </div>
-          ))}
+        <div className='years-section'>
+          <h2>Léto</h2>
+          <Slider {...settings}>
+            {galleries &&
+              galleries.map(({ node: gallery }) => (
+                <div key={gallery.title} className="years-item-container">
+                  {gallery.frontmatter.nahledacek ? (
+                    <Link className="gallery-carousel-container" to={gallery.fields.slug}>
+                      <img alt="náhledový obrázek ke galerii" src={gallery.frontmatter.nahledacek} />
+                      <Link
+                        className='gallery-carousel-text'
+                        to={gallery.fields.slug}>
+                        {gallery.frontmatter.title}
+                      </Link>
+                    </Link>
+                  ) : null}
+                </div>
+              ))}
+          </Slider>
+        </div>
       </div>
     )
   }
@@ -62,14 +73,8 @@ export default () => (
               }
               frontmatter {
                 title
-                featuredimage {
-                  childImageSharp {
-                    fluid(maxWidth: 1200, quality: 100) {
-                      ...GatsbyImageSharpFluid
-                    }
-                  }
-                }
-            }
+                nahledacek
+              }
           }
         }
       }
