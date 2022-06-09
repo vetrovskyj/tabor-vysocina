@@ -5,8 +5,8 @@ import { GalleriesTemplate } from '../../templates/gallery-post'
 const GalleryPreview = ({ entry, widgetFor }) => {
     return ( <
         GalleriesTemplate content = { widgetFor('body') }
-        galleries = { entry.getIn(['data', 'date']) }
-        date = { entry.getIn(['data', 'date']) }
+        galleries = { entry.getIn(['data', 'media']) }
+        title = { entry.getIn(['data', 'title']) }
         />
     )
 }

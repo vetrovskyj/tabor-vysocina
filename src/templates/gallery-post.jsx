@@ -7,14 +7,7 @@ import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 
 export const GalleriesTemplate = ({
-  content,
   contentComponent,
-  description,
-  tags,
-  title,
-  helmet,
-  galleries,
-  date,
 }) => {
   const PostContent = contentComponent || Content
 
@@ -32,7 +25,7 @@ GalleriesTemplate.propTypes = {
   title: PropTypes.string,
   helmet: PropTypes.object,
   galleries: PropTypes.string,
-  date: PropTypes.string,
+  title: PropTypes.string,
 }
 
 const GalleryPost = ({ data }) => {
@@ -44,8 +37,8 @@ const GalleryPost = ({ data }) => {
         content={post.html}
         contentComponent={HTMLContent}
         helmet={
-          <Helmet titleTemplate="%s | Optika Volyně">
-            <title>{`${post.frontmatter.date}`}</title>
+          <Helmet>
+            <title>{`${post.frontmatter.title}`}</title>
             <meta
               name="description"
               content="gallery"
@@ -75,7 +68,7 @@ export const pageQuery = graphql`
       id
       html
       frontmatter {
-        date(formatString: "D. MMMM YYYY", locale: "cs")
+        title
         media
       }
     }

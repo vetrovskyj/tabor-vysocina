@@ -50,7 +50,7 @@ collections:
     create: true
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "gallery-post"}
-      - {label: "Datum", name: "date", widget: "datetime", default: "", format: "YYYY"}
+      - {label: "Rok", name: "title", widget: "string"}
       - {label: "Náhledový obrázek", name: "featuredimage", widget: image}
       - {label: "Media",
         name: "media",

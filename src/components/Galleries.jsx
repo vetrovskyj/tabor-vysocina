@@ -12,18 +12,18 @@ class Galleries extends React.Component {
       <div>
         {galleries &&
           galleries.map(({ node: gallery }) => (
-            <div key={gallery.date}>
+            <div key={gallery.title}>
               <Link
                 className="article-title"
                 to={gallery.fields.slug}>
-                {gallery.frontmatter.date}
+                {gallery.frontmatter.title}
               </Link>
               {gallery.frontmatter.featuredimage ? (
                   <div className="foto-href">
                     <PreviewCompatibleImage
                       imageInfo={{
                         image: gallery.frontmatter.featuredimage,
-                        alt: `náhledový obrázek ke galerii ${gallery.frontmatter.date}`,
+                        alt: `náhledový obrázek ke galerii ${gallery.frontmatter.title}`,
                       }}
                     />
                   </div>
@@ -61,7 +61,7 @@ export default () => (
                 slug
               }
               frontmatter {
-                date(formatString: "YYYY", locale: "cs")
+                title
                 featuredimage {
                   childImageSharp {
                     fluid(maxWidth: 1200, quality: 100) {
