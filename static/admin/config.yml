@@ -50,8 +50,9 @@ collections:
     create: true
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "gallery-post"}
-      - {label: "Rok", name: "title", widget: "string"}
-      - {label: "Náhledový obrázek", name: "nahledacek", widget: image}
+      - {label: "Rok", name: "title", widget: "string", required: true}
+      - {label: "Heslo", name: "password", widget: "string", required: true}
+      - {label: "Náhledový obrázek", name: "nahledacek", widget: image, required: true}
       - {label: "Media",
         name: "media",
         widget: "image",
@@ -67,8 +68,9 @@ collections:
     create: true
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "velikonoce-post"}
-      - {label: "Rok", name: "title", widget: "string"}
-      - {label: "Náhledový obrázek", name: "nahledacek", widget: image}
+      - {label: "Rok", name: "title", widget: "string", required: true}
+      - {label: "Heslo", name: "password", widget: "string", required: true}
+      - {label: "Náhledový obrázek", name: "nahledacek", widget: image, required: true}
       - {label: "Media",
         name: "media",
         widget: "image",
@@ -84,8 +86,9 @@ collections:
     create: true
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "vylety-post"}
-      - {label: "Místo", name: "title", widget: "string"}
-      - {label: "Náhledový obrázek", name: "nahledacek", widget: image}
+      - {label: "Místo", name: "title", widget: "string", required: true}
+      - {label: "Heslo", name: "password", widget: "string", required: true}
+      - {label: "Náhledový obrázek", name: "nahledacek", widget: image, required: true}
       - {label: "Media",
         name: "media",
         widget: "image",

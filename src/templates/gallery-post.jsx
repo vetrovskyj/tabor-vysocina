@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import { kebabCase } from 'lodash'
 import { Helmet } from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import { useMemo } from 'react'
+import { useCallback } from 'react'
+
 
 export const GalleriesTemplate = ({
   contentComponent,
@@ -13,7 +16,7 @@ export const GalleriesTemplate = ({
 
   return (
     <div className="Gallery-post-body">
-      
+
     </div>
   )
 }
@@ -26,10 +29,44 @@ GalleriesTemplate.propTypes = {
   helmet: PropTypes.object,
   galleries: PropTypes.string,
   title: PropTypes.string,
+  password: PropTypes.string,
 }
 
 const GalleryPost = ({ data }) => {
   const { markdownRemark: post } = data
+
+  const [authorized, setAuthorized] = useState(false);
+  const [password, setPassword] = useState('')
+  const [invalid, setInvalid] = useState(false);
+
+  const content = useMemo(() => {
+    if (!authorized) {
+      return <>
+      <input value={password} onChange={(e) => { 
+        setInvalid(false)
+        setPassword(e.target.value)
+      }}></input>
+      <button onClick={() => {
+        checkpassword();
+      }}>kamo</button>
+      {invalid && <p>jses curak</p>}
+      </>;
+    } else {
+      return (
+        <>
+          {post.frontmatter.media.map((item, index) => <div className='grid-item'><img key={index} src={item} /></div>)}
+        </>
+      )
+    }
+  }, [authorized, password, invalid])
+
+  const checkpassword = useCallback(() => {
+    if (password === post.frontmatter.password) {
+      setAuthorized(true);
+    } else {
+      setInvalid(true);
+    }
+  }, [password])
 
   return (
     <Layout>
@@ -47,7 +84,7 @@ const GalleryPost = ({ data }) => {
         }
       />
       <div className='grid'>
-      {post.frontmatter.media.map((item, index) => <div className='grid-item'><img key={index} src={item} /></div>)}
+        {content}
       </div>
       <div className="footer-to-bottom"></div>
     </Layout>
@@ -69,6 +106,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
+        password
         media
       }
     }
