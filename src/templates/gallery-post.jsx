@@ -42,19 +42,26 @@ const GalleryPost = ({ data }) => {
   const content = useMemo(() => {
     if (!authorized) {
       return <>
-      <input value={password} onChange={(e) => { 
-        setInvalid(false)
-        setPassword(e.target.value)
-      }}></input>
-      <button onClick={() => {
-        checkpassword();
-      }}>kamo</button>
-      {invalid && <p>jses curak</p>}
+        <div className='password'>
+          <h1>K zobrazení fotek zadejte <br></br>prosím <strong>heslo</strong></h1>
+          <input value={password} className="password-input" onKeyPress={() => {
+            checkpassword();
+          }} onChange={(e) => {
+            setInvalid(false)
+            setPassword(e.target.value)
+          }}></input>
+          <button className="password-button" type="submit" onClick={() => {
+            checkpassword();
+          }}>Potvrdit</button>
+          {invalid && <p>Nesprávné heslo</p>}
+        </div>
       </>;
     } else {
       return (
         <>
-          {post.frontmatter.media.map((item, index) => <div className='grid-item'><img key={index} src={item} /></div>)}
+          <div className='grid'>
+            {post.frontmatter.media.map((item, index) => <div className='grid-item'><img key={index} src={item} /></div>)}
+          </div>
         </>
       )
     }
@@ -83,7 +90,7 @@ const GalleryPost = ({ data }) => {
           </Helmet>
         }
       />
-      <div className='grid'>
+      <div>
         {content}
       </div>
       <div className="footer-to-bottom"></div>

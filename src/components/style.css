@@ -824,6 +824,10 @@ nav {
     align-items: center;
 }
 
+.years-section:last-child {
+    margin-bottom: 50px;
+}
+
 .years-item {
     width: 100%;
     height: 100%;
@@ -3845,6 +3849,41 @@ input:focus {
 
 /*css for gallery images*/
 
+.password {
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.password h1 {
+    font-size: 32px;
+    color: #585772;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.password-input {
+    width: 400px;
+    padding: 12px;
+    border: 2px solid #666;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    background-color: #f7f6f3;
+    margin-bottom: 20px;
+    height: 50px;
+}
+
+.password-button {
+    background-color: transparent;
+    color: #666;
+    border: 2px solid #666;
+    width: 150px !important;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
 .grid {
     width: 95%;
     margin: 20px auto;
@@ -4019,6 +4058,41 @@ input:focus {
     }
     .grid-item img {
         margin: 2.5px;
+    }
+    .password h1 {
+        font-size: 24px;
+        margin-bottom: 22px;
+    }
+    .password-input {
+        width: 300px;
+        padding: 11px;
+        font-size: 14px;
+        margin-bottom: 15px;
+        height: 40px;
+    }
+    .password-button {
+        width: 100px !important;
+        height: 40px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 400px) {
+    .password h1 {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    .password-input {
+        width: 200px;
+        padding: 10px;
+        font-size: 12px;
+        margin-bottom: 10px;
+        height: 30px;
+    }
+    .password-button {
+        width: 60px !important;
+        height: 30px;
+        font-size: 12px;
     }
 }
 

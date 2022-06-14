@@ -31,7 +31,7 @@ const Navbar = class extends React.Component {
           </nav>
           <div className="logo">
             <a className="nadpis" href="/">
-              <img src="../../img/logo.png" alt="Vysočina logo" />
+              <img src="/img/logo.png" alt="Vysočina logo" />
             </a>
           </div>
         </header>

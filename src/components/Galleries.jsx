@@ -20,27 +20,25 @@ class Galleries extends React.Component {
     };
 
     return (
-      <div>
-        <div className='years-section'>
-          <h2>Léto</h2>
-          <Slider {...settings}>
-            {galleries &&
-              galleries.map(({ node: gallery }) => (
-                <div key={gallery.title} className="years-item-container">
-                  {gallery.frontmatter.nahledacek ? (
-                    <Link className="gallery-carousel-container" to={gallery.fields.slug}>
-                      <img alt="náhledový obrázek ke galerii" src={gallery.frontmatter.nahledacek} />
-                      <Link
-                        className='gallery-carousel-text'
-                        to={gallery.fields.slug}>
-                        {gallery.frontmatter.title}
-                      </Link>
+      <div className='years-section'>
+        <h2>Léto</h2>
+        <Slider {...settings}>
+          {galleries &&
+            galleries.map(({ node: gallery }) => (
+              <div key={gallery.title} className="years-item-container">
+                {gallery.frontmatter.nahledacek ? (
+                  <Link className="gallery-carousel-container" to={gallery.fields.slug}>
+                    <img alt="náhledový obrázek ke galerii" src={gallery.frontmatter.nahledacek} />
+                    <Link
+                      className='gallery-carousel-text'
+                      to={gallery.fields.slug}>
+                      {gallery.frontmatter.title}
                     </Link>
-                  ) : null}
-                </div>
-              ))}
-          </Slider>
-        </div>
+                  </Link>
+                ) : null}
+              </div>
+            ))}
+        </Slider>
       </div>
     )
   }
