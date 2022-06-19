@@ -71,7 +71,7 @@ export const IndexPageTemplate = ({
   )
 }
 
-const IndexPage = ({ data }) => {
+const IndexPage = ({ }) => {
 
   return (
     <Layout>
@@ -88,7 +88,6 @@ const IndexPage = ({ data }) => {
           },
         ]}
       />
-      <IndexPageTemplate
     </Layout>
   )
 }
