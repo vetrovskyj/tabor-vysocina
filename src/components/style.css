@@ -3115,6 +3115,7 @@ input:focus {
 .news .article-container .vylet .nazev_vyletu a {
     text-decoration: underline;
     margin-top: 15px;
+    font-size: 24px;
 }
 
 .news .article-container:first-child .vylet .nazev_vyletu a {
@@ -3297,7 +3298,7 @@ input:focus {
         margin-bottom: 20px
     }
     .news .article-container .vylet .nazev_vyletu a {
-        font-size: 24px;
+        font-size: 18px;
         margin-top: 10px;
     }
 }
@@ -3384,7 +3385,7 @@ input:focus {
         grid-column: 2/4
     }
     .news .article-container .vylet a {
-        font-size: 16px
+        font-size: 14px
     }
     .news .article-container .vylet p {
         font-size: 14px;

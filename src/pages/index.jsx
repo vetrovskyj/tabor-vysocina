@@ -7,10 +7,24 @@ import Articles from '../components/Articles'
 
 import Layout from '../components/Layout'
 
-export const IndexPageTemplate = ({
+export const IndexPage = ({
 }) => {
 
   return (
+    <Layout>
+      <Helmet
+        title={`Domovská stránka | Tábor Vysočina 3. turnus`}
+        meta={[
+          {
+            name: `description`,
+            content: 'Web Táboru Vysočina 3. turnus, který je organizovanán Policií České republiky každé léto v Novém Městě na Moravě',
+          },
+          {
+            name: "keywords",
+            content: 'Tábor, Vysočina, PČR, Policie, Dětský tábor, Nové Město na Moravě, 3. turnus',
+          },
+        ]}
+      />
     <main className="telo-homepage">
       <div className="top-site">
         <div className="fotky">
@@ -68,26 +82,6 @@ export const IndexPageTemplate = ({
         </div>
       </div>
     </main>
-  )
-}
-
-const IndexPage = ({ }) => {
-
-  return (
-    <Layout>
-      <Helmet
-        title={`Domovská stránka | Tábor Vysočina 3. turnus`}
-        meta={[
-          {
-            name: `description`,
-            content: 'Web Táboru Vysočina 3. turnus, který je organizovanán Policií České republiky každé léto v Novém Městě na Moravě',
-          },
-          {
-            name: "keywords",
-            content: 'Tábor, Vysočina, PČR, Policie, Dětský tábor, Nové Město na Moravě, 3. turnus',
-          },
-        ]}
-      />
     </Layout>
   )
 }
