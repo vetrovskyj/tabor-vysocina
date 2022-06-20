@@ -45,21 +45,21 @@ export const IndexPageTemplate = ({
             <img alt="ikona kamaradu" src="../img/kamaradi_ikona.svg" width={100} />
             <div className="box-desc">
               <h2>Kamarádi</h2>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis sunt vero, numquam repellat, obcaecati unde in reprehenderit nihil aut accusamus nostrum iure amet voluptates minus non, officia cum esse voluptas?</p>
+              <p>Děti jsou rozdělené do <strong>dívčích</strong> a <strong>klučičích</strong> oddílů. V oddílech si jsou věkově velmi blízko a brzy tak vznikají přátelské vztahy. Během CTH, <strong>diskoték</strong> a podobných akcí se navíc děti <strong>rychle seznámí</strong> i s dalšími táborníky.</p>
             </div>
           </div>
           <div className="box transition">
             <img alt="ikona her" src="../img/catapult_ikona.svg" width={100} />
             <div className="box-desc">
               <h2>Hry</h2>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis sunt vero, numquam repellat, obcaecati unde in reprehenderit nihil aut accusamus nostrum iure amet voluptates minus non, officia cum esse voluptas?</p>
+              <p>V průběhu tábora hrajeme spoustu her v oddílech i v rámci celého tábora. Děti se tak mohou těšit na tematickou <strong>celotáborovou hru (CTH)</strong>, sportovní a míčové hry, klasické <strong>táborové hry</strong> i noční dobrodružné <strong>bojovky</strong>.</p>
             </div>
           </div>
           <div className="box transition">
             <img alt="ikona dobrodruzstvi" src="../img/dobro_ikona.svg" width={100} />
             <div className="box-desc">
               <h2>Dobrodružství</h2>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis sunt vero, numquam repellat, obcaecati unde in reprehenderit nihil aut accusamus nostrum iure amet voluptates minus non, officia cum esse voluptas?</p>
+              <p>To pravé táborové dobrodružství? Na Vysočině rozhodně. Nejlepší letní zážitky děti nezískávají jen z her, ale čekají na ně třeba akční <strong>policejní ukázky</strong>, získávání a používání <strong>táborových dovedností</strong> i celodenní <strong>výlet</strong>.</p>
             </div>
           </div>
         </div>
@@ -69,7 +69,7 @@ export const IndexPageTemplate = ({
             <img src="../img/new_ikona.svg" alt="new icon" />
           </div>
           <div className="news-content">
-          <Articles />
+            <Articles />
           </div>
         </div>
       </div>
