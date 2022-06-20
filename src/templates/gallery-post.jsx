@@ -7,6 +7,7 @@ import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 import { useMemo } from 'react'
 import { useCallback } from 'react'
+import SimpleReactLightbox, {SRLWrapper} from 'simple-react-lightbox'
 
 
 export const GalleriesTemplate = ({
@@ -53,15 +54,19 @@ const GalleryPost = ({ data }) => {
           <button className="password-button" type="submit" onClick={() => {
             checkpassword();
           }}>Potvrdit</button>
-          {invalid && <p>Nesprávné heslo</p>}
+          {invalid && <p className='wrong-password'>Nesprávné heslo</p>}
         </div>
       </>;
     } else {
       return (
         <>
+        <SimpleReactLightbox>
+          <SRLWrapper>
           <div className='grid'>
-            {post.frontmatter.media.map((item, index) => <div className='grid-item'><img key={index} src={item} /></div>)}
+            {post.frontmatter.media.map((item, index) => <a className='grid-item' href={item}><img key={index} src={item} /></a>)}
           </div>
+          </SRLWrapper>
+        </SimpleReactLightbox>
         </>
       )
     }

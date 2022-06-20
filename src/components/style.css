@@ -1,9 +1,9 @@
 body {
-    font-family: 'Poppins', sans-serif
+    font-family: 'Poppins', sans-serif;
 }
 
 button {
-    font-family: 'Poppins', sans-serif
+    font-family: 'Poppins', sans-serif;
 }
 
 * {
@@ -875,7 +875,7 @@ nav {
 }
 
 main {
-    min-height: 80vh
+    min-height: 80vh;
 }
 
 .facebook {
@@ -3141,7 +3141,11 @@ input:focus {
 }
 
 .article-post-body {
-    min-height: 82.7vh;
+    margin: 30px auto 0 auto;
+}
+
+.article-post-body .container {
+    max-width: 800px;
 }
 
 @media(max-width:1500px) {
@@ -3160,6 +3164,9 @@ input:focus {
 }
 
 @media(max-width:1250px) {
+    .article-post-body .container {
+        max-width: 700px;
+    }
     .boxes {
         grid-template-columns: 2fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -3221,13 +3228,13 @@ input:focus {
 }
 
 @media(max-width:1000px) {
-    .article-post-body {
-        min-height: 80vh;
-    }
     .vysocina {
         font-size: 24px;
         padding: 0;
         text-align: center
+    }
+    .article-post-body .container {
+        max-width: 600px;
     }
     .turnus {
         font-size: 16px;
@@ -3329,6 +3336,9 @@ input:focus {
         margin-right: 20px;
         width: 15%
     }
+    .article-post-body .container {
+        max-width: 500px;
+    }
 }
 
 @media(max-width:700px) {
@@ -3418,6 +3428,9 @@ input:focus {
     .news .article-container .vylet .nazev_vyletu a {
         margin-top: 5px;
     }
+    .article-post-body .container {
+        max-width: 450px;
+    }
 }
 
 @media(max-width:550px) {
@@ -3432,6 +3445,9 @@ input:focus {
     }
     .news-content {
         padding: 10px
+    }
+    .article-post-body .container {
+        max-width: 350px;
     }
 }
 
@@ -3451,6 +3467,9 @@ input:focus {
 @media(max-width:450px) {
     .box:nth-child(2) img {
         margin-right: 20px
+    }
+    .article-post-body .container {
+        max-width: 300px;
     }
 }
 
@@ -3476,6 +3495,9 @@ input:focus {
     .fa {
         font-size: 11px!important;
         display: flex!important
+    }
+    .article-post-body .container {
+        max-width: 260px;
     }
 }
 
@@ -3516,16 +3538,6 @@ input:focus {
     color: #585772;
     margin-bottom: 20px;
     margin-top: 20px;
-}
-
-.article-post-body {
-    max-width: 85%;
-    margin: auto;
-}
-
-.article-post-body .container {
-    max-width: 50em;
-    margin: auto;
 }
 
 .article-post-body img {
@@ -3615,16 +3627,22 @@ input:focus {
     margin-top: 30px;
 }
 
-@media (max-width:1150px) {
-    .article-post-body {
-        max-width: 95%;
+.site-body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+@media (max-width:1150px) {}
+
+@media (max-width:1000px) {
+    .article-post-heading {
+        margin-top: 0;
+        padding-top: 20px;
     }
 }
 
 @media (max-width:850px) {
-    .article-post-body .container {
-        max-width: 40em;
-    }
     .article-post-heading {
         font-size: 28px;
     }
@@ -3649,13 +3667,9 @@ input:focus {
 }
 
 @media (max-width:600px) {
-    .article-post-body .container {
-        max-width: 30em;
-    }
     .article-post-heading {
         font-size: 26px;
         margin-bottom: 15px;
-        margin-top: 0;
     }
     .article-post-body h2 {
         font-size: 20px;
@@ -3700,9 +3714,6 @@ input:focus {
 }
 
 @media (max-width:420px) {
-    .article-post-body .container {
-        max-width: 25em;
-    }
     .article-post-heading {
         font-size: 24px;
         margin-bottom: 12px;
@@ -3804,7 +3815,7 @@ input:focus {
 /*css for tags*/
 
 .tags-container {
-    margin: auto;
+    margin: 30px auto 0 auto;
 }
 
 .found-tags-heading {
@@ -3849,6 +3860,11 @@ input:focus {
 
 
 /*css for gallery images*/
+
+.wrong-password {
+    margin-top: 10px;
+    color: #f66;
+}
 
 .password {
     margin: 30px auto;

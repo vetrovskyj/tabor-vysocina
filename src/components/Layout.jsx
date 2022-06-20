@@ -21,6 +21,7 @@ const TemplateWrapper = ({ children }) => {
       </Helmet>
       <Navbar />
       {children}
+      <div className="footer-to-bottom"></div>
       <Footer />
     </div>
   )
