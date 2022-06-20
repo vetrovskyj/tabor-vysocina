@@ -99,10 +99,7 @@ export default class Informace extends React.Component {
             <div className="areal scroll-reveal-ambiente" id="areal">
               <h2>Areál</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ea aperiam
-                excepturi tempora nihil id accusamus magnam soluta ipsa, modi
-                repudiandae perferendis minus. Consequatur, eius? Nobis sint beatae
-                alias quia.
+                Děti jsou ubytované v rekreačním areálu PČR. Mladší táborníci bydlí v hlavní budově, ti starší v dřevěných chatkách. V hlavní budově je jídelna, toalety a sprchy. Do areálu kromě zaměstnanců nikdo cizí nesmí.
               </p>
             </div>
             <div className="arealFoto scroll-reveal-ambiente" id="arealFoto">
@@ -111,10 +108,7 @@ export default class Informace extends React.Component {
             <div className="vybaveni scroll-reveal-ambiente" id="vybaveni">
               <h2>Vybavení</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ea aperiam
-                excepturi tempora nihil id accusamus magnam soluta ipsa, modi
-                repudiandae perferendis minus. Consequatur, eius? Nobis sint beatae
-                alias quia.
+                Kromě příjemného a čistého ubytování jsou v areálu k dispozici hřiště, altán, sportovní vybavení, ohniště a další společenské místnosti. Pro léčení drobných zranění a nemocí nám slouží marodka v oddělené budově.
               </p>
             </div>
             <div className="vybaveniFoto scroll-reveal-ambiente" id="vybaveniFoto">
@@ -123,10 +117,7 @@ export default class Informace extends React.Component {
             <div className="okoli scroll-reveal-ambiente" id="okoli">
               <h2>Okolí</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ea aperiam
-                excepturi tempora nihil id accusamus magnam soluta ipsa, modi
-                repudiandae perferendis minus. Consequatur, eius? Nobis sint beatae
-                alias quia.
+                Nejraději hrajeme hry v přírodě, a proto jsme rádi, že nás obklopují krásné lesy, louky a vodní toky Žďárských vrchů. Zároveň se areál nachází i v blízkosti města, do kterého v průběhu tábora děti rády zavítají.
               </p>
             </div>
             <div className="okoliFoto scroll-reveal-ambiente" id="okoliFoto">
@@ -217,19 +208,13 @@ export default class Informace extends React.Component {
             <div className="section visits">
               <h3>Návštěvy</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quas
-                nemo dicta culpa obcaecati, suscipit pariatur libero possimus dolore
-                porro excepturi laudantium molestias error, explicabo praesentium.
-                Accusantium neque quia iste!
+              Aby měli všichni táborníci stejné podmínky a užili si nerušeně celý tábor, návštěvy do areálu nepovolujeme. Vždy nás (i děti) ale potěší, když můžeme předávat radost a pozdravy třeba skrze poslané pohledy nebo menší balíčky.
               </p>
             </div>
             <div className="section post" id="post">
               <h3>Pošta</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quas
-                nemo dicta culpa obcaecati, suscipit pariatur libero possimus dolore
-                porro excepturi laudantium molestias error, explicabo praesentium.
-                Accusantium neque quia iste!
+              Do tábora není problém poslat dopis, pohled nebo menší balíček. Adresu najdete v <a href='../kontakt/'>kontaktech</a>. Ze zkušenosti víme, že pohledy dělají radost i dospělým, a proto doporučujeme dětem pár pohledů předepsat, ať také mohou odpovědět.
               </p>
             </div>
           </div>

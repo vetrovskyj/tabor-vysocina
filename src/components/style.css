@@ -1334,6 +1334,10 @@ nav {
     grid-column: 2/3
 }
 
+.post p a {
+    color: #fda94a;
+}
+
 .facebook {
     color: #fff;
     position: absolute;
