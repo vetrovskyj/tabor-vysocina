@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
-import { kebabCase } from 'lodash'
 import { Helmet } from 'react-helmet'
-import { graphql, Link } from 'gatsby'
+import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import { useMemo } from 'react'
+import { useCallback } from 'react'
+import SimpleReactLightbox, {SRLWrapper} from 'simple-react-lightbox'
+
 
 export const VelikonoceTemplate = ({
   contentComponent,
@@ -13,7 +16,7 @@ export const VelikonoceTemplate = ({
 
   return (
     <div className="Gallery-post-body">
-      
+
     </div>
   )
 }
@@ -24,12 +27,57 @@ VelikonoceTemplate.propTypes = {
   description: PropTypes.string,
   title: PropTypes.string,
   helmet: PropTypes.object,
-  galleries: PropTypes.string,
+  velikonoce: PropTypes.string,
   title: PropTypes.string,
+  password: PropTypes.string,
 }
 
 const VelikonocePost = ({ data }) => {
   const { markdownRemark: post } = data
+
+  const [authorized, setAuthorized] = useState(false);
+  const [password, setPassword] = useState('')
+  const [invalid, setInvalid] = useState(false);
+
+  const content = useMemo(() => {
+    if (!authorized) {
+      return <>
+        <div className='password'>
+          <h1>K zobrazení fotek zadejte <br></br>prosím <strong>heslo</strong></h1>
+          <input value={password} className="password-input" onKeyPress={() => {
+            checkpassword();
+          }} onChange={(e) => {
+            setInvalid(false)
+            setPassword(e.target.value)
+          }}></input>
+          <button className="password-button" type="submit" onClick={() => {
+            checkpassword();
+          }}>Potvrdit</button>
+          {invalid && <p className='wrong-password'>Nesprávné heslo</p>}
+        </div>
+      </>;
+    } else {
+      return (
+        <>
+        <SimpleReactLightbox>
+          <SRLWrapper>
+          <div className='grid'>
+            {post.frontmatter.media.map((item, index) => <a className='grid-item' href={item}><img key={index} src={item} /></a>)}
+          </div>
+          </SRLWrapper>
+        </SimpleReactLightbox>
+        </>
+      )
+    }
+  }, [authorized, password, invalid])
+
+  const checkpassword = useCallback(() => {
+    if (password === post.frontmatter.password) {
+      setAuthorized(true);
+    } else {
+      setInvalid(true);
+    }
+  }, [password])
 
   return (
     <Layout>
@@ -46,8 +94,8 @@ const VelikonocePost = ({ data }) => {
           </Helmet>
         }
       />
-      <div className='grid'>
-      {post.frontmatter.media.map((item, index) => <div className='grid-item'><img key={index} src={item} /></div>)}
+      <div>
+        {content}
       </div>
       <div className="footer-to-bottom"></div>
     </Layout>
@@ -69,6 +117,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
+        password
         media
       }
     }
