@@ -7,6 +7,8 @@ import Content, { HTMLContent } from '../components/Content'
 import { useMemo } from 'react'
 import { useCallback } from 'react'
 import SimpleReactLightbox, {SRLWrapper} from 'simple-react-lightbox'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 
 export const VelikonoceTemplate = ({
@@ -64,7 +66,7 @@ const VelikonocePost = ({ data }) => {
         <SimpleReactLightbox>
           <SRLWrapper>
           <div className='grid'>
-            {post.frontmatter.media.map((item, index) => <a className='grid-item' href={item}><img key={index} src={item} /></a>)}
+            {post.frontmatter.media.map((item, index) => <a className='grid-item' href={item}><LazyLoadImage effect="blur" key={index} src={item} /></a>)}
           </div>
           </SRLWrapper>
         </SimpleReactLightbox>

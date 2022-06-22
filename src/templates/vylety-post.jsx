@@ -1,10 +1,11 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { kebabCase } from 'lodash'
-import { Helmet } from 'react-helmet'
-import { graphql, Link } from 'gatsby'
-import Layout from '../components/Layout'
-import Content, { HTMLContent } from '../components/Content'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Helmet } from 'react-helmet';
+import { graphql, Link } from 'gatsby';
+import Layout from '../components/Layout';
+import Content, { HTMLContent } from '../components/Content';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 export const VyletyTemplate = ({
   contentComponent,
@@ -50,7 +51,7 @@ const VyletyPost = ({ data }) => {
         }
       />
       <div className='grid'>
-      {post.frontmatter.media.map((item, index) => <div className='grid-item'><img key={index} src={item} /></div>)}
+      {post.frontmatter.media.map((item, index) => <div className='grid-item'><LazyLoadImage effect="blur" key={index} src={item} /></div>)}
       </div>
       <div className="footer-to-bottom"></div>
     </Layout>
