@@ -26,6 +26,9 @@ VyletyTemplate.propTypes = {
   helmet: PropTypes.object,
   galleries: PropTypes.string,
   title: PropTypes.string,
+  password: PropTypes.string,
+  media: PropTypes.string,
+  nahledacek: PropTypes.string
 }
 
 const VyletyPost = ({ data }) => {
@@ -70,6 +73,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         media
+        password
       }
     }
   }

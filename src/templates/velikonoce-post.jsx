@@ -30,6 +30,8 @@ VelikonoceTemplate.propTypes = {
   velikonoce: PropTypes.string,
   title: PropTypes.string,
   password: PropTypes.string,
+  media: PropTypes.string,
+  nahledacek: PropTypes.string
 }
 
 const VelikonocePost = ({ data }) => {

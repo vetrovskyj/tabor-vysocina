@@ -7,6 +7,10 @@ import Content, { HTMLContent } from '../components/Content'
 import { useMemo } from 'react'
 import { useCallback } from 'react'
 import SimpleReactLightbox, {SRLWrapper} from 'simple-react-lightbox'
+<<<<<<< HEAD
+=======
+import { StaticImage } from "gatsby-plugin-image"
+>>>>>>> 030a2e1dbddc65a41f12d69b97e8fdae9bec61b2
 
 
 export const GalleriesTemplate = ({
@@ -30,6 +34,8 @@ GalleriesTemplate.propTypes = {
   galleries: PropTypes.string,
   title: PropTypes.string,
   password: PropTypes.string,
+  media: PropTypes.string,
+  nahledacek: PropTypes.string
 }
 
 const GalleryPost = ({ data }) => {
@@ -62,7 +68,11 @@ const GalleryPost = ({ data }) => {
         <SimpleReactLightbox>
           <SRLWrapper>
           <div className='grid'>
+<<<<<<< HEAD
             {post.frontmatter.media.map((item, index) => <a className='grid-item' href={item}><img key={index} src={item} /></a>)}
+=======
+            {post.frontmatter.media.map((item, index) => <a className='grid-item' href={item}><StaticImage key={index} src={item} alt="galerie foto" /></a>)}
+>>>>>>> 030a2e1dbddc65a41f12d69b97e8fdae9bec61b2
           </div>
           </SRLWrapper>
         </SimpleReactLightbox>
