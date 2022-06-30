@@ -11,7 +11,7 @@ tags:
   - web
   - novinky
 ---
-![ilustrační foto webové stránky](https://res.cloudinary.com/dd2ejj6yt/image/upload/v1656320153/Aktuality/glenn-carstens-peters-npxXWgQ33ZQ-unsplash_lh2btw.jpg "ilustrační foto webové stránky")
+![](https://res.cloudinary.com/dd2ejj6yt/image/upload/v1656320153/Aktuality/glenn-carstens-peters-npxXWgQ33ZQ-unsplash_lh2btw.jpg)
 
 K čemu se vám web hodí?
 

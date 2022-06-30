@@ -53,8 +53,8 @@ collections:
       - {label: "Rok", name: "title", widget: "string", required: true}
       - {label: "Heslo", name: "password", widget: "string", required: true}
       - {label: "Náhledový obrázek", name: "nahledacek", widget: image, required: true}
-      - {label: "Media",
-        name: "media",
+      - {label: "fotky",
+        name: "fotky",
         widget: "image",
         allow_multiple: true,
         media_library:
@@ -71,8 +71,8 @@ collections:
       - {label: "Rok", name: "title", widget: "string", required: true}
       - {label: "Heslo", name: "password", widget: "string", required: true}
       - {label: "Náhledový obrázek", name: "nahledacek", widget: image, required: true}
-      - {label: "Media",
-        name: "media",
+      - {label: "fotky",
+        name: "fotky",
         widget: "image",
         allow_multiple: true,
         media_library:
@@ -89,8 +89,8 @@ collections:
       - {label: "Místo", name: "title", widget: "string", required: true}
       - {label: "Heslo", name: "password", widget: "string", required: true}
       - {label: "Náhledový obrázek", name: "nahledacek", widget: image, required: true}
-      - {label: "Media",
-        name: "media",
+      - {label: "fotky",
+        name: "fotky",
         widget: "image",
         allow_multiple: true,
         media_library:

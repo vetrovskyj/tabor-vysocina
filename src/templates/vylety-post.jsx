@@ -27,7 +27,7 @@ VyletyTemplate.propTypes = {
   galleries: PropTypes.string,
   title: PropTypes.string,
   password: PropTypes.string,
-  media: PropTypes.string,
+  fotky: PropTypes.string,
   nahledacek: PropTypes.string
 }
 
@@ -50,7 +50,7 @@ const VyletyPost = ({ data }) => {
         }
       />
       <div className='grid'>
-      {post.frontmatter.media.map((item, index) => <div className='grid-item'><LazyLoadImage effect="blur" key={index} src={item} /></div>)}
+      {post.frontmatter.fotky.map((item, index) => <div className='grid-item'><LazyLoadImage effect="blur" key={index} src={item} /></div>)}
       </div>
       <div className="footer-to-bottom"></div>
     </Layout>
@@ -72,7 +72,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        media
+        fotky
         password
       }
     }

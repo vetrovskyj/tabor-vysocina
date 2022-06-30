@@ -32,7 +32,7 @@ VelikonoceTemplate.propTypes = {
   velikonoce: PropTypes.string,
   title: PropTypes.string,
   password: PropTypes.string,
-  media: PropTypes.string,
+  fotky: PropTypes.string,
   nahledacek: PropTypes.string
 }
 
@@ -66,7 +66,7 @@ const VelikonocePost = ({ data }) => {
         <SimpleReactLightbox>
           <SRLWrapper>
           <div className='grid'>
-            {post.frontmatter.media.map((item, index) => <a className='grid-item' href={item}><LazyLoadImage effect="blur" key={index} src={item} /></a>)}
+            {post.frontmatter.fotky.map((item, index) => <a className='grid-item' href={item}><LazyLoadImage effect="blur" key={index} src={item} /></a>)}
           </div>
           </SRLWrapper>
         </SimpleReactLightbox>
@@ -122,7 +122,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         password
-        media
+        fotky
       }
     }
   }
