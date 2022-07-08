@@ -13,7 +13,7 @@ tags:
 ---
 ![](https://res.cloudinary.com/dd2ejj6yt/image/upload/v1656320153/Aktuality/glenn-carstens-peters-npxXWgQ33ZQ-unsplash_lh2btw.jpg)
 
-K čemu se vám web hodí?
+## K čemu se vám web hodí?
 
 Dozvíte se na něm vždy to nejdůležitější info k organizaci tábora. Zároveň zde naleznete odpovědi na nejčastější otázky ohledně ubytování, prostředí, vybavení i programu tábora. Uvádíme i informace ke snazšímu posílání pošty, včetně dalších kontaktních údajů na tábor. 
 
