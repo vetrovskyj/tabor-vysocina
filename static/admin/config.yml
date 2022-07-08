@@ -60,6 +60,7 @@ collections:
         media_library:
           {config:
             {multiple: true,
+            max_files: 500,
             output_filename_only: true}}}
 
   - name: velikonoce
@@ -78,6 +79,7 @@ collections:
         media_library:
           {config:
             {multiple: true,
+            max_files: 500,
             output_filename_only: true}}}
 
   - name: vylety
@@ -96,5 +98,6 @@ collections:
         media_library:
           {config:
             {multiple: true,
+            max_files: 500,
             output_filename_only: true}}}
  
