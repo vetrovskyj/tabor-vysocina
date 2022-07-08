@@ -9,8 +9,6 @@ import { useCallback } from 'react'
 import SimpleReactLightbox, {SRLWrapper} from 'simple-react-lightbox'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
-
 
 export const GalleriesTemplate = ({
   contentComponent,
@@ -77,7 +75,7 @@ const GalleryPost = ({ data }) => {
   }, [authorized, password, invalid])
 
   const checkpassword = useCallback(() => {
-    if (password === post.frontmatter.password) {
+    if (password.toLowerCase() === post.frontmatter.password.toLowerCase()) {
       setAuthorized(true);
     } else {
       setInvalid(true);

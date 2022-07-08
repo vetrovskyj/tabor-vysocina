@@ -76,7 +76,7 @@ const VelikonocePost = ({ data }) => {
   }, [authorized, password, invalid])
 
   const checkpassword = useCallback(() => {
-    if (password === post.frontmatter.password) {
+    if (password.toLowerCase() === post.frontmatter.password.toLowerCase()) {
       setAuthorized(true);
     } else {
       setInvalid(true);

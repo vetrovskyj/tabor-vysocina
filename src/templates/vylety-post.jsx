@@ -1,11 +1,15 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Helmet } from 'react-helmet';
-import { graphql, Link } from 'gatsby';
-import Layout from '../components/Layout';
-import Content, { HTMLContent } from '../components/Content';
+import React, { useState } from 'react'
+import PropTypes from 'prop-types'
+import { Helmet } from 'react-helmet'
+import { graphql } from 'gatsby'
+import Layout from '../components/Layout'
+import Content, { HTMLContent } from '../components/Content'
+import { useMemo } from 'react'
+import { useCallback } from 'react'
+import SimpleReactLightbox, {SRLWrapper} from 'simple-react-lightbox'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
+
 
 export const VyletyTemplate = ({
   contentComponent,
@@ -14,7 +18,7 @@ export const VyletyTemplate = ({
 
   return (
     <div className="Gallery-post-body">
-      
+
     </div>
   )
 }
@@ -22,9 +26,10 @@ export const VyletyTemplate = ({
 VyletyTemplate.propTypes = {
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
+  description: PropTypes.string,
   title: PropTypes.string,
   helmet: PropTypes.object,
-  galleries: PropTypes.string,
+  vylety: PropTypes.string,
   title: PropTypes.string,
   password: PropTypes.string,
   fotky: PropTypes.string,
@@ -33,6 +38,50 @@ VyletyTemplate.propTypes = {
 
 const VyletyPost = ({ data }) => {
   const { markdownRemark: post } = data
+
+  const [authorized, setAuthorized] = useState(false);
+  const [password, setPassword] = useState('')
+  const [invalid, setInvalid] = useState(false);
+
+  const content = useMemo(() => {
+    if (!authorized) {
+      return <>
+        <div className='password'>
+          <h1>K zobrazení fotek zadejte <br></br>prosím <strong>heslo</strong></h1>
+          <input value={password} className="password-input" onKeyPress={() => {
+            checkpassword();
+          }} onChange={(e) => {
+            setInvalid(false)
+            setPassword(e.target.value)
+          }}></input>
+          <button className="password-button" type="submit" onClick={() => {
+            checkpassword();
+          }}>Potvrdit</button>
+          {invalid && <p className='wrong-password'>Nesprávné heslo</p>}
+        </div>
+      </>;
+    } else {
+      return (
+        <>
+        <SimpleReactLightbox>
+          <SRLWrapper>
+          <div className='grid'>
+            {post.frontmatter.fotky.map((item, index) => <a className='grid-item' href={item}><LazyLoadImage effect="blur" key={index} src={item} /></a>)}
+          </div>
+          </SRLWrapper>
+        </SimpleReactLightbox>
+        </>
+      )
+    }
+  }, [authorized, password, invalid])
+
+  const checkpassword = useCallback(() => {
+    if (password.toLowerCase() === post.frontmatter.password.toLowerCase()) {
+      setAuthorized(true);
+    } else {
+      setInvalid(true);
+    }
+  }, [password])
 
   return (
     <Layout>
@@ -49,8 +98,8 @@ const VyletyPost = ({ data }) => {
           </Helmet>
         }
       />
-      <div className='grid'>
-      {post.frontmatter.fotky.map((item, index) => <div className='grid-item'><LazyLoadImage effect="blur" key={index} src={item} /></div>)}
+      <div>
+        {content}
       </div>
       <div className="footer-to-bottom"></div>
     </Layout>
@@ -72,8 +121,8 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        fotky
         password
+        fotky
       }
     }
   }
