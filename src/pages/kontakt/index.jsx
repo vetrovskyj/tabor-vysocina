@@ -117,7 +117,7 @@ export const Kontakt = ({
           <div className="rotation-back">
             <div className="contact">
               <img src="../../img/man-in-suit-and-tie.svg" width={50} alt="person icon" />
-              <p className="contact-entity"><strong>Jan Větrovský</strong></p>
+              <p className="contact-entity"><strong>Dominik Brych</strong></p>
             </div>
             <div className="contact">
               <img src="../../img/cell-phone.svg" width={50} alt="cell phone icon" />

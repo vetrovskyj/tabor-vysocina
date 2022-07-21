@@ -65,7 +65,7 @@ const GalleryPost = ({ data }) => {
         <SimpleReactLightbox>
           <SRLWrapper>
           <div className='grid'>
-            {post.frontmatter.fotky.map((item, index) => <a className='grid-item' href={item}><LazyLoadImage effect="blur" key={index} src={item} /></a>)}
+            {post.frontmatter.fotky.map((item, index) => <a className='grid-item' href={item}><img loading="lazy" key={index} src={item} /></a>)}
           </div>
           </SRLWrapper>
         </SimpleReactLightbox>
