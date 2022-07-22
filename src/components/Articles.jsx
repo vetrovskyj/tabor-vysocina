@@ -34,14 +34,16 @@ class Articles extends React.Component {
                   </Link>
                 </p>
                 {post.frontmatter.featuredimage ? (
-                  <div className="foto-href">
+                  <Link
+                    className="foto-href"
+                    to={post.fields.slug}>
                     <PreviewCompatibleImage
                       imageInfo={{
                         image: post.frontmatter.featuredimage,
                         alt: `náhledový obrázek ke článku ${post.frontmatter.title}`,
                       }}
                     />
-                  </div>
+                  </Link>
                 ) : null}
               </article>
             </div>

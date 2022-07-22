@@ -16,7 +16,7 @@ header {
     min-height: 10vh;
     display: flex;
     align-items: center;
-    background-color: #f66;
+    background-color: #113B49;
     justify-content: space-around
 }
 
@@ -77,7 +77,7 @@ nav {
 }
 
 .link:hover {
-    color: yellow
+    color: #113B49;
 }
 
 .telo {
@@ -103,7 +103,7 @@ nav {
     grid-template-areas: "box1 box3" "box2 box3";
     padding: 10px;
     grid-column-gap: 20px;
-    color: #585772;
+    color: #113B49;
     margin: 20px 0;
 }
 
@@ -259,7 +259,7 @@ nav {
     }
     nav {
         order: 3;
-        background-color: #666;
+        background-color: #fda94a;
         height: 5vh;
         align-self: flex-end;
     }
@@ -455,10 +455,6 @@ nav {
     color: white
 }
 
-.link:hover {
-    color: yellow
-}
-
 @media(max-width:1000px) {
     .vysocina {
         font-size: 24px;
@@ -488,7 +484,7 @@ nav {
     }
     nav {
         order: 3;
-        background-color: #666;
+        background-color: #fda94a;
         height: 5vh;
         align-self: flex-end
     }
@@ -617,10 +613,6 @@ nav {
     color: white
 }
 
-.link:hover {
-    color: yellow
-}
-
 .fa {
     font-size: 14px!important;
     display: flex!important
@@ -690,7 +682,7 @@ nav {
 }
 
 .years-section h2 {
-    color: #585772;
+    color: #113B49;
     font-size: 32px;
     width: 100%;
     text-align: center;
@@ -752,7 +744,7 @@ main {
     }
     nav {
         order: 3;
-        background-color: #666;
+        background-color: #fda94a;
         height: 5vh;
         align-self: flex-end
     }
@@ -902,10 +894,6 @@ nav {
     color: white
 }
 
-.link:hover {
-    color: yellow
-}
-
 .arealFoto img,
 .vybaveniFoto img,
 .okoliFoto img {
@@ -917,7 +905,7 @@ nav {
 .vybaveni,
 .okoli {
     font-size: 22px;
-    color: #585772;
+    color: #113B49;
     margin-top: 20px;
     width: 100%
 }
@@ -926,7 +914,7 @@ nav {
 .vybaveni h2,
 .okoli h2 {
     margin-bottom: 20px;
-    background-color: #585772;
+    background-color: #113B49;
     color: #fff;
     text-align: center
 }
@@ -936,7 +924,7 @@ nav {
     height: 80px;
     font-size: 36px;
     font-weight: 800;
-    color: #585772
+    color: #113B49
 }
 
 .areal {
@@ -986,7 +974,7 @@ nav {
 
 .dotazy {
     width: 75%;
-    color: #585772;
+    color: #113B49;
     margin-top: 20px;
     display: grid;
     column-gap: 50px;
@@ -1030,7 +1018,7 @@ nav {
 }
 
 .dotazy ul li:hover {
-    background-color: #f66
+    background-color: #113B49;
 }
 
 .arrow-down {
@@ -1046,15 +1034,15 @@ nav {
     grid-row: 1fr 1fr;
     row-gap: 30px;
     column-gap: 50px;
-    color: #585772;
+    color: #113B49;
     width: 75%;
     margin-top: 50px
 }
 
 .card {
     background: #fff;
-    border: 40px solid #585772;
-    color: #585772;
+    border: 40px solid #113B49;
+    color: #113B49;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1075,7 +1063,7 @@ nav {
 .card h2 {
     font-size: 32px;
     color: #fff;
-    background-color: #585772;
+    background-color: #113B49;
     width: 100%;
     margin: 0 0 30px 0
 }
@@ -1128,7 +1116,7 @@ nav {
 .visits-posts {
     display: grid;
     grid-column: 1fr 1fr;
-    color: #585772;
+    color: #113B49;
     width: 75%;
     column-gap: 50px;
     margin: 50px 0 30px 0;
@@ -1155,7 +1143,7 @@ nav {
     grid-column: 1/2;
     font-size: 32px;
     margin-bottom: 30px;
-    background-color: #585772;
+    background-color: #113B49;
     color: #fff;
     text-align: center
 }
@@ -1262,7 +1250,7 @@ nav {
     }
     nav {
         order: 3;
-        background-color: #666;
+        background-color: #fda94a;
         height: 5vh;
         align-self: flex-end
     }
@@ -1356,7 +1344,7 @@ nav {
     }
     .card {
         padding: 15px 20px;
-        border: 25px solid #585772
+        border: 25px solid #113B49
     }
     .visits-posts {
         column-gap: 25px
@@ -1563,10 +1551,6 @@ nav {
     color: white
 }
 
-.link:hover {
-    color: yellow
-}
-
 .kontakt {
     width: 85%;
     display: flex;
@@ -1581,7 +1565,7 @@ nav {
 
 .adress {
     font-size: 22px;
-    color: #585772;
+    color: #113B49;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1594,7 +1578,7 @@ nav {
     display: flex;
     flex-direction: column;
     font-size: 22px;
-    color: #585772;
+    color: #113B49;
     text-align: center;
     width: 50%;
     margin-left: 30px
@@ -1604,7 +1588,7 @@ nav {
     margin: 40px 0 30px;
     display: grid;
     font-size: 22px;
-    color: #585772;
+    color: #113B49;
     grid-template-rows: 50px 25px 50px 25px 50px 25px 275px 30px auto;
     width: 100%
 }
@@ -1729,7 +1713,7 @@ svg {
 }
 
 .alert-email {
-    color: #f66;
+    color: #fda94a;
     font-size: 14px;
     grid-row: 4/5;
     display: flex;
@@ -1737,7 +1721,7 @@ svg {
 }
 
 .alert-name {
-    color: #f66;
+    color: #fda94a;
     font-size: 14px;
     grid-row: 2/3;
     display: flex;
@@ -1835,7 +1819,7 @@ svg {
     }
     nav {
         order: 3;
-        background-color: #666;
+        background-color: #fda94a;
         height: 5vh;
         align-self: flex-end
     }
@@ -2113,10 +2097,6 @@ nav {
     color: white
 }
 
-.link:hover {
-    color: yellow
-}
-
 .dva {
     box-shadow: 15px solid #666;
     padding: 10px;
@@ -2126,7 +2106,7 @@ nav {
 }
 
 .tri {
-    background-color: #f664f6;
+    background-color: #fda94a;
     box-shadow: 5px 5px 5px 5px #666;
     padding: 10px;
     grid-column: 1/3;
@@ -2212,7 +2192,7 @@ nav {
     width: 80%;
     margin: auto;
     justify-content: space-around;
-    color: #585772
+    color: #113B49
 }
 
 .profile-description {
@@ -2301,7 +2281,7 @@ nav {
     }
     nav {
         order: 3;
-        background-color: #666;
+        background-color: #fda94a;
         height: 5vh;
         align-self: flex-end
     }
@@ -2495,10 +2475,6 @@ nav {
     color: white
 }
 
-.link:hover {
-    color: yellow
-}
-
 .telo-hompepage {
     margin: auto;
     height: 100%
@@ -2574,7 +2550,7 @@ input:focus {
     text-align: justify;
     margin: auto;
     font-size: 22px;
-    color: #585772
+    color: #113B49
 }
 
 .text-heading {
@@ -2582,14 +2558,14 @@ input:focus {
 }
 
 .text-heading h2 {
-    color: #585772;
+    color: #113B49;
     font-size: 48px;
     margin-bottom: 20px;
 }
 
 .text-heading h2:last-child {
     padding-left: 5px;
-    color: #f66;
+    color: #fda94a;
     font-size: 48px;
     margin-bottom: 20px;
 }
@@ -2639,8 +2615,8 @@ input:focus {
     text-decoration: none;
     float: right;
     background-color: transparent;
-    color: #f66;
-    border: 2px solid #f66;
+    color: #fda94a;
+    border: 2px solid #fda94a;
     width: 150px;
     height: 50px;
     cursor: pointer;
@@ -2670,16 +2646,16 @@ input:focus {
 }
 
 .boxes {
-    background-color: #f66;
+    background-color: #fda94a;
     min-height: 75vh;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr 3fr 1fr 3fr 1fr;
     grid-template-rows: 1fr 4fr;
-    color: #585772
+    color: #113B49
 }
 
 .box {
-    background: #fffcee;
+    background: white;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -2841,7 +2817,7 @@ input:focus {
     background-color: #d3d3d3;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr 3fr 1fr 3fr 1fr;
-    color: #585772;
+    color: #113B49;
 }
 
 .news-heading {
@@ -2850,7 +2826,7 @@ input:focus {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #f66;
+    color: #113B49;
     margin-top: 14em;
 }
 
@@ -2866,7 +2842,7 @@ input:focus {
 .news-content {
     grid-row: 2/3;
     grid-column: 4/7;
-    background-color: #f66;
+    background-color: #113B49;
     margin-bottom: 5em;
     padding: 20px;
     margin-top: 14em;
@@ -2902,7 +2878,7 @@ input:focus {
 }
 
 .news .article-container .vylet a:hover {
-    color: yellow
+    color: #fda94a
 }
 
 .news .article-container .vylet img {
@@ -3093,7 +3069,7 @@ input:focus {
     }
     nav {
         order: 3;
-        background-color: #666;
+        background-color: #fda94a;
         height: 5vh;
         align-self: flex-end
     }
@@ -3372,7 +3348,7 @@ input:focus {
 .article-post-heading {
     font-size: 32px;
     font-weight: 600;
-    color: #585772;
+    color: #113B49;
     margin-bottom: 20px;
     margin-top: 20px;
 }
@@ -3404,7 +3380,7 @@ input:focus {
 .article-post-body h2,
 .article-post-body h3,
 .article-post-body h4 {
-    color: #585772;
+    color: #113B49;
     font-weight: 600;
     line-height: 1.125;
 }
@@ -3450,7 +3426,7 @@ input:focus {
 }
 
 .article-post-body a {
-    color: #f66;
+    color: #fda94a;
     cursor: pointer;
     text-decoration: none;
     font-size: 18px;
@@ -3658,7 +3634,7 @@ input:focus {
 .found-tags-heading {
     font-size: 32px;
     font-weight: 600;
-    color: #585772;
+    color: #113B49;
     margin-bottom: 20px;
 }
 
@@ -3666,7 +3642,7 @@ input:focus {
     font-size: 24px;
     font-weight: 500;
     margin: 10px 0;
-    color: #f66;
+    color: #fda94a;
 }
 
 .taglist {
@@ -3691,7 +3667,7 @@ input:focus {
 .all-tags-heading {
     font-size: 32px;
     font-weight: 600;
-    color: #f66;
+    color: #fda94a;
     margin-bottom: 20px;
 }
 
@@ -3700,7 +3676,7 @@ input:focus {
 
 .wrong-password {
     margin-top: 10px;
-    color: #f66;
+    color: #fda94a;
 }
 
 .password {
@@ -3712,7 +3688,7 @@ input:focus {
 
 .password h1 {
     font-size: 32px;
-    color: #585772;
+    color: #113B49;
     margin-bottom: 30px;
     text-align: center;
 }

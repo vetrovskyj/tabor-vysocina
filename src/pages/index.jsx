@@ -1,8 +1,5 @@
-import React, { useState } from "react";
-import { graphql } from 'gatsby'
+import React from "react";
 import Helmet from "react-helmet"
-import { withPrefix } from "gatsby"
-import ArticlesPreview from '../components/ArticlesPreview'
 import Articles from '../components/Articles'
 
 import Layout from '../components/Layout'
@@ -74,7 +71,7 @@ export const IndexPage = ({
         <div className="news">
           <div className="news-heading">
             <h2>Aktuality</h2>
-            <img src="../img/new_ikona.svg" alt="new icon" />
+            {/*<img src="../img/new_ikona.svg" alt="new icon" />*/}
           </div>
           <div className="news-content">
             <Articles />
