@@ -137,25 +137,24 @@ export default class Informace extends React.Component {
                   />
                 </div>
                 <ul className="clothes-list">
-                  <li>2x teplé ponožky a dostatečný počet těch normálních,</li>
-                  <li>4x triko s krátkým rukávem,</li>
-                  <li>2x triko s dlouhým rukávem,</li>
-                  <li>3x mikinu,</li>
+                  <li>dostatek teplých i normálních ponožek,</li>
+                  <li>dostatek spodního prádla,</li>
+                  <li>trika s krátkým rukávem,</li>
+                  <li>trika s dlouhým rukávem,</li>
+                  <li>mikiny,</li>
                   <li>větrovku,</li>
-                  <li>alespoň 2 - 3x krátké kalhoty (kraťasy),</li>
-                  <li>4x tepláky, dlouhé kalhoty</li>
+                  <li>krátké kalhoty (kraťasy),</li>
                 </ul>
                 <ul className="clothes-list">
+                  <li>tepláky (dlouhé kalhoty),</li>
                   <li>plavky,</li>
-                  <li>
-                    oblečení na spaní (ideálně tepláky, triko s dlouhým rukávem, svetr,
-                    ponožky),
-                  </li>
+                  <li>oblečení na spaní</li>
                   <li>oblečení do města,</li>
-                  <li>šátek.</li>
-                  <li>sportovní obuv</li>
+                  <li>pokrývka hlavy,</li>
+                  <li>sportovní obuv,</li>
                   <li>nepromokavé boty (holínky),</li>
-                  <li>přezůvky.</li>
+                  <li>přezůvky,</li>
+                  <li>lahev na pití.</li>
                 </ul>
               </div>
             </div>
@@ -170,15 +169,13 @@ export default class Informace extends React.Component {
                   />
                 </div>
                 <ul className="hygiene-list">
-                  <li>ručníky (ideálně 2 ks),</li>
-                  <li>zubní kartáček + pasta,</li>
+                  <li>ručníky,</li>
+                  <li>zubní kartáček a pasta,</li>
                   <li>mýdlo,</li>
                   <li>šampón (sprchový gel),</li>
                   <li>hřeben,</li>
-                  <li>toaletní papír,</li>
                   <li>opalovací krém,</li>
-                  <li>papírové kapesníky,</li>
-                  <li>dětské vlhčené ubrousky.</li>
+                  <li>papírové kapesníky.</li>
                 </ul>
               </div>
             </div>
@@ -193,12 +190,11 @@ export default class Informace extends React.Component {
                   />
                 </div>
                 <ul className="others-list">
-                  <li>hry (např. karty, pexeso, atd.),</li>
+                  <li>hry (např. karty),</li>
                   <li>dopisní papíry a obálky s poštovní známkou,</li>
-                  <li>psací potřeby (pastelky, tužky, atd.),</li>
+                  <li>psací potřeby,</li>
                   <li>repelent,</li>
-                  <li>náhradní baterie,</li>
-                  <li>látkový vak na špinavé prádlo.</li>
+                  <li>vak na špinavé prádlo.</li>
                 </ul>
               </div>
             </div>

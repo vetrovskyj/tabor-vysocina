@@ -3,8 +3,6 @@ import React from 'react'
 import Layout from '../../components/Layout'
 import Helmet from "react-helmet"
 import { Map, MarkerLayer, Marker, ZoomControl, MouseControl, CompassControl, KeyboardControl } from 'react-mapycz'
-import emailjs from 'emailjs-com';
-import { withPrefix } from "gatsby"
 
 export const Kontakt = ({
 }) => {

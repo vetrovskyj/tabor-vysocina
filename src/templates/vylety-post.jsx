@@ -7,7 +7,6 @@ import Content, { HTMLContent } from '../components/Content'
 import { useMemo } from 'react'
 import { useCallback } from 'react'
 import SimpleReactLightbox, {SRLWrapper} from 'simple-react-lightbox'
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
 
