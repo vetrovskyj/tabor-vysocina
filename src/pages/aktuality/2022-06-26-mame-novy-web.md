@@ -7,9 +7,7 @@ description: Pro snadnější komunikaci informací a sdílení zážitků z tá
   informace o táboře i fotografie, které v průběhu tábora budeme přidávat.
 featuredpost: false
 featuredimage: https://res.cloudinary.com/dd2ejj6yt/image/upload/v1656320153/Aktuality/glenn-carstens-peters-npxXWgQ33ZQ-unsplash_lh2btw.jpg
-tags:
-  - web
-  - novinky
+tags: []
 ---
 ![](https://res.cloudinary.com/dd2ejj6yt/image/upload/v1656320153/Aktuality/glenn-carstens-peters-npxXWgQ33ZQ-unsplash_lh2btw.jpg)
 
