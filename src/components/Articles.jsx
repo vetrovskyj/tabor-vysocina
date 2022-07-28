@@ -12,8 +12,7 @@ class Articles extends React.Component {
       <div className="article-list">
         {posts &&
           posts.map(({ node: post }) => (
-            <div className={`article-container ${post.frontmatter.featuredpost ? 'is-featured' : ''
-              }`} key={post.id}>
+            <div className={`article-container`} key={post.id}>
               <article className="vylet">
                 <p className="nazev_vyletu">
                   <Link
@@ -83,7 +82,6 @@ export default () => (
                 title
                 templateKey
                 date(formatString: "D. MMMM YYYY", locale: "cs")
-                featuredpost
                 featuredimage
               }
             }
