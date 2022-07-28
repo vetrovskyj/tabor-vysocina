@@ -100,7 +100,7 @@ nav {
     width: 64%;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr auto;
-    grid-template-areas: "box1 box3" "box2 box3";
+    grid-template-areas: "box1 box3""box2 box3";
     padding: 10px;
     grid-column-gap: 20px;
     color: #113B49;
@@ -148,7 +148,7 @@ nav {
 }
 
 .more {
-    color: #fda94a!important;
+    color: #fda94a !important;
     font-size: 14px
 }
 
@@ -178,8 +178,8 @@ nav {
 }
 
 .fa {
-    font-size: 14px!important;
-    display: flex!important
+    font-size: 14px !important;
+    display: flex !important
 }
 
 .facebook {
@@ -212,6 +212,7 @@ nav {
     .foto {
         width: 100%;
     }
+
     .text_vyletu {
         -webkit-line-clamp: 7;
     }
@@ -231,16 +232,19 @@ nav {
         min-height: 15vh;
         margin-bottom: 0;
     }
+
     .vysocina {
         font-size: 24px;
         padding: 0;
         text-align: center;
     }
+
     .turnus {
         font-size: 16px;
         padding: 0;
         text-align: center;
     }
+
     .nazev {
         margin-left: 10px;
         width: 60%;
@@ -248,32 +252,39 @@ nav {
         align-items: center;
         flex: auto;
     }
+
     .logo {
         width: 40%;
         height: 10vh;
         align-items: center;
     }
+
     .nadpis img {
         height: 8vh;
         width: auto;
     }
+
     nav {
         order: 3;
         background-color: #fda94a;
         height: 5vh;
         align-self: flex-end;
     }
+
     .menu {
         text-align: center;
         align-items: center;
         height: 100%;
     }
+
     .kapitola {
         margin-top: 30px;
     }
+
     .vylet {
         width: 85%;
     }
+
     .text_vyletu {
         -webkit-line-clamp: 6;
     }
@@ -283,6 +294,7 @@ nav {
     .vylet {
         grid-column-gap: 5px
     }
+
     .text_vyletu {
         -webkit-line-clamp: 5
     }
@@ -292,15 +304,19 @@ nav {
     .text_vyletu {
         -webkit-line-clamp: 7
     }
+
     .text_vyletu {
         font-size: 12px
     }
+
     .more {
         font-size: 12px
     }
+
     .nazev_vyletu a {
         font-size: 24px
     }
+
     .article-date {
         font-size: 12px;
     }
@@ -310,6 +326,7 @@ nav {
     .vylet {
         margin: 10px 0
     }
+
     .text_vyletu {
         -webkit-line-clamp: 5
     }
@@ -319,18 +336,23 @@ nav {
     .vylet {
         padding: 5px
     }
+
     .text_vyletu {
         -webkit-line-clamp: 4
     }
+
     .text_vyletu {
         font-size: 12px
     }
+
     .more {
         font-size: 12px
     }
+
     .nazev_vyletu a {
         font-size: 16px
     }
+
     .article-date {
         font-size: 11px;
     }
@@ -340,9 +362,10 @@ nav {
     .link {
         font-size: 14px
     }
+
     .fa {
-        font-size: 12px!important;
-        display: flex!important
+        font-size: 12px !important;
+        display: flex !important
     }
 }
 
@@ -350,15 +373,19 @@ nav {
     .text_vyletu {
         -webkit-line-clamp: 4
     }
+
     .text_vyletu {
         font-size: 11px
     }
+
     .more {
         font-size: 11px
     }
+
     .nazev_vyletu a {
         font-size: 14px
     }
+
     .article-date {
         font-size: 10px;
     }
@@ -368,11 +395,13 @@ nav {
     .link {
         font-size: 12px
     }
+
     .vylet {
         width: 92%
     }
+
     .fa {
-        font-size: 11px!important
+        font-size: 11px !important
     }
 }
 
@@ -380,6 +409,7 @@ nav {
     nav {
         min-height: 20px
     }
+
     .nadpis img {
         height: 40px
     }
@@ -461,11 +491,13 @@ nav {
         padding: 0;
         text-align: center
     }
+
     .turnus {
         font-size: 16px;
         padding: 0;
         text-align: center
     }
+
     .nazev {
         margin-left: 10px;
         width: 60%;
@@ -473,32 +505,39 @@ nav {
         align-items: center;
         flex: auto
     }
+
     .logo {
         width: 40%;
         min-height: 10vh;
         align-items: center
     }
+
     .nadpis img {
         height: 8vh;
         width: auto
     }
+
     nav {
         order: 3;
         background-color: #fda94a;
         height: 5vh;
         align-self: flex-end
     }
+
     .menu {
         text-align: center;
         align-items: center;
         height: 100%
     }
+
     .kapitola {
         margin-top: 30px
     }
+
     .telo {
         min-height: 80vh
     }
+
     .link:hover {
         color: #113B49;
     }
@@ -508,11 +547,13 @@ nav {
     .link {
         font-size: 14px
     }
+
     .panel p {
         font-size: 12px
     }
+
     .fa {
-        font-size: 12px!important
+        font-size: 12px !important
     }
 }
 
@@ -520,12 +561,14 @@ nav {
     .link {
         font-size: 12px
     }
+
     .panel p {
         font-size: 11px
     }
+
     .fa {
-        font-size: 11px!important;
-        display: flex!important
+        font-size: 11px !important;
+        display: flex !important
     }
 }
 
@@ -533,6 +576,7 @@ nav {
     nav {
         min-height: 20px
     }
+
     .nadpis img {
         height: 40px
     }
@@ -617,8 +661,8 @@ nav {
 }
 
 .fa {
-    font-size: 14px!important;
-    display: flex!important
+    font-size: 14px !important;
+    display: flex !important
 }
 
 .years-preview-container {
@@ -724,11 +768,13 @@ main {
         padding: 0;
         text-align: center
     }
+
     .turnus {
         font-size: 16px;
         padding: 0;
         text-align: center
     }
+
     .nazev {
         margin-left: 10px;
         width: 60%;
@@ -736,32 +782,39 @@ main {
         align-items: center;
         flex: auto
     }
+
     .logo {
         width: 40%;
         min-height: 10vh;
         align-items: center
     }
+
     .nadpis img {
         height: 8vh;
         width: auto
     }
+
     nav {
         order: 3;
         background-color: #fda94a;
         height: 5vh;
         align-self: flex-end
     }
+
     .menu {
         text-align: center;
         align-items: center;
         height: 100%
     }
+
     .kapitola {
         margin-top: 30px
     }
+
     .years-item-container {
         height: 220px;
     }
+
     .prevBtn,
     .nextBtn {
         width: 25px
@@ -772,9 +825,11 @@ main {
     .years-item-container {
         height: 190px;
     }
+
     .years-item a {
         font-size: 32px
     }
+
     .prevBtn,
     .nextBtn {
         width: 20px
@@ -785,14 +840,17 @@ main {
     .link {
         font-size: 14px
     }
+
     .years-item-container {
         height: 150px;
     }
+
     .years-item a {
         font-size: 24px
     }
+
     .fa {
-        font-size: 12px!important
+        font-size: 12px !important
     }
 }
 
@@ -800,14 +858,17 @@ main {
     .years-item-container {
         height: 100px;
     }
+
     .years-item a {
         font-size: 16px
     }
+
     .link {
         font-size: 12px
     }
+
     .fa {
-        font-size: 11px!important
+        font-size: 11px !important
     }
 }
 
@@ -815,6 +876,7 @@ main {
     nav {
         min-height: 20px
     }
+
     .nadpis img {
         height: 40px
     }
@@ -955,8 +1017,8 @@ nav {
 }
 
 .fa {
-    font-size: 14px!important;
-    display: flex!important
+    font-size: 14px !important;
+    display: flex !important
 }
 
 .telo-faq {
@@ -970,7 +1032,7 @@ nav {
     column-gap: 50px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 3fr 3fr 3fr;
-    grid-template-areas: "box1 box2" "box4 box3" "box5 box6";
+    grid-template-areas: "box1 box2""box4 box3""box5 box6";
     justify-items: center;
     margin-top: 30px
 }
@@ -1068,7 +1130,7 @@ nav {
     color: #fff;
     background-color: #113B49;
     width: 100%;
-    margin: 0 0 30px 0
+    margin: 0;
 }
 
 .clothes {
@@ -1080,40 +1142,40 @@ nav {
 }
 
 .card-img {
-    width: 55%;
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center
+    justify-content: center;
+    margin: 30px 0;
 }
 
 .card-img img {
-    width: 40%;
-    justify-self: center
-}
-
-.card-img img {
-    width: 40%;
-    justify-self: center
+    width: 80px;
+    margin: auto;
 }
 
 .card-content {
     display: flex;
-    width: 100%
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
 }
 
 .others {
-    grid-column: 2/3
+    grid-column: 2/3;
 }
 
 .clothes-list,
 .others-list,
 .hygiene-list {
-    width: 70%;
-    list-style: none
+    width: 100%;
+    -webkit-padding-start: 30px;
+    padding-inline-start: 30px;
 }
 
 .clothes-list {
-    margin-left: 40px
+    columns: 2;
+    column-gap: 50px;
 }
 
 .visits-posts {
@@ -1168,31 +1230,27 @@ nav {
     text-decoration: none
 }
 
-@media(max-width:1500px) {
+@media(max-width:1250px) {
     .hygiene {
         grid-column: 1/3
     }
-    .clothes-list {
-        width: 40%
-    }
+
     .hygiene-list {
-        width: 80%;
         columns: 2;
-        margin-left: 40px
+        column-gap: 40px;
     }
+
     .others {
         grid-column: 1/3
     }
+
     .others-list {
-        width: 80%;
         columns: 2;
-        margin-left: 40px
+        column-gap: 40px;
     }
-    .card-img img {
-        width: 100px
-    }
-    .card-img {
-        width: 20%
+
+    .clothes-list {
+        column-gap: 40px;
     }
 }
 
@@ -1200,25 +1258,32 @@ nav {
     .grid-informace p {
         font-size: 16px
     }
+
     .questions p {
         font-size: 16px
     }
+
     .dotazy ul li {
         background-color: #fda94a
     }
+
     .dotazy ul {
         background-color: transparent
     }
+
     .questions img {
         display: flex;
         align-items: center
     }
+
     .arrow-down {
         margin-top: -20px
     }
+
     .things-needed li {
         font-size: 16px
     }
+
     .visits-posts p {
         font-size: 16px
     }
@@ -1230,11 +1295,13 @@ nav {
         padding: 0;
         text-align: center
     }
+
     .turnus {
         font-size: 16px;
         padding: 0;
         text-align: center
     }
+
     .nazev {
         margin-left: 10px;
         width: 60%;
@@ -1242,21 +1309,25 @@ nav {
         align-items: center;
         flex: auto
     }
+
     .logo {
         width: 40%;
         min-height: 10vh;
         align-items: center
     }
+
     .nadpis img {
         height: 8vh;
         width: auto
     }
+
     nav {
         order: 3;
         background-color: #fda94a;
         height: 5vh;
         align-self: flex-end
     }
+
     .menu {
         text-align: center;
         align-items: center;
@@ -1268,14 +1339,23 @@ nav {
     .dotazy {
         width: 90%
     }
+
     .grid-informace {
         width: 90%
     }
+
     .things-needed {
         width: 90%
     }
+
     .visits-posts {
         width: 90%
+    }
+
+    .clothes-list,
+    .others-list,
+    .hygiene-list {
+        column-gap: 32px;
     }
 }
 
@@ -1284,14 +1364,24 @@ nav {
         display: flex;
         flex-direction: column
     }
+
     .arrow-down {
         margin-right: 10px
     }
+
     .things-needed {
         margin-top: 30px
     }
+
     .visits-posts {
         margin-top: 30px
+    }
+
+    .card-img img {
+        width: 60px;
+    }
+    .card-img {
+        margin: 20px 0;
     }
 }
 
@@ -1299,27 +1389,35 @@ nav {
     .grid-informace p {
         font-size: 14px
     }
+
     .questions p {
         font-size: 14px
     }
+
     .things-needed li {
         font-size: 14px
     }
+
     .visits-posts p {
         font-size: 14px
     }
+
     .grid-informace h2 {
         font-size: 24px
     }
+
     .questions h2 {
         font-size: 24px
     }
+
     .things-needed h2 {
         font-size: 24px
     }
+
     .visits-posts h3 {
         font-size: 24px
     }
+
     .arrow-down {
         width: 15px;
         margin-top: -17px
@@ -1330,25 +1428,37 @@ nav {
     .link {
         font-size: 14px
     }
+
+    .clothes-list,
+    .others-list,
+    .hygiene-list {
+        column-gap: 26px;
+    }
+
     .dotazy {
         grid-template-rows: 2fr 3fr 3fr;
         row-gap: 0
     }
+
     .questions-one {
         grid-column: 1/3;
         grid-row: 2/3
     }
+
     .dotazy ul:last-child {
         grid-column: 1/3;
         grid-row: 3/4
     }
+
     .grid-informace {
         margin-top: 0
     }
+
     .card {
         padding: 15px 20px;
         border: 25px solid #113B49
     }
+
     .visits-posts {
         column-gap: 25px
     }
@@ -1358,16 +1468,19 @@ nav {
     .link {
         font-size: 14px
     }
+
     .dotazy h1 {
         font-size: 32px;
         margin-bottom: 20px
     }
+
     .dotazy {
         grid-template-rows: auto;
         row-gap: 0
     }
+
     .fa {
-        font-size: 12px!important
+        font-size: 12px !important
     }
 }
 
@@ -1375,55 +1488,48 @@ nav {
     .grid-informace p {
         font-size: 12px
     }
+
     .questions p {
         font-size: 12px
     }
+
     .things-needed li {
         font-size: 12px
     }
+
     .visits-posts p {
         font-size: 12px
     }
+
     .arrow-down {
         width: 12px;
         margin-top: -15px
     }
-    .clothes-list {
-        width: 45%;
-        margin-left: 20px
-    }
-    .hygiene-list {
-        width: 90%;
-        margin-left: 20px
-    }
-    .others-list {
-        width: 90%;
-        margin-left: 20px
-    }
+
     .card-img img {
-        width: 100px
+        width: 40px;
     }
+
     .card-img {
-        width: 10%
+        margin: 10px 0;
     }
+
     .visits-posts {
         display: flex;
         flex-direction: column
     }
+
     .post {
         margin-top: 20px
     }
 }
 
 @media(max-width:400px) {
-    .clothes-list {
-        margin-left: 10px
-    }
-    .others-list {
-        margin-left: 10px
-    }
+
+    .clothes-list,
+    .others-list,
     .hygiene-list {
-        margin-left: 10px
+        column-gap: 18px;
     }
 }
 
@@ -1431,24 +1537,30 @@ nav {
     .link {
         font-size: 12px
     }
+
     .dotazy h1 {
         font-size: 28px
     }
+
     .grid-informace h2 {
         font-size: 16px
     }
+
     .questions h2 {
         font-size: 16px
     }
+
     .things-needed h2 {
         font-size: 16px
     }
+
     .visits-posts h3 {
         font-size: 16px
     }
+
     .fa {
-        font-size: 11px!important;
-        display: flex!important
+        font-size: 11px !important;
+        display: flex !important
     }
 }
 
@@ -1456,12 +1568,15 @@ nav {
     .grid-informace p {
         font-size: 11px
     }
+
     .questions p {
         font-size: 11px
     }
+
     .things-needed li {
         font-size: 11px
     }
+
     .visits-posts p {
         font-size: 11px
     }
@@ -1471,6 +1586,7 @@ nav {
     nav {
         min-height: 20px
     }
+
     .nadpis img {
         height: 40px
     }
@@ -1656,8 +1772,8 @@ textarea {
 }
 
 .fa {
-    font-size: 14px!important;
-    display: flex!important
+    font-size: 14px !important;
+    display: flex !important
 }
 
 .contacts {
@@ -1748,6 +1864,7 @@ svg {
     .adresa p {
         display: block
     }
+
     .adresa {
         margin-top: -10px;
         flex-direction: column
@@ -1760,33 +1877,42 @@ svg {
         flex-direction: column;
         align-items: center
     }
+
     .adress {
         margin: 0 0 40px;
         width: 80%
     }
+
     .formular {
         margin: 0;
         width: 80%
     }
+
     #map {
         margin: 30px 0 30px 0
     }
+
     .pole {
         margin: 30px 0 0 0
     }
+
     .adresa p {
         display: inline
     }
+
     .adresa {
         margin-top: 0;
         flex-direction: row
     }
+
     .contacts {
         width: 68%
     }
+
     .rotation-back {
         flex-wrap: wrap
     }
+
     .contact {
         width: 49%;
         text-align: center
@@ -1799,11 +1925,13 @@ svg {
         padding: 0;
         text-align: center
     }
+
     .turnus {
         font-size: 16px;
         padding: 0;
         text-align: center
     }
+
     .nazev {
         margin-left: 10px;
         width: 60%;
@@ -1811,26 +1939,31 @@ svg {
         align-items: center;
         flex: auto
     }
+
     .logo {
         width: 40%;
         min-height: 10vh;
         align-items: center
     }
+
     .nadpis img {
         height: 8vh;
         width: auto
     }
+
     nav {
         order: 3;
         background-color: #fda94a;
         height: 5vh;
         align-self: flex-end
     }
+
     .menu {
         text-align: center;
         align-items: center;
         height: 100%
     }
+
     .kapitola {
         margin-top: 30px
     }
@@ -1840,15 +1973,19 @@ svg {
     .contacts {
         width: 76.5%
     }
+
     .adress {
         width: 90%
     }
+
     .formular {
         width: 90%
     }
+
     .adresa p {
         font-size: 18px
     }
+
     .contact-entity {
         font-size: 18px
     }
@@ -1858,37 +1995,46 @@ svg {
     #map {
         height: 300px
     }
+
     .kontakt h1 {
         font-size: 32px
     }
+
     .kontakt {
         margin: 30px auto
     }
+
     .adress {
         margin: 0 0 30px 0
     }
+
     #map {
         margin: 20px 0
     }
+
     .pole {
         margin: 20px 0 0;
         grid-template-rows: 40px 15px 40px 15px 40px 15px 150px 15px auto
     }
+
     .alert-name {
         font-size: 10px;
         background-size: 12px;
         text-indent: 15px
     }
+
     .alert-subject {
         font-size: 10px;
         background-size: 12px;
         text-indent: 15px
     }
+
     .alert-email {
         font-size: 10px;
         background-size: 12px;
         text-indent: 15px
     }
+
     .tlacitko-formular {
         height: auto;
         font-size: 14px;
@@ -1897,6 +2043,7 @@ svg {
         width: 100px;
         text-align: center
     }
+
     .rotation-back {
         min-height: 35vh
     }
@@ -1909,26 +2056,33 @@ svg {
         grid-template-columns: 1fr 2fr;
         align-items: center
     }
+
     .contact img {
         margin: 0 auto;
         width: 40px
     }
+
     .kontakt {
         margin: 20px auto
     }
+
     .adress {
         margin: 0 0 20px 0
     }
+
     #map {
         margin: 15px 0
     }
+
     .pole {
         margin: 15px 0 0 0
     }
+
     .pole input,
     .pole textarea {
         font-size: 14px
     }
+
     .contacts {
         margin: 0 auto 20px auto
     }
@@ -1938,21 +2092,26 @@ svg {
     .link {
         font-size: 14px
     }
+
     .contact-entity {
         font-size: 14px
     }
+
     .kontakt {
         width: 90%
     }
+
     .contacts {
         width: 80.5%;
         min-height: 25vh
     }
+
     .rotation-back {
         min-width: 20vh
     }
+
     .fa {
-        font-size: 12px!important
+        font-size: 12px !important
     }
 }
 
@@ -1960,15 +2119,19 @@ svg {
     .adresa p {
         font-size: 16px
     }
+
     .contact-entity {
         font-size: 12px
     }
+
     .kontakt {
         width: 95%
     }
+
     .contacts {
         width: 85.5%
     }
+
     .contact img {
         width: 40px
     }
@@ -1978,31 +2141,38 @@ svg {
     .link {
         font-size: 12px
     }
+
     .fa {
-        font-size: 11px!important;
-        display: flex!important
+        font-size: 11px !important;
+        display: flex !important
     }
+
     .alert-name {
         font-size: 9px;
         background-size: 12px;
         text-indent: 14px
     }
+
     .alert-subject {
         font-size: 9px;
         background-size: 12px;
         text-indent: 14px
     }
+
     .alert-email {
         font-size: 9px;
         background-size: 12px;
         text-indent: 14px
     }
+
     .contacts {
         width: 91.2%
     }
+
     .adress {
         width: 96%
     }
+
     .formular {
         width: 96%
     }
@@ -2012,6 +2182,7 @@ svg {
     nav {
         min-height: 20px
     }
+
     .nadpis img {
         height: 40px
     }
@@ -2208,8 +2379,8 @@ nav {
 }
 
 .fa {
-    font-size: 14px!important;
-    display: flex!important
+    font-size: 14px !important;
+    display: flex !important
 }
 
 .facebook {
@@ -2231,12 +2402,15 @@ nav {
     .telo-lide {
         width: 90%
     }
+
     .text p {
         font-size: 14px
     }
+
     .text {
         margin: 10px
     }
+
     .profile-description {
         margin-right: 10px
     }
@@ -2246,9 +2420,11 @@ nav {
     .telo-lide {
         width: 90%
     }
+
     .text p {
         font-size: 14px
     }
+
     .osoba {
         margin: 10px 0;
         width: 47.5%
@@ -2261,11 +2437,13 @@ nav {
         padding: 0;
         text-align: center
     }
+
     .turnus {
         font-size: 16px;
         padding: 0;
         text-align: center
     }
+
     .nazev {
         margin-left: 10px;
         width: 60%;
@@ -2273,26 +2451,31 @@ nav {
         align-items: center;
         flex: auto
     }
+
     .logo {
         width: 40%;
         min-height: 10vh;
         align-items: center
     }
+
     .nadpis img {
         height: 8vh;
         width: auto
     }
+
     nav {
         order: 3;
         background-color: #fda94a;
         height: 5vh;
         align-self: flex-end
     }
+
     .menu {
         text-align: center;
         align-items: center;
         height: 100%
     }
+
     .kapitola {
         margin-top: 30px
     }
@@ -2302,6 +2485,7 @@ nav {
     .telo-lide {
         width: 95%
     }
+
     .osoba.transition {
         height: 500px
     }
@@ -2311,18 +2495,23 @@ nav {
     .text p {
         font-size: 12px
     }
+
     .jmeno p:first-child {
         font-size: 16px
     }
+
     .osoba.transition {
         height: 400px
     }
+
     .osoba {
         height: 150px
     }
+
     .text {
         margin: 5px
     }
+
     .profile-description {
         margin-right: 5px
     }
@@ -2338,6 +2527,7 @@ nav {
     .osoba {
         width: 80%
     }
+
     .osoba.transition {
         height: 300px
     }
@@ -2347,12 +2537,14 @@ nav {
     .link {
         font-size: 14px
     }
+
     .osoba {
         width: 85%
     }
+
     .fa {
-        font-size: 12px!important;
-        display: flex!important
+        font-size: 12px !important;
+        display: flex !important
     }
 }
 
@@ -2360,6 +2552,7 @@ nav {
     .link {
         font-size: 14px
     }
+
     .osoba {
         width: 85%
     }
@@ -2381,6 +2574,7 @@ nav {
     .osoba.transition {
         height: 400px
     }
+
     .osoba {
         width: 95%
     }
@@ -2390,9 +2584,10 @@ nav {
     .link {
         font-size: 12px
     }
+
     .fa {
-        font-size: 11px!important;
-        display: flex!important
+        font-size: 11px !important;
+        display: flex !important
     }
 }
 
@@ -2400,6 +2595,7 @@ nav {
     nav {
         min-height: 20px
     }
+
     .nadpis img {
         height: 40px
     }
@@ -2604,10 +2800,12 @@ input:focus {
     0% {
         opacity: 0;
     }
+
     10% {
         transform: translateY(0);
         opacity: 1;
     }
+
     100% {
         transform: translateY(15px);
         opacity: 0;
@@ -2688,8 +2886,8 @@ input:focus {
 }
 
 .fa {
-    font-size: 14px!important;
-    display: flex!important
+    font-size: 14px !important;
+    display: flex !important
 }
 
 .facebook {
@@ -2752,9 +2950,9 @@ input:focus {
 #prev img {
     z-index: 1000;
     width: 50px;
-    padding-left: 3px!important;
-    background-color: transparent!important;
-    border: none!important
+    padding-left: 3px !important;
+    background-color: transparent !important;
+    border: none !important
 }
 
 #prev.active {
@@ -2805,9 +3003,9 @@ input:focus {
 #next img {
     z-index: 1000;
     width: 50px;
-    padding-left: 3px!important;
-    background-color: transparent!important;
-    border: none!important
+    padding-left: 3px !important;
+    background-color: transparent !important;
+    border: none !important
 }
 
 #next.active {
@@ -2965,12 +3163,15 @@ input:focus {
     .boxes {
         grid-template-columns: 1fr 5fr 1fr 5fr 1fr 5fr 1fr
     }
+
     .news {
         grid-template-columns: 1fr 5fr 1fr 5fr 1fr 5fr 1fr
     }
+
     .box {
         font-size: 18px
     }
+
     .text_vyletu_homepage {
         font-size: 18px
     }
@@ -2980,19 +3181,23 @@ input:focus {
     .article-post-body .container {
         max-width: 700px;
     }
+
     .boxes {
         grid-template-columns: 2fr 1fr;
         grid-template-rows: 1fr 1fr;
         align-items: center;
     }
+
     .news {
         height: 100%;
         grid-template-rows: auto;
         padding: 30px 0 0 0
     }
+
     .news-content {
         margin-bottom: 20px
     }
+
     .box {
         display: flex;
         flex-direction: row;
@@ -3004,37 +3209,46 @@ input:focus {
         height: 80%;
         margin: auto
     }
+
     .box img {
         margin-right: 20px;
         width: 15%
     }
+
     .box-desc {
         width: 85%
     }
+
     .box:nth-child(1) {
         grid-column: 1/2;
         grid-row: 1/2
     }
+
     .box:nth-child(2) {
         grid-column: 2/3;
         grid-row: 1/3;
         flex-direction: column;
         height: 90%
     }
+
     .box:nth-child(2) .box-desc h2 {
         margin-bottom: 50px
     }
+
     .box:nth-child(2) img {
         margin: 0;
         width: 30%
     }
+
     .box:nth-child(3) {
         grid-column: 1/2;
         grid-row: 2/3
     }
+
     .news-heading {
         margin-top: 0;
     }
+
     .news-content {
         margin-top: 0;
     }
@@ -3046,14 +3260,17 @@ input:focus {
         padding: 0;
         text-align: center
     }
+
     .article-post-body .container {
         max-width: 600px;
     }
+
     .turnus {
         font-size: 16px;
         padding: 0;
         text-align: center
     }
+
     .nazev {
         margin-left: 10px;
         width: 60%;
@@ -3061,62 +3278,77 @@ input:focus {
         align-items: center;
         flex: auto
     }
+
     .logo {
         width: 40%;
         min-height: 10vh;
         align-items: center
     }
+
     .nadpis img {
         height: 8vh;
         width: auto
     }
+
     nav {
         order: 3;
         background-color: #fda94a;
         height: 5vh;
         align-self: flex-end
     }
+
     .menu {
         text-align: center;
         align-items: center;
         height: 100%
     }
+
     .kapitola {
         margin-top: 30px
     }
+
     .info {
         width: 640px
     }
+
     .boxes {
         grid-template-columns: 3fr 2fr;
         grid-template-rows: 1fr 1fr
     }
+
     .box-desc h2 {
         padding: 15px 0;
         font-size: 24px
     }
+
     .box p {
         font-size: 16px
     }
+
     .news .article-container .vylet p {
         font-size: 16px
     }
+
     .top-site {
         height: 100%
     }
+
     .boxes {
         grid-template-columns: 2fr 1fr;
         grid-template-rows: 1fr 1fr;
         align-items: center;
     }
+
     .tlacitko {
         width: 100px;
         height: 40px;
         font-size: 14px
     }
+
     .box:nth-child(2) .box-desc h2 {
         margin-bottom: 20px
     }
+
     .news .article-container .vylet .nazev_vyletu a {
         font-size: 18px;
         margin-top: 10px;
@@ -3129,26 +3361,32 @@ input:focus {
         flex-direction: column;
         height: 100%
     }
+
     .box {
         height: 30%;
         margin: 40px 0 -20px 0
     }
+
     .box:nth-child(1) {
         margin-top: 20px
     }
+
     .box:nth-child(2) {
         grid-column: 2/3;
         grid-row: 1/3;
         flex-direction: row;
         height: 30%
     }
+
     .box:nth-child(2) .box-desc h2 {
         margin-bottom: initial
     }
+
     .box:nth-child(2) img {
         margin-right: 20px;
         width: 15%
     }
+
     .article-post-body .container {
         max-width: 500px;
     }
@@ -3158,92 +3396,118 @@ input:focus {
     .info {
         width: 80%;
     }
+
     .fotky {
         width: 100%;
     }
+
     .foto1,
     .foto2,
     .foto3 {
         width: 100%;
     }
+
     .text-heading {
         margin: 10px 0
     }
+
     .text-heading h2:first-child {
         margin-bottom: 0
     }
+
     .text-heading h2:last-child {
         margin-bottom: 0
     }
+
     .text-homepage p {
         font-size: 14px;
     }
+
     .text-heading h2 {
         font-size: 32px;
     }
+
     .text-heading h2:last-child {
         font-size: 32px;
     }
+
     .news {
         grid-template-rows: auto;
         grid-template-columns: 1fr 10fr 1fr 1fr;
         padding: 0
     }
+
     .news-heading {
         grid-row: 1/2;
         flex-direction: row;
         align-items: flex-end
     }
+
     .news-heading h2 {
         margin: 40px 0 15px;
         font-size: 32px
     }
+
     .news-heading img {
         margin: 0 0 0 20px;
         width: 50px;
         margin-bottom: 10px
     }
+
     .news-content {
         grid-row: 2/3;
         grid-column: 2/4
     }
+
     .news .article-container .vylet a {
         font-size: 14px
     }
+
     .news .article-container .vylet p {
         font-size: 14px;
     }
+
     .news .article-container .nazev_vyletu {
         display: flex;
         padding-top: 10px;
     }
+
     .news .article-container {
         padding: 10px 0;
     }
+
     .news-content {
         padding: 10px 10px;
     }
+
     .news .article-container .vylet .nazev_vyletu {
         margin-bottom: 10px;
     }
+
     .news .article-container .vylet:first-child .nazev_vyletu {
         padding: 0
     }
+
     .scroll-downs {
         display: none;
     }
+
     .mousey {
         display: none;
     }
+
     .scroller {
         display: none;
     }
+
     .news .article-container .vylet .nazev_vyletu a {
         margin-top: 5px;
     }
+
     .article-post-body .container {
         max-width: 450px;
     }
+
     .article-post-body {
         margin: 10px auto 0 auto;
     }
@@ -3253,15 +3517,19 @@ input:focus {
     .link {
         font-size: 14px
     }
+
     .box p {
         font-size: 14px
     }
+
     .info {
         width: 90%
     }
+
     .news-content {
         padding: 10px
     }
+
     .article-post-body .container {
         max-width: 350px;
     }
@@ -3269,12 +3537,14 @@ input:focus {
 
 @media(max-width:500px) {
     .fa {
-        font-size: 12px!important;
-        display: flex!important
+        font-size: 12px !important;
+        display: flex !important
     }
+
     .text-heading h2 {
         font-size: 24px;
     }
+
     .text-heading h2:last-child {
         font-size: 24px;
     }
@@ -3284,6 +3554,7 @@ input:focus {
     .box:nth-child(2) img {
         margin-right: 20px
     }
+
     .article-post-body .container {
         max-width: 300px;
     }
@@ -3293,9 +3564,11 @@ input:focus {
     .text-heading {
         flex-direction: column;
     }
+
     .text-heading h2:last-child {
         padding: 0;
     }
+
     .text-homepage p {
         text-align: initial;
     }
@@ -3305,13 +3578,16 @@ input:focus {
     .link {
         font-size: 12px
     }
+
     .news-content {
         padding: 5px
     }
+
     .fa {
-        font-size: 11px!important;
-        display: flex!important
+        font-size: 11px !important;
+        display: flex !important
     }
+
     .article-post-body .container {
         max-width: 260px;
     }
@@ -3327,12 +3603,15 @@ input:focus {
     .text-heading h2:last-child {
         font-size: 24px
     }
+
     .text-heading h2 {
         font-size: 24px
     }
+
     .tlacitko {
         margin-top: 15px
     }
+
     .fa {
         font-size: 11px;
         display: flex
@@ -3343,6 +3622,7 @@ input:focus {
     nav {
         min-height: 20px
     }
+
     .nadpis img {
         height: 40px
     }
@@ -3462,21 +3742,27 @@ input:focus {
     .article-post-heading {
         font-size: 28px;
     }
+
     .article-post-body h2 {
         font-size: 24px;
     }
+
     .article-post-body p {
         font-size: 16px;
     }
+
     .article-post-body a {
         font-size: 16px;
     }
+
     .article-post-body li {
         font-size: 16px;
     }
+
     .article-post-body h3 {
         font-size: 20px;
     }
+
     .article-post-body h4 {
         font-size: 18px;
     }
@@ -3487,43 +3773,54 @@ input:focus {
         font-size: 26px;
         margin-bottom: 15px;
     }
+
     .article-post-body h2 {
         font-size: 20px;
         margin-bottom: 12px;
     }
+
     .article-post-body p {
         font-size: 14px;
     }
+
     .article-post-body a {
         font-size: 14px;
     }
+
     .article-post-body li {
         font-size: 14px;
     }
+
     .article-post-body h3 {
         margin-bottom: 10px;
         margin-top: 10px;
         font-size: 18px;
     }
+
     .article-post-body h4 {
         font-size: 16px;
         margin-bottom: 10px;
         margin-top: 10px;
     }
+
     .article-post-body .taglist {
         margin: 15px 15px 0 0;
     }
+
     .article-post-body .taglist li {
         padding: 0 20px 10px 0;
         margin-bottom: 15px;
     }
+
     .article-post-body p:not(:last-child),
     .article-post-body ul:not(:last-child) {
         margin-bottom: 12px;
     }
+
     .article-post-body ul {
         margin-top: 12px;
     }
+
     .tags {
         margin-top: 25px;
     }
@@ -3534,46 +3831,58 @@ input:focus {
         font-size: 24px;
         margin-bottom: 12px;
     }
+
     .article-post-body h2 {
         font-size: 18px;
         margin-bottom: 10px;
     }
+
     .article-post-body p {
         font-size: 12px;
     }
+
     .article-post-body a {
         font-size: 12px;
     }
+
     .article-post-body li {
         font-size: 12px;
     }
+
     .article-post-body h3 {
         font-size: 16px;
         margin-bottom: 8px;
         margin-top: 8px;
     }
+
     .article-post-body h4 {
         font-size: 14px;
         margin-bottom: 8px;
         margin-top: 8px;
     }
+
     .article-post-body .taglist {
         margin: 10px 10px 0 0;
     }
+
     .article-post-body .taglist li {
         padding: 0 15px 5px 0;
         margin-bottom: 10px;
     }
+
     .article-post-body p:not(:last-child),
     .article-post-body ul:not(:last-child) {
         margin-bottom: 10px;
     }
+
     .article-post-body ul {
         margin-top: 10px;
     }
+
     .tags {
         margin-top: 20px;
     }
+
     .article-post-body ul {
         margin-left: 1.5em;
     }
@@ -3583,21 +3892,27 @@ input:focus {
     .article-post-heading {
         font-size: 18px;
     }
+
     .article-post-body h2 {
         font-size: 16px;
     }
+
     .article-post-body p {
         font-size: 11px;
     }
+
     .article-post-body a {
         font-size: 11px;
     }
+
     .article-post-body li {
         font-size: 11px;
     }
+
     .article-post-body h3 {
         font-size: 14px;
     }
+
     .article-post-body h4 {
         font-size: 12px;
     }
@@ -3607,21 +3922,27 @@ input:focus {
     .article-post-heading {
         font-size: 16px;
     }
+
     .article-post-body h2 {
         font-size: 14px;
     }
+
     .article-post-body p {
         font-size: 10px;
     }
+
     .article-post-body a {
         font-size: 10px;
     }
+
     .article-post-body li {
         font-size: 10px;
     }
+
     .article-post-body h3 {
         font-size: 12px;
     }
+
     .article-post-body h4 {
         font-size: 11px;
     }
@@ -3863,10 +4184,12 @@ input:focus {
     .grid {
         margin: 7px auto;
     }
+
     .grid-item img {
         width: 246px !important;
         height: 164px !important;
     }
+
     .grid-item {
         margin: 7px 7px 0 7px;
     }
@@ -3876,10 +4199,12 @@ input:focus {
     .grid {
         margin: 5px auto;
     }
+
     .grid-item img {
         width: 201px !important;
         height: 134px !important;
     }
+
     .grid-item {
         margin: 5px 5px -2px 5px;
     }
@@ -3889,10 +4214,12 @@ input:focus {
     .grid {
         margin: 3px auto;
     }
+
     .grid-item img {
         width: 150px !important;
         height: 100px !important;
     }
+
     .grid-item {
         margin: 3px 3px -4px 3px;
     }
@@ -3903,6 +4230,7 @@ input:focus {
         font-size: 24px;
         margin-bottom: 22px;
     }
+
     .password-input {
         width: 300px;
         padding: 11px;
@@ -3910,6 +4238,7 @@ input:focus {
         margin-bottom: 15px;
         height: 40px;
     }
+
     .password-button {
         width: 100px !important;
         height: 40px;
@@ -3943,6 +4272,7 @@ input:focus {
         font-size: 16px;
         margin-bottom: 15px;
     }
+
     .password-input {
         width: 200px;
         padding: 10px;
@@ -3950,6 +4280,7 @@ input:focus {
         margin-bottom: 10px;
         height: 30px;
     }
+
     .password-button {
         width: 60px !important;
         height: 30px;
@@ -4036,9 +4367,11 @@ input:focus {
     .gallery-carousel-container a {
         font-size: 24px
     }
+
     .slick-next {
         right: 20px !important;
     }
+
     .slick-prev {
         left: 20px !important;
     }
@@ -4048,6 +4381,7 @@ input:focus {
     .slick-next {
         right: 15px !important;
     }
+
     .slick-prev {
         left: 15px !important;
     }

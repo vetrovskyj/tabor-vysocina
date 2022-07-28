@@ -29,7 +29,7 @@ collections:
       - {label: "Úvod", name: "description", widget: "text"}
       - {label: "Náhledový obrázek", name: "featuredimage", widget: image}
       - {label: "Text", name: "body", widget: "markdown"}
-      - {label: "Tagy", name: "tags", widget: "list", required: false}
+      - {label: "Tagy", name: "tags", widget: "list"}
 
   - name: galerie
     label: Foto Leto

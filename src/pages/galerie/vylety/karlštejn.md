@@ -1,7 +1,7 @@
 ---
 templateKey: vylety-post
 title: Karlštejn
-password: vylet
+password: "Vysočina66"
 nahledacek: https://res.cloudinary.com/dd2ejj6yt/image/upload/v1657274513/Fotky/VyletKarlstejn/vylet_karlstejn_011_lt8on2.jpg
 fotky:
   - https://res.cloudinary.com/dd2ejj6yt/image/upload/v1657274526/Fotky/VyletKarlstejn/vylet_karlstejn_001_ywzqxu.jpg

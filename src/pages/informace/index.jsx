@@ -137,24 +137,22 @@ export default class Informace extends React.Component {
                   />
                 </div>
                 <ul className="clothes-list">
-                  <li>dostatek teplých i normálních ponožek,</li>
-                  <li>dostatek spodního prádla,</li>
-                  <li>trika s krátkým rukávem,</li>
-                  <li>trika s dlouhým rukávem,</li>
-                  <li>mikiny,</li>
-                  <li>větrovku,</li>
-                  <li>krátké kalhoty (kraťasy),</li>
-                </ul>
-                <ul className="clothes-list">
-                  <li>tepláky (dlouhé kalhoty),</li>
-                  <li>plavky,</li>
+                  <li>dostatek teplých i normálních ponožek</li>
+                  <li>dostatek spodního prádla</li>
+                  <li>trika s krátkým rukávem</li>
+                  <li>trika s dlouhým rukávem</li>
+                  <li>mikiny</li>
+                  <li>větrovku</li>
+                  <li>krátké kalhoty (kraťasy)</li>
+                  <li>tepláky (dlouhé kalhoty)</li>
+                  <li>plavky</li>
                   <li>oblečení na spaní</li>
-                  <li>oblečení do města,</li>
-                  <li>pokrývka hlavy,</li>
-                  <li>sportovní obuv,</li>
-                  <li>nepromokavé boty (holínky),</li>
-                  <li>přezůvky,</li>
-                  <li>lahev na pití.</li>
+                  <li>oblečení do města</li>
+                  <li>pokrývka hlavy</li>
+                  <li>sportovní obuv</li>
+                  <li>nepromokavé boty (holínky)</li>
+                  <li>přezůvky</li>
+                  <li>lahev na pití</li>
                 </ul>
               </div>
             </div>
@@ -169,13 +167,13 @@ export default class Informace extends React.Component {
                   />
                 </div>
                 <ul className="hygiene-list">
-                  <li>ručníky,</li>
-                  <li>zubní kartáček a pasta,</li>
-                  <li>mýdlo,</li>
-                  <li>šampón (sprchový gel),</li>
-                  <li>hřeben,</li>
-                  <li>opalovací krém,</li>
-                  <li>papírové kapesníky.</li>
+                  <li>ručníky</li>
+                  <li>zubní kartáček a pasta</li>
+                  <li>mýdlo</li>
+                  <li>šampón (sprchový gel)</li>
+                  <li>hřeben</li>
+                  <li>opalovací krém</li>
+                  <li>papírové kapesníky</li>
                 </ul>
               </div>
             </div>
@@ -190,11 +188,11 @@ export default class Informace extends React.Component {
                   />
                 </div>
                 <ul className="others-list">
-                  <li>hry (např. karty),</li>
-                  <li>dopisní papíry a obálky s poštovní známkou,</li>
-                  <li>psací potřeby,</li>
-                  <li>repelent,</li>
-                  <li>vak na špinavé prádlo.</li>
+                  <li>hry (např. karty)</li>
+                  <li>dopisní papíry a obálky s poštovní známkou</li>
+                  <li>psací potřeby</li>
+                  <li>repelent</li>
+                  <li>vak na špinavé prádlo</li>
                 </ul>
               </div>
             </div>

@@ -1,7 +1,7 @@
 ---
 templateKey: vylety-post
 title: Tetín
-password: vylet
+password: "Vysočina66"
 nahledacek: https://res.cloudinary.com/dd2ejj6yt/image/upload/v1657273765/Fotky/VyletTetin/vylet_tetin_014_vw7pwr.jpg
 fotky:
   - https://res.cloudinary.com/dd2ejj6yt/image/upload/v1657273767/Fotky/VyletTetin/vylet_tetin_003_zxw3ib.jpg

@@ -91,7 +91,7 @@ export const Kontakt = ({
             </div>
             <div className="adresa">
               <p>Adresa:</p>
-              <p> Lesní 66, Nové Město na Moravě, 592 31</p>
+              <p> Lesní 66 (PS 28), Nové Město na Moravě, 592 31</p>
             </div>
           </div>
           <iframe name="hidden_iframe" id="hidden_iframe" style={{ display: 'none' }} onload="if(submitted) {window.location='../kontakt/';}" />
