@@ -90,8 +90,8 @@ export const Kontakt = ({
               </Map>
             </div>
             <div className="adresa">
-              <p>Adresa:</p>
-              <p> Lesní 66 (PS 28), Nové Město na Moravě, 592 31</p>
+              <p>ÚZ Vysočina, PS 28, Nové Město na Moravě, 592 31 </p>
+              
             </div>
           </div>
           <iframe name="hidden_iframe" id="hidden_iframe" style={{ display: 'none' }} onload="if(submitted) {window.location='../kontakt/';}" />
@@ -119,11 +119,7 @@ export const Kontakt = ({
             </div>
             <div className="contact">
               <img src="../../img/cell-phone.svg" width={50} alt="cell phone icon" />
-              <a className="contact-entity" href="tel:+420773201372"><strong>+420773201372</strong></a>
-            </div>
-            <div className="contact">
-              <img src="../../img/email.svg" width={50} alt="envelope icon" />
-              <a className="contact-entity" href="mailto:vetrovsky.jan@gmail.com"><strong>vetrovsky.jan@gmail.com</strong></a>
+              <a className="contact-entity" href="tel:+420773201372"><strong>+420731553002</strong></a>
             </div>
             <div className="contact">
               <img src="../../img/information-button.svg" width={50} alt="information icon" />
