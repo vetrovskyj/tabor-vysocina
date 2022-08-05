@@ -119,7 +119,7 @@ export const Kontakt = ({
             </div>
             <div className="contact">
               <img src="../../img/cell-phone.svg" width={50} alt="cell phone icon" />
-              <a className="contact-entity" href="tel:+420773201372"><strong>+420731553002</strong></a>
+              <a className="contact-entity" href="tel:+420731553002"><strong>+420731553002</strong></a>
             </div>
             <div className="contact">
               <img src="../../img/information-button.svg" width={50} alt="information icon" />
