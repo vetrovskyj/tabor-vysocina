@@ -8,13 +8,8 @@ backend:
     uploadMedia: '[skip ci] Upload “{{path}}”'
     deleteMedia: '[skip ci] Delete “{{path}}”'
 
-media_library:
-  name: cloudinary
-  config:
-    cloud_name: dd2ejj6yt
-    api_key: 296647141253866
-public_folder: /img
 media_folder: static/img
+public_folder: /img
 
 collections:
   - name: "novinky"
@@ -44,11 +39,7 @@ collections:
         name: "fotky",
         widget: "image",
         allow_multiple: true,
-        media_library:
-          {config:
-            {multiple: true,
-            max_files: 500,
-            output_filename_only: true}}}
+        media_folder: "static/img/Facebook"}
 
   - label: "Gallery"
     name: "galleryImages"
@@ -72,11 +63,7 @@ collections:
         name: "fotky",
         widget: "image",
         allow_multiple: true,
-        media_library:
-          {config:
-            {multiple: true,
-            max_files: 500,
-            output_filename_only: true}}}
+        media_folder: "static/img/Facebook"}
 
   - name: vylety
     label: Foto vylety
@@ -91,9 +78,5 @@ collections:
         name: "fotky",
         widget: "image",
         allow_multiple: true,
-        media_library:
-          {config:
-            {multiple: true,
-            max_files: 500,
-            output_filename_only: true}}}
+        media_folder: "static/img/Facebook"}
  
