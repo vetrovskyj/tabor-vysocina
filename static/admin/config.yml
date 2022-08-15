@@ -56,7 +56,8 @@ collections:
     folder: "src/pages/galerie/leto"
     create: true
     summary: '{{fields.image}}'
-    field: {label: Image, name: image, widget: image}
+    fields: 
+      - {label: Image, name: image, widget: image}
 
   - name: velikonoce
     label: Foto Velikonoce
