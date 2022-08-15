@@ -46,13 +46,12 @@ collections:
     widget: "list"
     folder: "src/pages/galerie/leto"
     create: true
-    summary: '{{fields.image}}'
-    field: {label: Image, name: image, widget: image}
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "gallery-post"}
-      - {label: "Rok", name: "title", widget: "string", required: true}
-      - {label: "Heslo", name: "password", widget: "string", required: true}
-      - {label: "Náhledový obrázek", name: "nahledacek", widget: image, required: true}
+      - { label: "Source", name: "src", widget: "string" }
+      - { label: "Alt Text", name: "alt", widget: "string" }
+    default:
+      - { src: "/img/tennis.jpg", alt: "Tennis" }
+      - { src: "/img/footbar.jpg", alt: "Football" }
 
   - name: velikonoce
     label: Foto Velikonoce
