@@ -50,6 +50,12 @@ collections:
             max_files: 500,
             output_filename_only: true}}}
 
+  - label: "Gallery"
+    name: "galleryImages"
+    widget: "list"
+    summary: '{{fields.image}}'
+    field: {label: Image, name: image, widget: image}
+
   - name: velikonoce
     label: Foto Velikonoce
     folder: "src/pages/galerie/velikonoce"
