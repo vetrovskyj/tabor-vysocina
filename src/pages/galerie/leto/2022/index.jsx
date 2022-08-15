@@ -39,12 +39,10 @@ const Galerka = ({ data }) => {
           <SimpleReactLightbox>
             <SRLWrapper>
               <div className='grid'>
-                {data.gallery.edges.map(({ node }) => (
-  
+                {data.gallery.edges.map(({ node }) => (  
                     <a className='grid-item' href={node.publicURL}>
                       <GatsbyImage image={node.childImageSharp.gatsbyImageData} alt={node.base.split('-').join(' ').split('.')[0]} />
                     </a>
-
                 ))}
               </div>
             </SRLWrapper>

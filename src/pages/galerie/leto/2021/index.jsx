@@ -36,22 +36,17 @@ const Galerka = ({ data }) => {
       </>;
     } else {
       return (
-        <Container>
-          <SimpleReactLightbox>
+        <SimpleReactLightbox>
             <SRLWrapper>
               <div className='grid'>
-                {data.gallery.edges.map(({ node }) => (
-                  <Col lg={4} md={6} key={node.id} className="py-3">
-                    {/* {node.base.split('-').join(' ').split('.')[0]} */}
-                    <a href={node.publicURL}>
+                {data.gallery.edges.map(({ node }) => (  
+                    <a className='grid-item' href={node.publicURL}>
                       <GatsbyImage image={node.childImageSharp.gatsbyImageData} alt={node.base.split('-').join(' ').split('.')[0]} />
                     </a>
-                  </Col>
                 ))}
               </div>
             </SRLWrapper>
           </SimpleReactLightbox>
-        </Container>
       )
     }
   }, [authorized, password, invalid])
