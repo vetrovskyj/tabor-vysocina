@@ -21,22 +21,37 @@ class Galleries extends React.Component {
     return (
       <div className='years-section'>
         <h2>Léto</h2>
-        <Slider {...settings}>
-          {galleries &&
-            galleries.map(({ node: gallery }) => (
-              <div key={gallery.title} className="years-item-container">
-                {gallery.frontmatter.nahledacek ? (
-                  <Link className="gallery-carousel-container" to={gallery.fields.slug}>
-                    <img alt="náhledový obrázek ke galerii" src={gallery.frontmatter.nahledacek} />
+        <Slider {...settings}>      
+              <div  className="years-item-container">                
+                  <Link className="gallery-carousel-container" to={"./leto/2022/"}>
+                    <img alt="náhledový obrázek ke galerii" src="../../../img/Facebook/leto2020_292.jpg" />
                     <Link
                       className='gallery-carousel-text'
-                      to={gallery.fields.slug}>
-                      {gallery.frontmatter.title}
+                      to="./leto/2022/">
+                      2022
                     </Link>
                   </Link>
-                ) : null}
               </div>
-            ))}
+              <div  className="years-item-container">                
+                  <Link className="gallery-carousel-container" to={"./leto/2021/"}>
+                    <img alt="náhledový obrázek ke galerii" src="../../../img/Facebook/leto2021_074.jpg" />
+                    <Link
+                      className='gallery-carousel-text'
+                      to="./leto/2021/">
+                      2021
+                    </Link>
+                  </Link>
+              </div>
+              <div  className="years-item-container">                
+                  <Link className="gallery-carousel-container" to={"./leto/2020/"}>
+                    <img alt="náhledový obrázek ke galerii" src="../../../img/Facebook/leto2019_042.jpg" />
+                    <Link
+                      className='gallery-carousel-text'
+                      to="./leto/2020/">
+                      2020
+                    </Link>
+                  </Link>
+              </div>
         </Slider>
       </div>
     )

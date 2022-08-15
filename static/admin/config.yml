@@ -40,10 +40,6 @@ collections:
         widget: "image",
         allow_multiple: true,
         media_folder: "static/img/Facebook"}
-      - {label: "Gallery",
-        name: "galleryImages",
-        widget: "list",
-        field: {label: Image, name: image, widget: image}}
 
   - name: velikonoce
     label: Foto Velikonoce
