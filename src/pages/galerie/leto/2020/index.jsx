@@ -85,7 +85,7 @@ export const pageQuery = graphql`
   query {
     gallery: allFile(filter: {
       relativeDirectory: {eq: "leto-2020"}}
-      sort: {fields: id, order: ASC}) {
+      sort: {fields: base, order: ASC}) {
       edges {
         node {
           id
