@@ -42,7 +42,7 @@
         "react-lazy-load-image-component": "^1.5.4",
         "react-mapycz": "^1.1.1",
         "react-slick": "^0.29.0",
-        "simple-react-lightbox": "^2.7.0",
+        "simple-react-lightbox": "^3.3.4",
         "slick-carousel": "^1.8.1",
         "uuid": "^7.0.0"
     },

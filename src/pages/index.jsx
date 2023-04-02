@@ -26,13 +26,13 @@ export const IndexPage = ({
       <div className="top-site">
         <div className="fotky">
           <div className="fotka">
-            <img className="foto3" id="lastClone" src="../img/bradavice.png" alt="foto3" />
+            <img className="foto3" id="lastClone" src="../img/velikonoce-2023/banner_velikonoce 2023.png" alt="foto3" />
           </div>
         </div>
         <div className="info">
           <div className="text-homepage">
             <div className="text-heading">
-              <h2>Zábava. Zážitky..</h2>
+              <h2>Zábava. Zážitky.</h2>
               <h2>Vysočina</h2>
             </div>
             <p>Tábor Vysočina je policejní <strong>dětský tábor</strong> s dlouholetou tradicí, skvělou partou a hlavně <strong>zábavou</strong>. K dispozici máme 3 hřiště, hlavní budovu, chatky a <strong>krásnou přírodu.</strong></p>
