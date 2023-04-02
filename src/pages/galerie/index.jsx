@@ -26,7 +26,7 @@ export default class Galerie extends React.Component {
         <main>
           <Galleries />
           <Velikonoce />
-          <Vylety />
+          {/*<Vylety />*/}
           <Helmet>
             <script src={withPrefix('../scripts/slider.js')} type="text/javascript" />
           </Helmet>

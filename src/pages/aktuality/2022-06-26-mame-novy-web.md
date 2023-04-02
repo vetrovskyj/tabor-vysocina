@@ -6,12 +6,12 @@ description: Pro snadnější komunikaci informací a sdílení zážitků z tá
   spouštíme nový web. Naleznete na něm zprávy o aktuálním dění, všechny důležité
   informace o táboře i fotografie, které v průběhu tábora budeme přidávat.
 featuredpost: false
-featuredimage: https://res.cloudinary.com/dd2ejj6yt/image/upload/v1656320153/Aktuality/glenn-carstens-peters-npxXWgQ33ZQ-unsplash_lh2btw.jpg
+featuredimage: ../img/web-foto.jpg
 tags:
   - web
   - novinky
 ---
-![](https://res.cloudinary.com/dd2ejj6yt/image/upload/v1656320153/Aktuality/glenn-carstens-peters-npxXWgQ33ZQ-unsplash_lh2btw.jpg)
+![](../img/web-foto.jpg)
 
 ## K čemu se vám web hodí?
 
