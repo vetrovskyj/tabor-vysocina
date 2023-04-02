@@ -32,7 +32,7 @@ export const IndexPage = ({
         <div className="info">
           <div className="text-homepage">
             <div className="text-heading">
-              <h2>Zábava. Zážitky.</h2>
+              <h2>Zábava. Zážitky..</h2>
               <h2>Vysočina</h2>
             </div>
             <p>Tábor Vysočina je policejní <strong>dětský tábor</strong> s dlouholetou tradicí, skvělou partou a hlavně <strong>zábavou</strong>. K dispozici máme 3 hřiště, hlavní budovu, chatky a <strong>krásnou přírodu.</strong></p>
