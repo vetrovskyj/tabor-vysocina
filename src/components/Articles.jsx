@@ -29,7 +29,7 @@ class Articles extends React.Component {
                   <br />
                   <br />
                   <Link className="more" to={`./aktuality/2022-06-26-mame-novy-web/`}>
-                    více...
+                    více méně...
                   </Link>
                 </p>
                 {post.frontmatter.featuredimage ? (
