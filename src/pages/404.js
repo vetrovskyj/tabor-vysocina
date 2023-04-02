@@ -5,7 +5,7 @@ import { Helmet } from 'react-helmet'
 const NotFoundPage = () => (
   <Layout>
     <Helmet
-      title={`Chyba | Optika Volyně`}
+      title={`Chyba | Tábor Vysočina`}
     />
     <div>
       <h1>Stránku se nepodařilo najít</h1>

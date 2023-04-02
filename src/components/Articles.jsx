@@ -17,7 +17,7 @@ class Articles extends React.Component {
                 <p className="nazev_vyletu">
                   <Link
                     className="article-title"
-                    to={`./aktuality/2022-06-26-mame-novy-web/`}>
+                    to={post.fields.slug}>
                     {post.frontmatter.title}
                   </Link>
                   <span className="article-date">
@@ -28,14 +28,14 @@ class Articles extends React.Component {
                   {post.excerpt}
                   <br />
                   <br />
-                  <Link className="more" to={`./aktuality/2022-06-26-mame-novy-web/`}>
+                  <Link className="more" to={post.fields.slug}>
                     více méně...
                   </Link>
                 </p>
                 {post.frontmatter.featuredimage ? (
                   <Link
                     className="foto-href"
-                    to={`./aktuality/2022-06-26-mame-novy-web/`}>
+                    to={post.fields.slug}>
                     <PreviewCompatibleImage
                       imageInfo={{
                         image: post.frontmatter.featuredimage,

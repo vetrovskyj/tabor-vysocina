@@ -14,7 +14,7 @@ const TagsPage = ({
 }) => (
   <Layout>
     <section className="tags-container">
-      <Helmet title={`Tagy | Optika Volyně`} />
+      <Helmet title={`Tagy | Tábor Vysočina`} />
       <h1 className="all-tags-heading">Tagy</h1>
       <ul className="taglist">
         {group.map((tag) => (
