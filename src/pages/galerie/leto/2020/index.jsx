@@ -8,8 +8,6 @@ import { useMemo } from 'react';
 import { useCallback } from 'react';
 import PropTypes from 'prop-types'
 
-import { Container, Col } from 'react-bootstrap';
-
 
 const Galerka = ({ data }) => {
   const { markdownRemark: post } = data
