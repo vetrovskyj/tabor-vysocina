@@ -1,11 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useMemo, useCallback } from "react";
 import { graphql } from "gatsby";
 import Layout from "../../../../components/Layout";
 import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import { GatsbyImage } from "gatsby-plugin-image";
-import { useMemo } from "react";
-import { useCallback } from "react";
 import PropTypes from "prop-types";
 
 const Galerka = ({ data }) => {
@@ -13,6 +11,19 @@ const Galerka = ({ data }) => {
   const [authorized, setAuthorized] = useState(false);
   const [password, setPassword] = useState("");
   const [invalid, setInvalid] = useState(false);
+
+  const [currentPage, setCurrentPage] = useState(1);
+  const [imagesPerPage] = useState(52); // Adjust this value to change the number of images per page
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [currentPage]);
+
+  const indexOfLastImage = currentPage * imagesPerPage;
+  const indexOfFirstImage = indexOfLastImage - imagesPerPage;
+  const currentImages = data.gallery.edges.slice(indexOfFirstImage, indexOfLastImage);
+
+  const totalPages = Math.ceil(data.gallery.edges.length / imagesPerPage);
 
   const content = useMemo(() => {
     if (!authorized) {
@@ -50,8 +61,19 @@ const Galerka = ({ data }) => {
       return (
         <SimpleReactLightbox>
           <SRLWrapper>
+            <div className="pagination">
+              {Array.from({ length: totalPages }, (_, index) => (
+                <a
+                  key={index}
+                  onClick={() => setCurrentPage(index + 1)}
+                  className={index + 1 === currentPage ? "pagination-page active" : "pagination-page"}
+                >
+                  {index + 1}
+                </a>
+              ))}
+            </div>
             <div className="grid">
-              {data.gallery.edges.map(({ node }) => (
+              {currentImages.map(({ node }) => (
                 <a className="grid-item" href={node.publicURL}>
                   <GatsbyImage
                     className="grid-item"
@@ -61,11 +83,22 @@ const Galerka = ({ data }) => {
                 </a>
               ))}
             </div>
+            <div className="pagination">
+              {Array.from({ length: totalPages }, (_, index) => (
+                <a
+                  key={index}
+                  onClick={() => setCurrentPage(index + 1)}
+                  className={index + 1 === currentPage ? "pagination-page active" : "pagination-page"}
+                >
+                  {index + 1}
+                </a>
+              ))}
+            </div>
           </SRLWrapper>
         </SimpleReactLightbox>
       );
     }
-  }, [authorized, password, invalid]);
+  }, [authorized, password, invalid, currentImages, currentPage, totalPages]);
 
   const checkpassword = useCallback(() => {
     if (password.toLowerCase() === "vysočina66") {

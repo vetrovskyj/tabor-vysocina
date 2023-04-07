@@ -3669,6 +3669,32 @@ input:focus {
 
 /*css for gallery images*/
 
+.pagination{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    margin: auto
+}
+.pagination:first-child{
+margin-top: 10px;
+}
+
+.pagination-page{
+    text-decoration: underline;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.pagination-page:hover{
+    color: #fda94a;
+}
+
+.pagination-page.active{
+    color: #fda94a;
+}
+
 .wrong-password {
     margin-top: 10px;
     color: #fda94a;
@@ -3714,7 +3740,7 @@ input:focus {
     flex-wrap: wrap;
     max-width: 95%;
     justify-content: center;
-    margin: 10px auto;
+    margin: 5px auto 10px auto;
 }
 
 .grid-item img {
