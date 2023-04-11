@@ -126,7 +126,7 @@ export default Galerka;
 export const pageQuery = graphql`
   query {
     gallery: allFile(
-      filter: { relativeDirectory: { eq: "velikonoce-2023" } }
+      filter: { relativeDirectory: { eq: "leto-2022" } }
       sort: { fields: base, order: ASC }
     ) {
       edges {
