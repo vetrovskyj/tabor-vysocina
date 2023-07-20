@@ -21,7 +21,17 @@ class Galleries extends React.Component {
     return (
       <div className='years-section'>
         <h2>Léto</h2>
-        <Slider {...settings}>      
+        <Slider {...settings}>
+              <div  className="years-item-container">                
+                  <Link className="gallery-carousel-container" to={"./leto/2023/"}>
+                    <img alt="náhledový obrázek ke galerii" src="../../../img/velikonoce-2023/rome2023.png" />
+                    <Link
+                      className='gallery-carousel-text'
+                      to="./leto/2022/">
+                      2022
+                    </Link>
+                  </Link>
+              </div>      
               <div  className="years-item-container">                
                   <Link className="gallery-carousel-container" to={"./leto/2022/"}>
                     <img alt="náhledový obrázek ke galerii" src="../../../img/Facebook/leto2020_292.jpg" />
