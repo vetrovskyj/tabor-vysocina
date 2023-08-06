@@ -56,6 +56,7 @@ const Galerka = ({ data }) => {
 
   const downloadImagesOnPage = () => {
     const zip = new JSZip();
+    setDownloading(true);
   
     currentImages.forEach(({ node }, index) => {
       const imageFileName = `image-${index + 1}.jpg`; // Change the file name as needed
