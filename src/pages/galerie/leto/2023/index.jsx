@@ -5,6 +5,8 @@ import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import { GatsbyImage } from "gatsby-plugin-image";
 import PropTypes from "prop-types";
+import { saveAs } from 'file-saver'; // Import the file-saver package
+import JSZip from 'jszip'; // Import the jszip package
 
 const Galerka = ({ data }) => {
   const { markdownRemark: post } = data;
@@ -24,6 +26,52 @@ const Galerka = ({ data }) => {
   const currentImages = data.gallery.edges.slice(indexOfFirstImage, indexOfLastImage);
 
   const totalPages = Math.ceil(data.gallery.edges.length / imagesPerPage);
+
+  const [downloading, setDownloading] = useState(false);
+
+  const downloadAllImages = () => {
+    setDownloading(true);
+    const zip = new JSZip();
+    
+    const fetchAndAddImage = (imageNode, index) => {
+      const imageFileName = `image-${index + 1}.jpg`; // Change the file name as needed
+      fetch(imageNode.publicURL)
+        .then(response => response.blob())
+        .then(blob => {
+          zip.file(imageFileName, blob);
+          if (index === data.gallery.edges.length - 1) {
+            zip.generateAsync({ type: "blob" }).then(content => {
+              saveAs(content, "fotky-vysocina-2023.zip");
+              setDownloading(false); // Reset the downloading state
+            });
+          }
+        });
+    };
+    
+    data.gallery.edges.forEach(({ node }, index) => {
+      fetchAndAddImage(node, index);
+    });
+  };
+  
+
+  const downloadImagesOnPage = () => {
+    const zip = new JSZip();
+  
+    currentImages.forEach(({ node }, index) => {
+      const imageFileName = `image-${index + 1}.jpg`; // Change the file name as needed
+      fetch(node.publicURL)
+        .then(response => response.blob())
+        .then(blob => {
+          zip.file(imageFileName, blob);
+          if (index === currentImages.length - 1) {
+            zip.generateAsync({ type: "blob" }).then(content => {
+              saveAs(content, "fotky-vysocina-2023.zip");
+              setDownloading(false); // Reset the downloading state
+            });
+          }
+        });
+    });
+  };  
 
   const content = useMemo(() => {
     if (!authorized) {
@@ -61,6 +109,17 @@ const Galerka = ({ data }) => {
       return (
         <SimpleReactLightbox>
           <SRLWrapper>
+            <div className="fotky-informace"><p>Fotky si nyní můžete hromadně stáhnout kliknutím na tlačítka níže (chvíli trvá, než stahování začne).</p></div>
+            <div className="downloads-buttons">
+            {downloading ? (
+              <div className="loader"></div>
+            ) : (
+            <>
+              <button className="tlacitko-fotky" onClick={downloadImagesOnPage}>Stáhnout aktuální stránku</button>
+              <button className="tlacitko-fotky" onClick={downloadAllImages}>Stáhnout všechny fotky</button>
+              </>
+              )}
+              </div>
             <div className="pagination">
               {Array.from({ length: totalPages }, (_, index) => (
                 <a
