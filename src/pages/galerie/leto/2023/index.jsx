@@ -110,14 +110,13 @@ const Galerka = ({ data }) => {
       return (
         <SimpleReactLightbox>
           <SRLWrapper>
-            <div className="fotky-informace"><p>Fotky si nyní můžete hromadně stáhnout kliknutím na tlačítka níže (chvíli trvá, než stahování začne).</p></div>
+            <div className="fotky-informace"><p>Fotky si nyní můžete hromadně stáhnout kliknutím na tlačítko níže (chvíli trvá, než stahování začne).</p></div>
             <div className="downloads-buttons">
             {downloading ? (
               <div className="loader"></div>
             ) : (
             <>
-              <button className="tlacitko-fotky" onClick={downloadImagesOnPage}>Stáhnout aktuální stránku</button>
-              <button className="tlacitko-fotky" onClick={downloadAllImages}>Stáhnout všechny fotky</button>
+              <button className="tlacitko-fotky" onClick={downloadImagesOnPage}>Stáhnout fotky z této stránky</button>
               </>
               )}
               </div>
