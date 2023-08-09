@@ -74,6 +74,19 @@ const Galerka = ({ data }) => {
     });
   };  
 
+  const options = {
+    thumbnails: {
+      showThumbnails: false
+    }
+  }
+
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = '../../../../components/leto-2023/rome2023.png'; // Adjust the path based on your project structure
+    link.download = 'rome2023.png';
+    link.click();
+  };
+
   const content = useMemo(() => {
     if (!authorized) {
       return (
@@ -109,7 +122,7 @@ const Galerka = ({ data }) => {
     } else {
       return (
         <SimpleReactLightbox>
-          <SRLWrapper>
+          <SRLWrapper options={options}>
             <div className="fotky-informace"><p>Fotky si nyní můžete hromadně stáhnout kliknutím na tlačítko níže (chvíli trvá, než stahování začne).</p></div>
             <div className="downloads-buttons">
             {downloading ? (
