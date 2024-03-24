@@ -26,7 +26,7 @@ export const IndexPage = ({
       <div className="top-site">
         <div className="fotky">
           <div className="fotka">
-            <img className="foto3" id="lastClone" src="../img/leto-2023/rome2023.png" alt="foto3" />
+            <img className="foto3" id="lastClone" src="../img/velikonoce-2024/Velikonoce_2024.png" alt="foto3" />
           </div>
         </div>
         <div className="info">
