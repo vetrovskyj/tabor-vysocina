@@ -22,6 +22,17 @@ class Velikonoce extends React.Component {
       <div className="years-section">
         <h2>Velikonoce</h2>
         <Slider {...settings}>
+        <div className="years-item-container">
+            <Link className="gallery-carousel-container" to={"./velikonoce/2024/"}>
+              <img
+                alt="náhledový obrázek ke galerii"
+                src="../../../img/velikonoce-2024/Velikonoce_2024.png"
+              />
+              <Link className="gallery-carousel-text" to="./velikonoce/2024/">
+                2023
+              </Link>
+            </Link>
+          </div>
           <div className="years-item-container">
             <Link className="gallery-carousel-container" to={"./velikonoce/2023/"}>
               <img
