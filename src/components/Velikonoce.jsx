@@ -29,7 +29,7 @@ class Velikonoce extends React.Component {
                 src="../../../img/velikonoce-2024/Velikonoce_2024.png"
               />
               <Link className="gallery-carousel-text" to="./velikonoce/2024/">
-                2023
+                2024
               </Link>
             </Link>
           </div>
