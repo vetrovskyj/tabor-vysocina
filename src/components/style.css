@@ -1566,13 +1566,16 @@ nav {
     height: 40px;
     animation: spin 1s linear infinite;
     margin: 0 auto;
-  }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-   
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
 
 .kontakt {
     width: 85%;
@@ -1671,7 +1674,7 @@ textarea {
     font-size: 16px
 }
 
-.downloads-buttons{
+.downloads-buttons {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1703,6 +1706,7 @@ textarea {
 .tlacitko-formular:hover {
     background-color: #f7f6f3
 }
+
 .tlacitko-fotky:hover {
     background-color: #f7f6f3
 }
@@ -3738,7 +3742,7 @@ input:focus {
 
 /*css for gallery images*/
 
-.pagination{
+.pagination {
     display: flex;
     flex-wrap: wrap;
     width: 80%;
@@ -3746,21 +3750,22 @@ input:focus {
     justify-content: center;
     margin: auto
 }
-.pagination:first-child{
-margin-top: 10px;
+
+.pagination:first-child {
+    margin-top: 10px;
 }
 
-.pagination-page{
+.pagination-page {
     text-decoration: underline;
     padding: 4px;
     cursor: pointer;
 }
 
-.pagination-page:hover{
+.pagination-page:hover {
     color: #fda94a;
 }
 
-.pagination-page.active{
+.pagination-page.active {
     color: #fda94a;
 }
 
@@ -4068,6 +4073,22 @@ margin-top: 10px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.buses-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.buses-table th,
+.buses-table td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.buses-table th {
+    background-color: #f2f2f2;
 }
 
 .slick-prev,
